@@ -11,6 +11,7 @@ description:
 author: J.ian
 ---
 <input type="hidden" id="categoryName" value="HowToUse" />
+<input type="hidden" id="postedDate" value="2021-01-01" />
 
 > IntelliJ(인텔리J)를 사용하면서 유용한 단축키에 대해 정리해 본다
 

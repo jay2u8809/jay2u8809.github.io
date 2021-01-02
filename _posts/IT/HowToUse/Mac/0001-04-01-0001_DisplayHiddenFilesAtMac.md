@@ -10,6 +10,7 @@ description:
 author: J.ian
 ---
 <input type="hidden" id="categoryName" value="HowToUse" />
+<input type="hidden" id="postedDate" value="2019-12-28" />
 
 > Mac OS에서 숨겨진 파일이나 폴더 표시하기
 

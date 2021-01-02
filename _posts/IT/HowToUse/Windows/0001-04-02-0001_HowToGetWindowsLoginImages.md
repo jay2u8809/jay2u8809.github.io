@@ -11,6 +11,7 @@ description:
 author: J.ian
 ---
 <input type="hidden" id="categoryName" value="HowToUse" />
+<input type="hidden" id="postedDate" value="2019-12-30" />
 
 > Windows10의 잠금화면(로그인화면)의 사진 저장하는 방법을 알아본다.
 
