@@ -17,8 +17,11 @@ author: J.ian
 
 ___
 
-&nbsp; - &nbsp; **`command` + `shift` + `>`**      
+&nbsp;
+ - &nbsp; **`command` + `shift` + `>`**      
 <br />
+
+&nbsp;&nbsp; 
 Finder에서 커맨드키와 쉬프트키, > 키를 동시에 누르면 숨긴 파일 및 폴더를 표시된다.
 
 <br /><br />
