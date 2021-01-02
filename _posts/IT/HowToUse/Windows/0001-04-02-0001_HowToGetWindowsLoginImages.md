@@ -24,7 +24,9 @@ ___
 <br />
 
 &nbsp; 
- **`%LocalAppData%\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets`**      
+```
+    %LocalAppData%\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets
+```      
 <br />
 
 &nbsp;&nbsp; 
