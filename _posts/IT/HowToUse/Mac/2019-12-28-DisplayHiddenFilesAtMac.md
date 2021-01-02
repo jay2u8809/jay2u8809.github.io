@@ -9,6 +9,7 @@ comments: false
 description:
 author: J.ian
 ---
+<input type="hidden" id="categoryName" value="HowToUse" />
 
 > Mac OS에서 숨겨진 파일이나 폴더 표시하기
 

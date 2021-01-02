@@ -10,6 +10,7 @@ comments: false
 description:
 author: J.ian
 ---
+<input type="hidden" id="categoryName" value="HowToUse" />
 
 > IntelliJ(인텔리J) Community 버전에서 Lombok 설정하기
 
