@@ -23,7 +23,7 @@ ___
 &nbsp;&nbsp;
 **`to_char(`** 변경할 데이터, 변경할 데이터 타입 **`)`**     
 &nbsp;&nbsp;&nbsp;&nbsp;
-- 날짜를 문자, 특정한 형식으로 변경     
+ - 날짜를 문자, 특정한 형식으로 변경     
 
 ```postgresql
 
@@ -55,9 +55,9 @@ ___
 
 #### 2) extract
 &nbsp;&nbsp; 
-**`extract`** 함수        
+**`extract()`** 함수        
 &nbsp;&nbsp;&nbsp;&nbsp;
-날짜의 일부 정보를 double precision 타입으로 변경하여 추출       
+ - 날짜의 일부 정보를 double precision 타입으로 변경하여 추출       
 
 ```postgresql
 
@@ -69,9 +69,9 @@ ___
 
 #### 3) date_part
 &nbsp;&nbsp;
-**`date_part`** (필요한 정보, 날짜)      
+**`date_part (`** 필요한 정보, 날짜 **`)`**      
 &nbsp;&nbsp;&nbsp;&nbsp;
-날짜의 일부 정보를 double precision 타입으로 변경하여 추출       
+ - 날짜의 일부 정보를 double precision 타입으로 변경하여 추출       
 
 ```postgresql
 
@@ -83,9 +83,9 @@ ___
 
 #### 4) interval
 &nbsp;&nbsp; 
-**`interval`**;      
+**`interval`**      
 &nbsp;&nbsp;&nbsp;&nbsp;
-날짜를 계산      
+ - 날짜를 계산      
 
 ```postgresql
 
