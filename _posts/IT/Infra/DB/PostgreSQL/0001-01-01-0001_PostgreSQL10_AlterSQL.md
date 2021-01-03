@@ -5,7 +5,9 @@ categories: [Database]
 tags: 
 - Database
 - PostgreSQL
-comments: true
+- SQL
+- Alter
+comments: false
 description:
 author: J.ian
 ---
