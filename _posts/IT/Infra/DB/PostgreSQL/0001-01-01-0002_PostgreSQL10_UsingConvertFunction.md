@@ -9,7 +9,6 @@ tags:
 comments: false
 description:
 author: J.ian
-date:   2019-02-03
 ---
 
 <input type="hidden" id="categoryName" value="Database" />
@@ -17,7 +16,7 @@ date:   2019-02-03
 
 > PostgreSQL의 함수 중 데이터 타입을 변경하는 함수에 대해 정리해 본다.
 
-> ### PostgreSQL의 데이터 타입 변경 함수의 사용법
+> ### PostgreSQL의 데이터 타입 변경 함수 사용법
 
 ___
 
@@ -27,7 +26,9 @@ ___
 
 #### 1) CAST     
 &nbsp;&nbsp; ・ **`CAST`** (변경할 데이터 **`AS`** 변경할 데이터 타입)      
+
 ```postgresql
+
     CAST(123.00000 AS integer);   -- 123 (double precision -> integer)
     CAST('1234' AS numeric);      -- 1,234 (varchar -> numeric)
     CAST(12302 AS vachar);        -- 12302 (integer -> varchar)
@@ -40,7 +41,9 @@ ___
 
 #### 2) ::     
 &nbsp;&nbsp; ・ 변경할데이터 **`::`** 변경할 데이터 타입       
+
 ```postgresql
+
     123.00000::integer;   -- 123 (double precision -> integer)
     '1234'::numeric;      -- 1,234 (varchar -> numeric)
     12302::vachar;        -- 12302 (integer -> varchar)
@@ -53,7 +56,9 @@ ___
 #### 3) to_char     
 &nbsp;&nbsp; ・ **`to_char(`** 변경할 데이터, 변경할 데이터 타입 **`)`**       
 &nbsp;&nbsp;&nbsp;&nbsp; - 숫자를 문자, 특정한 형식으로 변경      
+
 ```postgresql
+
   -- 숫자 
     to_char(12345, '999,999');        -- 12,345
     to_char(12345, '999,999.99');     -- 12,345.00
