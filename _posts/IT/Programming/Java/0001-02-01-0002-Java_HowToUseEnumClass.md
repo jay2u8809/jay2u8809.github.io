@@ -9,6 +9,7 @@ tags:
 comments: false
 description:
 author: J.ian
+date:   2019-12-05
 ---
 
 <input type="hidden" id="categoryName" value="Programming" />

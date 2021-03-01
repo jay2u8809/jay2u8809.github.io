@@ -10,6 +10,7 @@ tags:
 comments: true
 description:
 author: J.ian
+date:   2020-09-08
 ---
 
 <input type="hidden" id="categoryName" value="Programming" />

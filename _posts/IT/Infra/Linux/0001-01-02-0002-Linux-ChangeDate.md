@@ -12,7 +12,7 @@ date:   2019-05-01
 ---
 
 <input type="hidden" id="categoryName" value="Linux" />
-<input type="hidden" id="postedDate" value="2019-05-0`" />
+<input type="hidden" id="postedDate" value="2019-05-01" />
 
 
 > Linux에서 시스템 날짜를 변경하고 확인하기 위한 명령어 사용하기
