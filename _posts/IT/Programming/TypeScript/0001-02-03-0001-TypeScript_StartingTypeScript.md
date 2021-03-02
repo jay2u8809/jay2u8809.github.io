@@ -4,7 +4,7 @@ title: TypeScript - 타입스크립트의 개발 환경을 만들자
 categories: [Programming]
 tags: 
 - Programming
-- Typescript
+- Javascript
 - TypeScript
 comments: false
 description:
