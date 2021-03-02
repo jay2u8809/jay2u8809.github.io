@@ -16,7 +16,7 @@ date:   2020-05-10
 <input type="hidden" id="categoryName" value="Programming" />
 <input type="hidden" id="postedDate" value="2020-05-10" />
 
-> JAVA(자바) **`Stream의 Distict를 이용`** 하여 List의 중복값을 가진 인스턴스를 제거한다.
+> JAVA(자바) **`Stream의 Distinct를 이용`** 하여 List의 중복값을 가진 인스턴스를 제거한다.
 
 ### 1. 기본 자료형의 클래스들(Integer, BigDecimal 등) 및 String 객체의 중복값 제거
 &nbsp;&nbsp; 기본 자료형의 클래스들(Integer, BigDecimal 등)과 String 객체의 경우 Distinct를 이용하여 간단히 제거할수 있다.    
