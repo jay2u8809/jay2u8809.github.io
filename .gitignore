@@ -1,4 +1,9 @@
+.vscode
+.idea
 .jekyll-cache
 .github
 _site
-templates
+GemFile
+GemFile.lock
+*.gemspec
+Rakefile
