@@ -61,7 +61,8 @@ Node.js의 경우 그러한 규칙이 없기 때문에 개발자들이 프로젝
 
 ### 4) app.module.ts
 - `@Module()`이라는 decorators를 이용한다.
-- 루트Root 모듈로서 어플이케이션에 필요한 리소스들(컨트롤러, 서비스 등)을 명시하고 있다.
+- 루트Root 모듈로서 어플리케이션에 필요한 다른 모듈들을 명시하고 Import 한다.(imports 항목)
+- controllers 항목과 providers항목에는 AppController와 AppService만을 명시하도록 한다.
 ```typescript
 
     import {    Module }   from '@nestjs/common';
@@ -114,7 +115,7 @@ Node.js의 경우 그러한 규칙이 없기 때문에 개발자들이 프로젝
 
 ### 6) app.controller.ts
 - `@Controller()`라는 decorators를 이용한다.
-- `EndPoint` 로서 Request를 받아 서비스를 호출하고 Response 해주는 역할을 한다.
+- `EndPoint` 로서 Request를 받아 서비스Service를 호출하고 Response 해주는 역할을 한다.
 
 
 ---
