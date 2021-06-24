@@ -64,4 +64,32 @@ last_modified_at: 2021-06-23
     $ ts-node hello_world.ts
     > Hello World
 ```
+## 주요 문법
+
+### Destructuring Assignment
+- 객체와 배열에 적용할 수 있습니다.
+- 함수의 선언이나 변수의 초기화를 쉽게 할 수 있습니다.
+```typescript
+    let person = {  name: "John", age: 27   };
+    let {name, age} = person;       // name = "John", age = 27 가 할당된다
+
+    let arr = [1, 2, 3, 4];
+    let [first, ...rest] = arr;     // first = 1, rest = [2, 3, 4]
+
+    let num1 = 1, num2 = 4;
+    [num1, num2] = [num2, num1];    // num1 = 4, num2 = 1    
+```
+
+### Arrow Functions
+- `=>` 기호를 이용하여 `function 키워드` 대신 함수를 선언하고 사용할 수 있습니다.
+- 보다 간단하게 함수를 만들수 있습니다.
+```typescript
+    // 일반적인 함수의 선언 방법
+    function add_calc1(num1, num2) {
+        return num1 + num2;
+    }
+
+    // 화살표 함수를 사용한 함수의 선언 방법
+    const add_calc2 = (num1, num2) => num1 + num2;
+```
 
