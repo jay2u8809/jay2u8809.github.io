@@ -6,11 +6,20 @@
       en: Jung Ian
       ja: ジョン イアン
     skills:
-      languages: [Korean, Japanese]
-      programming: [Java, Typescript]
-      framework: [SpringBoot, NestJs]
-      etc: [Serverless Architecture, Aws, Git, React]
-    residence: Kawasaki, Japan
+      languages: 
+        - Korean
+        - Japanese
+      programming:
+        - Java
+        - Typescript
+      framework: 
+        - SpringBoot
+        - NestJs
+      etc: 
+        - Serverless Architecture
+        - Aws: [Lambda, Fargate, DynamoDB, S3, etc]
+        - Git
+        - React
     description: Back-End Developer
 ```
 # Article
