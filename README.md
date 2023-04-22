@@ -10,17 +10,16 @@
         - Korean
         - Japanese
       programming:
-        - Java
         - Typescript
+        - Java
       framework: 
-        - SpringBoot
         - NestJs
+        - SpringBoot
       etc: 
         - Serverless Architecture
         - Aws: [Lambda, Fargate, DynamoDB, S3, etc]
         - Git
+        - Serverless Framework
         - React
     description: Back-End Developer
 ```
-# Article
-- [J.Ian’s Wiki](https://buttercup-case-bfd.notion.site/J-Ian-s-Wiki-7162775d50394e2e8caa59a1536bf9c4)
