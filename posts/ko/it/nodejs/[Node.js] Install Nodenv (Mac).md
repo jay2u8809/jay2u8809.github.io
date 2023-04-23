@@ -1,3 +1,7 @@
+![nodejs](../../../../assets/images/common/logo/node.js_logo.png 'nodejs')
+
+<br />
+
 # [Node.js] Install Nodenv (Mac)
 
 - Created: 2022-May-22
@@ -126,7 +130,7 @@
     ```
 
 - 설치가 완료되었다. 설치한 node 의 버전을 확인해보자. 버전 정보가 잘 나온다면 정상적으로 설치된 것이다.
-  + (만약 `node -v` 명령어를 통해 버전 정보가 나오지 않는다면 터미널을 새로 열거나 `source ~/.zshrc` ****를 실행하고 다시 버전을 확인해본다.)
+  + (만약 `node -v` 명령어를 통해 버전 정보가 나오지 않는다면 터미널을 새로 열거나 `source ~/.zshrc` 를 실행하고 다시 버전을 확인해본다.)
     ```shell
         # check node version
         (% source ~/.zshrc)

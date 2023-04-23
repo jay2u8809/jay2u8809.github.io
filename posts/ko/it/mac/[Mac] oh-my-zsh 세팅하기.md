@@ -1,3 +1,7 @@
+![oh-my-zsh](https://ohmyz.sh/img/OMZLogo_BnW.png 'oh-my-zsh')
+
+<br />
+
 # [Mac] oh-my-zsh 세팅하기
 
 - Created: 2022-June-03
