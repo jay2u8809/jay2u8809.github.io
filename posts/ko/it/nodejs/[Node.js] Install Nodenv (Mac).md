@@ -1,3 +1,7 @@
+![nodejs](../../../../assets/images/common/logo/node.js_logo.png 'nodejs')
+
+<br />
+
 # [Node.js] Install Nodenv (Mac)
 
 - Created: 2022-May-22
