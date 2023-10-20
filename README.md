@@ -19,7 +19,7 @@
           - DynamoDB
           - APIGateway
         Deploy:
-	      - Serverless Framework
+          - Serverless Framework
       test:
         - Jest
         - JUnit
