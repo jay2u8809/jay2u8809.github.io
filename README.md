@@ -1,25 +1,29 @@
 # Profile
 ```yaml
   profile:
-    name:
-      ko: 정이언
-      en: Jung Ian
-      ja: ジョン イアン
+    name: Jung Ian
     skills:
-      languages: 
-        - Korean
-        - Japanese
       programming:
         - Typescript
         - Java
       framework: 
         - NestJs
         - SpringBoot
-      etc: 
-        - Serverless Architecture
-        - Aws: [Lambda, Fargate, DynamoDB, S3, etc]
-        - Git
-        - Serverless Framework
+          - JPA
+          - QueryDSL
+      infra:
+        AWS:  # Serverless Architecture
+          - Lambda
+          - Cloudfront
+          - ECS(Fargate)
+          - DynamoDB
+          - APIGateway
+        Deploy:
+	      - Serverless Framework
+      test:
+        - Jest
+        - JUnit
+      front-end: 
         - React
-    description: Back-End Developer
+        - Thymeleaf
 ```
