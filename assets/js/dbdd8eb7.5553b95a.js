@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[9013],{8764:e=>{e.exports=JSON.parse('{"blogBasePath":"/delog/blog","blogTitle":"Blog"}')}}]);

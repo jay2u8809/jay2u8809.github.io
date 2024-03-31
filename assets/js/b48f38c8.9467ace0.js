@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[6471],{3788:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/onigiri/blog/tags/docusaurus","allTagsPath":"/onigiri/blog/tags","count":1,"unlisted":false}')}}]);

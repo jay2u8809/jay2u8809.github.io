@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://jay2u8809.github.io/onigiri/delog/blog</id>
+    <id>https://jay2u8809.github.io/delog/blog</id>
     <title>Onigiri Jung Blog</title>
     <updated>2024-03-31T14:08:32.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://jay2u8809.github.io/onigiri/delog/blog"/>
+    <link rel="alternate" href="https://jay2u8809.github.io/delog/blog"/>
     <subtitle>Onigiri Jung Blog</subtitle>
-    <icon>https://jay2u8809.github.io/onigiri/img/favicon.ico</icon>
+    <icon>https://jay2u8809.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://jay2u8809.github.io/onigiri/delog/blog/welcome</id>
-        <link href="https://jay2u8809.github.io/onigiri/delog/blog/welcome"/>
+        <id>https://jay2u8809.github.io/delog/blog/welcome</id>
+        <link href="https://jay2u8809.github.io/delog/blog/welcome"/>
         <updated>2024-03-31T14:08:32.000Z</updated>
         <summary type="html"><![CDATA[Welcome De.log]]></summary>
         <content type="html"><![CDATA[<p>Welcome De.log</p>]]></content>
