@@ -1,9 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import BlogConfig from './src/config/blog.config';
-import DocsConfig from './src/config/docs.config';
-import CommonConfig, { PositionType } from './src/config/common.config';
+import CommonConfig, { BlogConfig, DocsConfig, PositionType } from './src/config/common.config';
 
 const config: Config = {
   title: 'Onigiri Jung',
@@ -11,15 +9,15 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://jay2u8809.github.io',
+  url: CommonConfig.gitRepo.url,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'jay2u8809', // Usually your GitHub org/user name.
-  projectName: 'jay2u8809.github.io', // Usually your repo name.
+  organizationName: CommonConfig.gitRepo.userName, // Usually your GitHub org/user name.
+  projectName: CommonConfig.gitRepo.name, // Usually your repo name.
   deploymentBranch: 'main', // deployment branch name.
 
   onBrokenLinks: 'throw',

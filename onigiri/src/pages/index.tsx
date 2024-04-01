@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import BlogConfig from '@site/src/config/blog.config';
+import { BlogConfig } from '@site/src/config/common.config';
 
 import styles from '@site/src/css/index.module.css';
 
