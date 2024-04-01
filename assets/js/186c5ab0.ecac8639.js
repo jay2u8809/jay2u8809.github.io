@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[9437],{7053:e=>{e.exports=JSON.parse('{"title":"All posts","items":[{"title":"Welcome","permalink":"/delog/blog/welcome","unlisted":false}]}')}}]);

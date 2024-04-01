@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[9139],{5731:e=>{e.exports=JSON.parse('{"title":"Career","description":"resume","slug":"/category/career","permalink":"/delog/docs/category/career","navigation":{"previous":{"title":"De.log Intro","permalink":"/delog/docs/intro"},"next":{"title":"Profile","permalink":"/delog/docs/career/profile"}}}')}}]);

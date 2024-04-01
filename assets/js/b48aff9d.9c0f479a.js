@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[8099],{2206:i=>{i.exports=JSON.parse('{"label":"life.log","permalink":"/onigiri/lifelog/blog/tags/life-log","allTagsPath":"/onigiri/lifelog/blog/tags","count":1,"unlisted":false}')}}]);
