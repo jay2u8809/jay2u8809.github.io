@@ -28,8 +28,6 @@
             <name>Dev.ian</name>
             <uri>https://github.com/jay2u8809</uri>
         </author>
-        <category label="facebook" term="facebook"/>
-        <category label="hello" term="hello"/>
         <category label="docusaurus" term="docusaurus"/>
     </entry>
 </feed>
