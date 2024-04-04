@@ -1,13 +1,13 @@
 ---
 slug: /aws/cli/s3/create-bucket
 # id: create-s3-bucket
-title: AWS - CLI 로 S3 Bucket 만들기
+title: CLI 로 S3 Bucket 만들기
 tags: [de.log, aws, aws cli, s3, bucket, create s3 bucket]
 # sidebar_position: 1
 ---
 
 <!--title -->
-# AWS - CLI 로 S3 Bucket 만들기
+# CLI 로 S3 Bucket 만들기
 <!--//title -->
 
 ## Command

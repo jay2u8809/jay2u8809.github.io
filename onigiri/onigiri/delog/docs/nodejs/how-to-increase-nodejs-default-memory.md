@@ -1,34 +1,37 @@
 ---
-slug: /nodejs/how-to-increase-nodejs-default-memory
-# id: how-to-increase-nodejs-default-memory
-title: NodeJs のメモリーサイズを増加する方法
-tags: [de.log, nodejs, memory, node]
+slug: /nodejs/how-to-increase-nodejs-default-memory/ja
+# id: how-to-increase-nodejs-default-memory-ja
+title: NodeJs メモリーサイズアップ
+tags: [de.log, nodejs, memory, node, japanese]
 # sidebar_position: 1
 ---
 
 <!--title -->
-# NodeJs のメモリーサイズを増加する方法
+# NodeJs メモリーサイズアップ
 <!--//title -->
 
 
-## 一時的に NodeJs のデフォルト Heap メモリー増加 Command
+## 一時的に NodeJs のデフォルト Heap メモリーを指定
+- 4GB (1024 * 4)
 ```shell
-# 4GB (1024 * 4)
 $ export NODE_OPTIONS=--max_old_space_size=4096
+```
 
-# 8GB (1024 * 8)
+- 8GB (1024 * 8)
+```shell
 $ export NODE_OPTIONS=--max_old_space_size=8192
-
 ```
 
 
-## スクリプトの実行時に Heap メモリーを指定する方法
+## スクリプトの実行時に Heap メモリーを指定
+- Example
+  + `${NODE_SCRIPT_FILE}` はスクリプト名です。
 ```shell
-# ${NODE_SCRIPT_FILE} is the file name that you want to execute using node.
 $ node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js
 ```
 
 ## package.json で設定する場合
+- 上のコマンドを `package.json` に固定にすれば、使いやすいです。
 - package.json
 ```json
 {
