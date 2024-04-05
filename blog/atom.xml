@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jay2u8809.github.io/blog"/>
     <subtitle>Onigiri Jung Blog</subtitle>
-    <icon>https://jay2u8809.github.io/img/favicon.ico</icon>
+    <icon>https://jay2u8809.github.io/img/onigiri_favicon.jpg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://jay2u8809.github.io/blog/welcome</id>
@@ -25,7 +25,7 @@
 <p>The blog supports tags as well!</p>
 <p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
         <author>
-            <name>Dev.ian</name>
+            <name>Onigiri.J</name>
             <uri>https://github.com/jay2u8809</uri>
         </author>
         <category label="docusaurus" term="docusaurus"/>
