@@ -6,7 +6,7 @@ import CommonConfig, { BlogConfig, DocsConfig, PositionType } from './src/config
 const config: Config = {
   title: 'Onigiri Jung',
   tagline: '잡ː담(談)',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/onigiri_favicon.jpg',
 
   // Set the production url of your site here
   url: CommonConfig.gitRepo.url,
@@ -60,7 +60,7 @@ const config: Config = {
       title: 'Onigiri',
       logo: {
         alt: 'Onigiri Logo',
-        src: 'https://avatars.githubusercontent.com/u/43085472?v=4',
+        src: 'img/onigiri_icon.jpg',
       },
       items: [
         ...CommonConfig.links.menu
