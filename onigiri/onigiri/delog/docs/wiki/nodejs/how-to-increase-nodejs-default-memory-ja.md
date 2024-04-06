@@ -1,8 +1,8 @@
 ---
-slug: /nodejs/how-to-increase-nodejs-default-memory/ja
-# id: how-to-increase-nodejs-default-memory-ja
+# slug: /wiki/nodejs/how-to-increase-nodejs-default-memory-ja
+id: how-to-increase-nodejs-default-memory-ja
 title: NodeJs メモリーサイズアップ
-tags: [de.log, nodejs, memory, node, japanese]
+tags: [de.log, wiki, nodejs, memory, node, japanese]
 # sidebar_position: 1
 ---
 

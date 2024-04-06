@@ -18,7 +18,7 @@ export const BlogConfig = {
   // de.log
   delog: {
     id: 'de-log',
-    label: 'De.log',
+    label: 'De.log Blog',
     routeBasePath: `/${BasePath}/delog/blog`, // '/delog-blog'
     directoryPath: `./${BasePath}/delog/blog`,
     blogSidebarTitle: 'All posts',
@@ -50,7 +50,7 @@ export const DocsConfig = {
   // de.log
   delogDocs: {
     id: 'de-log',
-    label: 'De.log Docs',
+    label: 'De.log',
     sidebarPath: './sidebars.ts',
     sidebarId: 'delogSidebar',
     routeBasePath: `${BasePath}/delog/docs`,
@@ -60,7 +60,7 @@ export const DocsConfig = {
   // living.log
   livingLogDocs: {
     id: 'living-log',
-    label: 'Living.log Docs',
+    label: 'Living.log Wiki',
     sidebarPath: './sidebars.ts',
     sidebarId: 'livinglogSidebar',
     routeBasePath: `${BasePath}/livinglog/docs`,
@@ -82,12 +82,14 @@ const config = {
         label: BlogConfig.defaultBlog.label,
         to: BlogConfig.defaultBlog.routeBasePath, 
         visible: false,
+        sort: 999,
       },
       {
         // De.log Blog
         label: BlogConfig.delog.label,
         to: BlogConfig.delog.routeBasePath, 
-        visible: true,
+        visible: false,
+        sort: 999,
       },
       {
         // Living.log Blog
@@ -95,6 +97,7 @@ const config = {
         to: BlogConfig.livinglog.routeBasePath, 
         href: BlogConfig.livinglog.routeBasePath, 
         visible: true,
+        sort: 2,
       },
       {
         // Default Docs
@@ -103,6 +106,7 @@ const config = {
         type: DocsConfig.docsType,
         sidebarId: DocsConfig.defaultDocs.sidebarId,
         visible: false,
+        sort: 999,
       },
       {
         // De.log Docs
@@ -110,7 +114,8 @@ const config = {
         to: DocsConfig.delogDocs.introPath, 
         type: DocsConfig.docsType,
         sidebarId: DocsConfig.delogDocs.sidebarId,
-        visible: false,
+        visible: true,
+        sort: 1,
       },
       {
         // Living.log Docs
@@ -118,7 +123,8 @@ const config = {
         to: DocsConfig.livingLogDocs.introPath, 
         sidebarId: DocsConfig.livingLogDocs.sidebarId,
         type: DocsConfig.docsType,
-        visible: false,
+        visible: true,
+        sort: 3,
       },
     ],
     community: [
@@ -126,6 +132,7 @@ const config = {
         label: 'Velog',
         href: 'https://velog.io/@jay2u8809/posts',
         visible: true,
+        sort: 1,
       }
     ],
     more: [
@@ -133,11 +140,13 @@ const config = {
         label: 'GitHub',
         href: 'https://github.com/jay2u8809',
         visible: true,
+        sort: 1,
       },
       {
         label: 'About Onigiri.J',
         href: '/page/resume/profile',
         visible: false,
+        sort: 2,
       },
     ],
   },

@@ -1,8 +1,8 @@
 ---
-slug: /japan/how-to-change-driver-licence
-# id: how-to-change-driver-licence
+# slug: /japan/how-to-change-driver-licence
+id: how-to-change-driver-licence
 title: 운전면허증(한국 → 일본) 변경
-tags: [living.log, Japan, living in Japan, driver license, 일본생활, 영사관, 운전면허증]
+tags: [living.log, wiki, Japan, living in Japan, driver license, 일본생활, 영사관, 운전면허증]
 # sidebar_position: 1
 ---
 

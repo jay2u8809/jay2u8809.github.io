@@ -1,8 +1,8 @@
 ---
-slug: /aws/cli/s3/create-bucket
-# id: create-s3-bucket
+# slug: /aws/cli/s3/create-bucket
+id: create-s3-bucket
 title: CLI 로 S3 Bucket 만들기
-tags: [de.log, aws, aws cli, s3, bucket, create s3 bucket]
+tags: [de.log, wiki, aws, aws cli, s3, bucket, create s3 bucket]
 # sidebar_position: 1
 ---
 
@@ -51,6 +51,7 @@ aws s3api create-bucket \
 echo "===== END CREAT BUCKET:$BUCKET_NAME ====="
 ```
 
+<br /><br /><br /><br /><br />
 
 --- 
 - Refs:

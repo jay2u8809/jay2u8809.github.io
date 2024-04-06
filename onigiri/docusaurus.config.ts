@@ -65,6 +65,7 @@ const config: Config = {
       items: [
         ...CommonConfig.links.menu
           .filter(item => !!item.visible)
+          .sort((before, after) => before.sort - after.sort)
           .map(item => {
             return {
               label: item.label,
@@ -88,6 +89,7 @@ const config: Config = {
           items: [
             ...CommonConfig.links.menu
               .filter(item => !!item.visible)
+              .sort((before, after) => before.sort - after.sort)
               .map(item => {
                 return {
                   label: item.label, 
@@ -101,6 +103,7 @@ const config: Config = {
           items: [
             ...CommonConfig.links.community
               .filter(item => !!item.visible)
+              .sort((before, after) => before.sort - after.sort)
               .map(item => {
                 return {
                   label: item.label,
@@ -114,6 +117,7 @@ const config: Config = {
           items: [
             ...CommonConfig.links.more
               .filter(item => !!item.visible)
+              .sort((before, after) => before.sort - after.sort)
               .map(item => {
                 return {
                   label: item.label,

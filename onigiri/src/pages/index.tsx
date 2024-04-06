@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import { BlogConfig } from '@site/src/config/common.config';
+import { DocsConfig } from '@site/src/config/common.config';
 
 import styles from '@site/src/css/index.module.css';
 
@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to={BlogConfig.delog.routeBasePath}>
+            to={DocsConfig.delogDocs.introPath}>
             View De.log ...
           </Link>
         </div>

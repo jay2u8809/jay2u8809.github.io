@@ -1,9 +1,14 @@
 ---
-# slug: /aws/cli/s3/create-bucket
-title: AWS - CLI 로 S3 Bucket 만들기
+# slug: /posts/aws/cli/s3/create-bucket
+id: create-s3-bucket
+title: CLI 로 S3 Bucket 만들기
 authors: [jian]
-tags: [de.log, aws, aws cli, s3, bucket, create s3 bucket]
+tags: [de.log, post, aws, aws cli, s3, bucket, create s3 bucket]
 ---
+
+<!--title -->
+# CLI 로 S3 Bucket 만들기
+<!--//title -->
 
 ## Command
 ```shell
@@ -55,6 +60,8 @@ $ aws s3api create-bucket \
 - S3 CLI 로 Bucket 을 만들게 되면, 기본적으로 `Public Access Block` 가 활성화 되어있다.(Public access 불가)
 - 따라서 Public Access Block 을 비활성화 하고 싶다면 [PutPublicAccessBlock](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-public-access-block.html?highlight=put%20public%20access%20block#put-public-access-block) 이나 [DeletePublicAccessBlock](https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-public-access-block.html?highlight=deletepublicaccessblock) 를 통해 할 수 있다.
 
+
+<br /><br /><br /><br /><br />
 
 --- 
 - Refs:
