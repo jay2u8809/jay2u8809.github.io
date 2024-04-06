@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[8323],{591:e=>{e.exports=JSON.parse('{"label":"create s3 bucket","permalink":"/onigiri/delog/blog/tags/create-s-3-bucket","allTagsPath":"/onigiri/delog/blog/tags","count":1,"unlisted":false}')}}]);

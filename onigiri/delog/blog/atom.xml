@@ -2,92 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jay2u8809.github.io/onigiri/delog/blog</id>
     <title>Onigiri Jung Blog</title>
-    <updated>2024-04-02T00:00:00.000Z</updated>
+    <updated>2024-03-31T14:08:32.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jay2u8809.github.io/onigiri/delog/blog"/>
     <subtitle>Onigiri Jung Blog</subtitle>
     <icon>https://jay2u8809.github.io/img/onigiri_favicon.jpg</icon>
-    <entry>
-        <title type="html"><![CDATA[AWS - CLI 로 S3 Bucket 만들기]]></title>
-        <id>https://jay2u8809.github.io/onigiri/delog/blog/2024/04/02/aws/aws-cli-create-s3-bucket</id>
-        <link href="https://jay2u8809.github.io/onigiri/delog/blog/2024/04/02/aws/aws-cli-create-s3-bucket"/>
-        <updated>2024-04-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Command]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="command">Command<a href="https://jay2u8809.github.io/onigiri/delog/blog/2024/04/02/aws/aws-cli-create-s3-bucket#command" class="hash-link" aria-label="Direct link to Command" title="Direct link to Command">​</a></h2>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ aws s3api create-bucket \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --bucket ${BUCKET_NAME} \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --region ${REGION} \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --create-bucket-configuration LocationConstraint=${REGION} \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --profile ${PROFILE}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="examples">Examples<a href="https://jay2u8809.github.io/onigiri/delog/blog/2024/04/02/aws/aws-cli-create-s3-bucket#examples" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h2>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ aws s3api create-bucket \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --bucket example-temp-bucket \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --region ap-northeast-2 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --create-bucket-configuration LocationConstraint=ap-northeast-2 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --profile sample-dev</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="options">Options<a href="https://jay2u8809.github.io/onigiri/delog/blog/2024/04/02/aws/aws-cli-create-s3-bucket#options" class="hash-link" aria-label="Direct link to Options" title="Direct link to Options">​</a></h3>
-<table><thead><tr><th>No</th><th>option</th><th>desc</th><th>note</th></tr></thead><tbody><tr><td>1</td><td><code>--bucket</code></td><td>Bucket 의 이름</td><td>-</td></tr><tr><td>2</td><td><code>--region</code></td><td>Region 의 이름</td><td><em>aws config 파일</em> 에 region 이 지정되어 있다면 생략</td></tr><tr><td>3</td><td><code>--create-bucket-configuration LocationConstraint=리전명</code></td><td>Bucket 을 생성할 Region 의 이름</td><td><code>--region</code> 이 <code>us-east-1</code> 이외의 리전이라면 반드시 지정한다.</td></tr><tr><td>4</td><td><code>--profile</code></td><td>profile 의 이름</td><td>사용하려는 <em>aws credentials 파일</em> 의 profile 명을 지정한다.</td></tr></tbody></table>
-<ul>
-<li>aws config, aws credentials 파일: aws configure 으로 설정한 인증 정보 파일<!-- -->
-<ul>
-<li>Linux, MacOS: <code>~/.aws/</code></li>
-<li>Windows: <code>C:\Users\USERNAME\.aws\</code></li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="locationconstraint">LocationConstraint<a href="https://jay2u8809.github.io/onigiri/delog/blog/2024/04/02/aws/aws-cli-create-s3-bucket#locationconstraint" class="hash-link" aria-label="Direct link to LocationConstraint" title="Direct link to LocationConstraint">​</a></h4>
-<ul>
-<li>
-<p>Bucket 의 기본 생성 Region: <em>us-east-1</em></p>
-<ul>
-<li><code>LocationConstraint</code> 을 지정하지 않으면 Bucket 의 Region 은 기본적으로 <em>us-east-1</em> 다.</li>
-</ul>
-</li>
-<li>
-<p>Bucket 의 Region 을 <code>us-east-1</code> 가 아닌 Region (<code>ap-northeast-2</code>) 으로 한다면, <code>--create-bucket-configuration LocationConstraint=리전이름</code> 을  반드시 지정해주어야 한다.</p>
-<ul>
-<li><strong>llegalLocationConstraintException</strong> 에러<!-- -->
-<ul>
-<li>LocationConstraint 을 지정하지 않고,<code>--region</code> 에서 지정한 Region 명이 <code>us-east-1</code> 가 아닌 경우</li>
-<li>LocationConstraint 에서 지정한 Region 명과 <code>--region</code> 에서 지정한 Region 명이 다를 경우</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="https://docs.aws.amazon.com/cli/latest/reference/s3api/create-bucket.html#options" target="_blank" rel="noopener noreferrer">공식 문서</a>에서는 <code>--create-bucket-configuration</code> 의 <strong>LocationConstraint</strong> 를 아래와 같이 설명하고 있다.</p>
-<ul>
-<li>
-<blockquote>
-<p>Specifies the Region where the bucket will be created. You might choose a Region to optimize latency, minimize costs, or address regulatory requirements. For example, if you reside in Europe, you will probably find it advantageous to create buckets in the Europe (Ireland) Region. For more information, see Accessing a bucket in the Amazon S3 User Guide .</p>
-</blockquote>
-<ul>
-<li>
-<blockquote>
-<p>If you don't specify a Region, the bucket is created in the US East (N. Virginia) Region (us-east-1) by default.</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="public-access-block">Public Access Block<a href="https://jay2u8809.github.io/onigiri/delog/blog/2024/04/02/aws/aws-cli-create-s3-bucket#public-access-block" class="hash-link" aria-label="Direct link to Public Access Block" title="Direct link to Public Access Block">​</a></h2>
-<ul>
-<li>S3 CLI 로 Bucket 을 만들게 되면, 기본적으로 <code>Public Access Block</code> 가 활성화 되어있다.(Public access 불가)</li>
-<li>따라서 Public Access Block 을 비활성화 하고 싶다면 <a href="https://docs.aws.amazon.com/cli/latest/reference/s3api/put-public-access-block.html?highlight=put%20public%20access%20block#put-public-access-block" target="_blank" rel="noopener noreferrer">PutPublicAccessBlock</a> 이나 <a href="https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-public-access-block.html?highlight=deletepublicaccessblock" target="_blank" rel="noopener noreferrer">DeletePublicAccessBlock</a> 를 통해 할 수 있다.</li>
-</ul>
-<hr>
-<ul>
-<li>Refs:<!-- -->
-<ul>
-<li><a href="https://docs.aws.amazon.com/cli/latest/reference/s3api/create-bucket.html" target="_blank" rel="noopener noreferrer">AWS CLI Refs: caete-bucket</a></li>
-</ul>
-</li>
-</ul>]]></content>
-        <author>
-            <name>Onigiri.J</name>
-            <uri>https://github.com/jay2u8809</uri>
-        </author>
-        <category label="de.log" term="de.log"/>
-        <category label="aws" term="aws"/>
-        <category label="aws cli" term="aws cli"/>
-        <category label="s3" term="s3"/>
-        <category label="bucket" term="bucket"/>
-        <category label="create s3 bucket" term="create s3 bucket"/>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://jay2u8809.github.io/onigiri/delog/blog/welcome</id>
