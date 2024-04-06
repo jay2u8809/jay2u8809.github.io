@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Onigiri Jung Blog</title>
+        <link>https://jay2u8809.github.io/onigiri/livinglog/blog</link>
+        <description>Onigiri Jung Blog</description>
+        <lastBuildDate>Sun, 31 Mar 2024 14:08:32 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://jay2u8809.github.io/onigiri/livinglog/blog/welcome</link>
+            <guid>https://jay2u8809.github.io/onigiri/livinglog/blog/welcome</guid>
+            <pubDate>Sun, 31 Mar 2024 14:08:32 GMT</pubDate>
+            <description><![CDATA[Welcome Living.log]]></description>
+            <content:encoded><![CDATA[<p>Welcome Living.log</p>]]></content:encoded>
+            <category>living.log</category>
+        </item>
+    </channel>
+</rss>
