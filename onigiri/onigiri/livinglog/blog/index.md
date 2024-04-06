@@ -2,7 +2,7 @@
 slug: welcome
 title: Welcome
 authors: [jian]
-tags: [life.log]
+tags: [living.log]
 ---
 
-Welcome Life.log
+Welcome Living.log

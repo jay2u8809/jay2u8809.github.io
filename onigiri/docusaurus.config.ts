@@ -144,12 +144,12 @@ const config: Config = {
     ],
     [
       '@docusaurus/plugin-content-blog',  // multi blog
-      { // life.log blog
-        id: BlogConfig.lifelog.id,
-        routeBasePath: BlogConfig.lifelog.routeBasePath,
-        path: BlogConfig.lifelog.directoryPath,
-        blogSidebarTitle: BlogConfig.lifelog.blogSidebarTitle,
-        blogSidebarCount: BlogConfig.lifelog.blogSidebarCount(5),
+      { // living.log blog
+        id: BlogConfig.livinglog.id,
+        routeBasePath: BlogConfig.livinglog.routeBasePath,
+        path: BlogConfig.livinglog.directoryPath,
+        blogSidebarTitle: BlogConfig.livinglog.blogSidebarTitle,
+        blogSidebarCount: BlogConfig.livinglog.blogSidebarCount(5),
       },
     ],
     [
@@ -163,11 +163,11 @@ const config: Config = {
     ],
     [
       '@docusaurus/plugin-content-docs',  // multi docs
-      { // life.log docs
-        id: DocsConfig.lifeLogDocs.id,
-        path: DocsConfig.lifeLogDocs.directoryPath,
-        routeBasePath: DocsConfig.lifeLogDocs.routeBasePath,
-        sidebarPath: DocsConfig.lifeLogDocs.sidebarPath,
+      { // living.log docs
+        id: DocsConfig.livingLogDocs.id,
+        path: DocsConfig.livingLogDocs.directoryPath,
+        routeBasePath: DocsConfig.livingLogDocs.routeBasePath,
+        sidebarPath: DocsConfig.livingLogDocs.sidebarPath,
       },
     ],
   ],

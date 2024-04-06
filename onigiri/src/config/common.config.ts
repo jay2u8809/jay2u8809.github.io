@@ -24,12 +24,12 @@ export const BlogConfig = {
     blogSidebarTitle: 'All posts',
     blogSidebarCount: sidebarCount,
   },
-  // life.log
-  lifelog: {
-    id: 'life-log',
-    label: 'Life.log',
-    routeBasePath: `/${BasePath}/lifelog/blog`,  // '/lifelog-blog'
-    directoryPath: `./${BasePath}/lifelog/blog`,
+  // living.log
+  livinglog: {
+    id: 'living-log',
+    label: 'Living.log',
+    routeBasePath: `/${BasePath}/livinglog/blog`,  // '/livinglog-blog'
+    directoryPath: `./${BasePath}/livinglog/blog`,
     blogSidebarTitle: undefined,
     blogSidebarCount: sidebarCount,
   }
@@ -57,15 +57,15 @@ export const DocsConfig = {
     introPath: `/${BasePath}/delog/docs/intro`,
     directoryPath: `./${BasePath}/delog/docs`,
   },
-  // life.log
-  lifeLogDocs: {
-    id: 'life-log',
-    label: 'Life.log Docs',
+  // living.log
+  livingLogDocs: {
+    id: 'living-log',
+    label: 'Living.log Docs',
     sidebarPath: './sidebars.ts',
-    sidebarId: 'lifelogSidebar',
-    routeBasePath: `${BasePath}/lifelog/docs`,
-    introPath: `/${BasePath}/lifelog/docs/intro`,
-    directoryPath: `./${BasePath}/lifelog/docs`,
+    sidebarId: 'livinglogSidebar',
+    routeBasePath: `${BasePath}/livinglog/docs`,
+    introPath: `/${BasePath}/livinglog/docs/intro`,
+    directoryPath: `./${BasePath}/livinglog/docs`,
   },
 };
 
@@ -90,10 +90,10 @@ const config = {
         visible: true,
       },
       {
-        // Life.log Blog
-        label: BlogConfig.lifelog.label,
-        to: BlogConfig.lifelog.routeBasePath, 
-        href: BlogConfig.lifelog.routeBasePath, 
+        // Living.log Blog
+        label: BlogConfig.livinglog.label,
+        to: BlogConfig.livinglog.routeBasePath, 
+        href: BlogConfig.livinglog.routeBasePath, 
         visible: true,
       },
       {
@@ -113,10 +113,10 @@ const config = {
         visible: false,
       },
       {
-        // Life.log Docs
-        label: DocsConfig.lifeLogDocs.label,
-        to: DocsConfig.lifeLogDocs.introPath, 
-        sidebarId: DocsConfig.lifeLogDocs.sidebarId,
+        // Living.log Docs
+        label: DocsConfig.livingLogDocs.label,
+        to: DocsConfig.livingLogDocs.introPath, 
+        sidebarId: DocsConfig.livingLogDocs.sidebarId,
         type: DocsConfig.docsType,
         visible: false,
       },

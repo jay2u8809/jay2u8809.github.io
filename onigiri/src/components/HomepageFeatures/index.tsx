@@ -27,7 +27,7 @@ const FeatureList: FeatureItem[] = [
     description: (<></>),
   },
   {
-    title: 'Life.log',
+    title: 'Living.log',
     Svg: require('@site/static/img/blog-icon-note.svg').default,
     image: null,
     description: (
