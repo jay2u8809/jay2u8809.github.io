@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[5009],{5248:i=>{i.exports=JSON.parse('{"title":"AWS","slug":"/category/aws","permalink":"/onigiri/delog/docs/category/aws","navigation":{"previous":{"title":"Posts","permalink":"/onigiri/delog/docs/category/posts"},"next":{"title":"CLI","permalink":"/onigiri/delog/docs/category/cli"}}}')}}]);

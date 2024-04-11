@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[6443],{4647:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"de-log-docs"}')}}]);
