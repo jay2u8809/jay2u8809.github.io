@@ -96,7 +96,7 @@ const config = {
         label: BlogConfig.livinglog.label,
         to: BlogConfig.livinglog.routeBasePath, 
         href: BlogConfig.livinglog.routeBasePath, 
-        visible: true,
+        visible: false,
         sort: 3,
       },
       {
