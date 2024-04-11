@@ -27,9 +27,9 @@ export const BlogConfig = {
   // living.log
   livinglog: {
     id: 'living-log',
-    label: 'Living.log',
-    routeBasePath: `/${BasePath}/livinglog/blog`,  // '/livinglog-blog'
-    directoryPath: `./${BasePath}/livinglog/blog`,
+    label: 'Blog',
+    routeBasePath: `/${BasePath}/living/blog`,  // '/livinglog-blog'
+    directoryPath: `./${BasePath}/living/blog`,
     blogSidebarTitle: undefined,
     blogSidebarCount: sidebarCount,
   }
@@ -49,7 +49,7 @@ export const DocsConfig = {
   },
   // de.log
   delogDocs: {
-    id: 'de-log',
+    id: 'de-log-docs',
     label: 'De.log',
     sidebarPath: './sidebars.ts',
     sidebarId: 'delogSidebar',
@@ -59,13 +59,13 @@ export const DocsConfig = {
   },
   // living.log
   livingLogDocs: {
-    id: 'living-log',
-    label: 'Living.log Wiki',
+    id: 'living-log-docs',
+    label: 'How to do',
     sidebarPath: './sidebars.ts',
     sidebarId: 'livinglogSidebar',
-    routeBasePath: `${BasePath}/livinglog/docs`,
-    introPath: `/${BasePath}/livinglog/docs/intro`,
-    directoryPath: `./${BasePath}/livinglog/docs`,
+    routeBasePath: `${BasePath}/living/docs`,
+    introPath: `/${BasePath}/living/docs/intro`,
+    directoryPath: `./${BasePath}/living/docs`,
   },
 };
 
@@ -97,7 +97,7 @@ const config = {
         to: BlogConfig.livinglog.routeBasePath, 
         href: BlogConfig.livinglog.routeBasePath, 
         visible: true,
-        sort: 2,
+        sort: 3,
       },
       {
         // Default Docs
@@ -124,7 +124,7 @@ const config = {
         sidebarId: DocsConfig.livingLogDocs.sidebarId,
         type: DocsConfig.docsType,
         visible: true,
-        sort: 3,
+        sort: 2,
       },
     ],
     community: [

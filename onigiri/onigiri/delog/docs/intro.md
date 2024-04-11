@@ -2,4 +2,4 @@
 sidebar_position: 0
 ---
 
-# De.log Intro
+# De.log

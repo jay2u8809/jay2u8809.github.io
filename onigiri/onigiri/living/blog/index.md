@@ -5,4 +5,4 @@ authors: [jian]
 tags: [living.log]
 ---
 
-Welcome Living.log
+Welcome! 
