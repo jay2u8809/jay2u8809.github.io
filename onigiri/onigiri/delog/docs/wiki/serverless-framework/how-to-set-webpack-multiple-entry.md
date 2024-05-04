@@ -2,7 +2,7 @@
 # slug: /wiki/serverless-framework/how-to-set-webpack-multiple-entry
 id: how-to-set-webpack-multiple-entry
 title: Webpack - Multiple EntryPoint
-tags: [de.log, wiki, serverless framework, aws lambda, serverless, sls, webpack, multi entry, multiple entry]
+tags: [de.log, wiki, serverless framework, aws lambda, serverless, sls, webpack, multi entry, multiple entry, nest.js]
 # sidebar_position: 1
 ---
 
