@@ -1,8 +1,7 @@
 export type PositionType = 'left' | 'right';
 type SidebarCountType = number | 'ALL';
 
-const Title = 'onigiri';
-const BasePath = 'track';
+const BasePath = 'onigiri';
 
 const sidebarCount = (count?: number): SidebarCountType => count || 'ALL';
 export const BlogConfig = {
@@ -73,8 +72,8 @@ export const DocsConfig = {
 const config = {
   gitRepo: {
     userName: 'jay2u8809',
-    url: `https://${Title}.github.io`,
-    name: `${Title}.github.io`
+    url: `https://jay2u8809.github.io`,
+    name: `jay2u8809.github.io`
   },
   links: {
     menu: [
