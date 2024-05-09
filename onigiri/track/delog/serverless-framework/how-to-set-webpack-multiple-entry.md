@@ -1,14 +1,14 @@
 ---
 # slug: /wiki/serverless-framework/how-to-set-webpack-multiple-entry
 id: how-to-set-webpack-multiple-entry
-title: Webpack - Multiple EntryPoint
+title: Webpack 적용하기 - Multiple EntryPoint
 tags: [de.log, wiki, serverless framework, aws lambda, serverless, sls, webpack, multi entry, multiple entry, nest.js]
 # sidebar_position: 1
 ---
 
 
 <!--title -->
-# [sls] Webpack: Multiple Entry
+# Webpack 적용하기: Multiple Entry
 <!--//title -->
 
 > Nest.js 로 개발, Serverless Framework 로 AWS Lambda 를 Deploy 합니다.

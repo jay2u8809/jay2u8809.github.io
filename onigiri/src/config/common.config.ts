@@ -1,9 +1,10 @@
 export type PositionType = 'left' | 'right';
 type SidebarCountType = number | 'ALL';
 
-const BasePath = 'onigiri';
+const Title = 'onigiri';
+const BasePath = 'track';
 
-const sidebarCount = (count: number): SidebarCountType => count || 'ALL';
+const sidebarCount = (count?: number): SidebarCountType => count || 'ALL';
 export const BlogConfig = {
   showReadingTime: false,
   editUrl: undefined,
@@ -16,21 +17,31 @@ export const BlogConfig = {
     blogSidebarCount: sidebarCount,
   },
   // de.log
-  delog: {
-    id: 'de-log',
-    label: 'De.log Blog',
-    routeBasePath: `/${BasePath}/delog/blog`, // '/delog-blog'
-    directoryPath: `./${BasePath}/delog/blog`,
+  // essay
+  essay: {
+    id: 'blog-essay',
+    label: 'Essay',
+    routeBasePath: `/${BasePath}/blog/essay`,
+    directoryPath: `./${BasePath}/blog/essay`,
     blogSidebarTitle: 'All posts',
     blogSidebarCount: sidebarCount,
   },
-  // living.log
-  livinglog: {
-    id: 'living-log',
-    label: 'Blog',
-    routeBasePath: `/${BasePath}/living/blog`,  // '/livinglog-blog'
-    directoryPath: `./${BasePath}/living/blog`,
+  // travel
+  travel: {
+    id: 'blog-travel',
+    label: 'Travel',
+    routeBasePath: `/${BasePath}/blog/travel`,
+    directoryPath: `./${BasePath}/blog/travel`,
     blogSidebarTitle: undefined,
+    blogSidebarCount: sidebarCount,
+  },
+   // review
+   review: {
+    id: 'blog-review',
+    label: 'Review',
+    routeBasePath: `/${BasePath}/blog/review`,
+    directoryPath: `./${BasePath}/blog/review`,
+    blogSidebarTitle: 'All posts',
     blogSidebarCount: sidebarCount,
   }
 }
@@ -48,35 +59,26 @@ export const DocsConfig = {
     directoryPath: './docs',
   },
   // de.log
-  delogDocs: {
-    id: 'de-log-docs',
+  delog: {
+    id: 'wiki-delog',
     label: 'De.log',
     sidebarPath: './sidebars.ts',
     sidebarId: 'delogSidebar',
-    routeBasePath: `${BasePath}/delog/docs`,
-    introPath: `/${BasePath}/delog/docs/intro`,
-    directoryPath: `./${BasePath}/delog/docs`,
-  },
-  // living.log
-  livingLogDocs: {
-    id: 'living-log-docs',
-    label: 'How to do',
-    sidebarPath: './sidebars.ts',
-    sidebarId: 'livinglogSidebar',
-    routeBasePath: `${BasePath}/living/docs`,
-    introPath: `/${BasePath}/living/docs/intro`,
-    directoryPath: `./${BasePath}/living/docs`,
+    routeBasePath: `${BasePath}/delog`,
+    introPath: `/${BasePath}/delog/intro`,
+    directoryPath: `./${BasePath}/delog`,
   },
 };
 
 const config = {
   gitRepo: {
     userName: 'jay2u8809',
-    url: 'https://jay2u8809.github.io',
-    name: 'jay2u8809.github.io'
+    url: `https://${Title}.github.io`,
+    name: `${Title}.github.io`
   },
   links: {
     menu: [
+      // === Blog ===
       {
         // Defualt Blog
         label: BlogConfig.defaultBlog.label,
@@ -85,20 +87,30 @@ const config = {
         sort: 999,
       },
       {
-        // De.log Blog
-        label: BlogConfig.delog.label,
-        to: BlogConfig.delog.routeBasePath, 
-        visible: false,
-        sort: 999,
-      },
-      {
-        // Living.log Blog
-        label: BlogConfig.livinglog.label,
-        to: BlogConfig.livinglog.routeBasePath, 
-        href: BlogConfig.livinglog.routeBasePath, 
-        visible: false,
+        // Essay Blog
+        label: BlogConfig.essay.label,
+        to: BlogConfig.essay.routeBasePath, 
+        visible: true,
         sort: 3,
       },
+      {
+        // Travel Blog
+        label: BlogConfig.travel.label,
+        to: BlogConfig.travel.routeBasePath, 
+        href: BlogConfig.travel.routeBasePath, 
+        visible: true,
+        sort: 4,
+      },
+      {
+        // Review Blog
+        label: BlogConfig.review.label,
+        to: BlogConfig.review.routeBasePath, 
+        href: BlogConfig.review.routeBasePath, 
+        visible: true,
+        sort: 5,
+      },
+      // ===// Blog ===
+      // === Docs ===
       {
         // Default Docs
         label: DocsConfig.defaultDocs.label,
@@ -110,22 +122,14 @@ const config = {
       },
       {
         // De.log Docs
-        label: DocsConfig.delogDocs.label,
-        to: DocsConfig.delogDocs.introPath, 
+        label: DocsConfig.delog.label,
+        to: DocsConfig.delog.introPath, 
         type: DocsConfig.docsType,
-        sidebarId: DocsConfig.delogDocs.sidebarId,
+        sidebarId: DocsConfig.delog.sidebarId,
         visible: true,
         sort: 1,
       },
-      {
-        // Living.log Docs
-        label: DocsConfig.livingLogDocs.label,
-        to: DocsConfig.livingLogDocs.introPath, 
-        sidebarId: DocsConfig.livingLogDocs.sidebarId,
-        type: DocsConfig.docsType,
-        visible: true,
-        sort: 2,
-      },
+      // ===// Docs ===
     ],
     community: [
       {

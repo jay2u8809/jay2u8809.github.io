@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from '@site/src/css/styles.module.css';
-import { DocsConfig } from '@site/src/config/common.config';
+import { BlogConfig, DocsConfig } from '@site/src/config/common.config';
 
 type FeatureItem = {
   title: string;
@@ -12,12 +12,12 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: DocsConfig.delogDocs.label,
+    title: DocsConfig.delog.label,
     Svg: require('@site/static/img/wiki-icon-code.svg').default,
     image: null,
     description: (
       <>
-        Development <br /> Wiki <br /> Debugging
+        Development <br /> Wiki <br /> Debugging 
       </>
     ),
   },
@@ -28,12 +28,12 @@ const FeatureList: FeatureItem[] = [
     description: (<></>),
   },
   {
-    title: DocsConfig.livingLogDocs.label,
+    title: BlogConfig.defaultBlog.label,
     Svg: require('@site/static/img/blog-icon-note.svg').default,
     image: null,
     description: (
       <>
-        Experience <br /> Review <br /> Travel
+        Essay <br /> Travel <br /> Review
       </>
     ),
   },

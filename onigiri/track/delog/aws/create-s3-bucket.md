@@ -1,9 +1,9 @@
 ---
-# slug: /posts/aws/cli/s3/create-bucket
+# slug: /aws/cli/s3/create-bucket
 id: create-s3-bucket
 title: CLI 로 S3 Bucket 만들기
-authors: [jian]
-tags: [de.log, post, aws, aws cli, s3, bucket, create s3 bucket]
+tags: [de.log, wiki, aws, aws cli, s3, bucket, create s3 bucket]
+# sidebar_position: 1
 ---
 
 <!--title -->
@@ -13,10 +13,10 @@ tags: [de.log, post, aws, aws cli, s3, bucket, create s3 bucket]
 ## Command
 ```shell
 $ aws s3api create-bucket \
-    --bucket ${BUCKET_NAME} \
-    --region ${REGION} \
-    --create-bucket-configuration LocationConstraint=${REGION} \
-    --profile ${PROFILE}
+    --bucket ${BUCKET_NAME} \ # bucket name
+    --region ${REGION} \  # region name
+    --create-bucket-configuration LocationConstraint=${REGION} \  # region name
+    --profile ${PROFILE} # profile name
 ```
 
 ## Examples
@@ -56,10 +56,29 @@ $ aws s3api create-bucket \
 
     - > If you don't specify a Region, the bucket is created in the US East (N. Virginia) Region (us-east-1) by default.
 
-## Public Access Block
-- S3 CLI 로 Bucket 을 만들게 되면, 기본적으로 `Public Access Block` 가 활성화 되어있다.(Public access 불가)
+#### Public Access Block
+- S3 CLI 로 Bucket 을 만들게 되면, 기본적으로 `Public Access Block` 은 활성화 되어있다.(Public access 불가)
 - 따라서 Public Access Block 을 비활성화 하고 싶다면 [PutPublicAccessBlock](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-public-access-block.html?highlight=put%20public%20access%20block#put-public-access-block) 이나 [DeletePublicAccessBlock](https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-public-access-block.html?highlight=deletepublicaccessblock) 를 통해 할 수 있다.
 
+## Shell Script
+```shell
+#!/bin/sh
+
+echo "===== CREATE NEW BUCKET ====="
+
+BUCKET_NAME="example-temp-bucket"
+REGION="ap-northeast-2"
+PROFILE="sample-dev"
+
+# craate s3 bucket
+aws s3api create-bucket \
+  --bucket ${BUCKET_NAME} \
+  --region ${REGION} \
+  --create-bucket-configuration LocationConstraint=${REGION} \
+  --profile ${PROFILE}
+
+echo "===== END CREAT BUCKET:$BUCKET_NAME ====="
+```
 
 <br /><br /><br /><br /><br />
 

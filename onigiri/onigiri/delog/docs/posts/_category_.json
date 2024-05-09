@@ -1,8 +1,0 @@
-{
-  "label": "Posts",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "post list"
-  }
-}

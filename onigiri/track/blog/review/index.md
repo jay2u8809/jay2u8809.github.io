@@ -2,7 +2,7 @@
 slug: welcome
 title: Welcome
 authors: [jian]
-tags: [de.log]
+tags: [blog, review]
 ---
 
-Welcome De.log
+Welcome Review Blog

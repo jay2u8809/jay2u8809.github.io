@@ -1,13 +1,13 @@
 ---
 # slug: /wiki/aws/cloudwatch/how-to-use-log-insights-query
 id: how-to-use-log-insights-query
-title: Log Insights 로 Log 검색하기
+title: Log Insights 로 CloudWatch 검색하기
 tags: [de.log, wiki, aws, cloudwatch, log, log insights]
 # sidebar_position: 1
 ---
 
 <!--title -->
-# Log Insights 로 Log 검색하기
+# Log Insights 로 CloudWatch Log 검색하기
 <!--//title -->
 
 ## Log Insights Query

@@ -1,8 +1,9 @@
 ---
 # slug: /japan/how-to-change-driver-licence
 id: how-to-change-driver-licence
-title: 운전면허증(한국 → 일본) 변경
+title: 일본 운전면허증으로 변경하기
 tags: [living.docs, wiki, Japan, living in Japan, driver license, 일본생활, 영사관, 운전면허증, 運転免許証切替, 江東運転免許試験場]
+authors: [jian]
 # sidebar_position: 1
 ---
 
@@ -10,7 +11,13 @@ tags: [living.docs, wiki, Japan, living in Japan, driver license, 일본생활, 
 # 운전면허증(한국 → 일본) 변경하기
 <!--//title -->
 
-> 2024.04.02 기준
+```json
+{
+  "author": "Onigiri.J",
+  "createdAt": "2024-04-02",
+  "updatedAt": "2024-04-02"
+}
+```
 
 ## 1. 영사관에서 관련 서류 발급 및 공증
 

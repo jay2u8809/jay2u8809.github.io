@@ -2,7 +2,7 @@
 slug: welcome
 title: Welcome
 authors: [jian]
-tags: [living.log]
+tags: [blog, essay]
 ---
 
-Welcome! 
+Welcome Essay Blog

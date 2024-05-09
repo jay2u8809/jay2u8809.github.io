@@ -1,13 +1,13 @@
 ---
 # slug: /wiki/nodejs/javascript/how-to-convert-map-to-array
 id: how-to-convert-map-to-array
-title: Map -> Array
+title: Map -> Array 변환하기
 tags: [de.log, wiki, nodejs, js, javascript, ts, typescript, map, array, convert]
 # sidebar_position: 1
 ---
 
 <!--title -->
-# [JS] Map 타입을 Array(List)로 변환
+# [JS] Map -> Array 변환하기
 <!--//title -->
 
 ## Array.from()

@@ -136,44 +136,49 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 
   plugins: [
-    [
+    // === Blog ===
+    [  
       '@docusaurus/plugin-content-blog',  // multi blog
-      { // de.log blog
-        id: BlogConfig.delog.id,
-        routeBasePath: BlogConfig.delog.routeBasePath,
-        path: BlogConfig.delog.directoryPath,
-        blogSidebarTitle: BlogConfig.delog.blogSidebarTitle,
-        blogSidebarCount: BlogConfig.delog.blogSidebarCount(0),
+      { // essay blog
+        id: BlogConfig.essay.id,
+        routeBasePath: BlogConfig.essay.routeBasePath,
+        path: BlogConfig.essay.directoryPath,
+        blogSidebarTitle: BlogConfig.essay.blogSidebarTitle,
+        blogSidebarCount: BlogConfig.essay.blogSidebarCount(0),
       },
     ],
     [
       '@docusaurus/plugin-content-blog',  // multi blog
-      { // living.log blog
-        id: BlogConfig.livinglog.id,
-        routeBasePath: BlogConfig.livinglog.routeBasePath,
-        path: BlogConfig.livinglog.directoryPath,
-        blogSidebarTitle: BlogConfig.livinglog.blogSidebarTitle,
-        blogSidebarCount: BlogConfig.livinglog.blogSidebarCount(5),
+      { // travel blog
+        id: BlogConfig.travel.id,
+        routeBasePath: BlogConfig.travel.routeBasePath,
+        path: BlogConfig.travel.directoryPath,
+        blogSidebarTitle: BlogConfig.travel.blogSidebarTitle,
+        blogSidebarCount: BlogConfig.travel.blogSidebarCount(0),
       },
     ],
+    [
+      '@docusaurus/plugin-content-blog',  // multi blog
+      { // review blog
+        id: BlogConfig.review.id,
+        routeBasePath: BlogConfig.review.routeBasePath,
+        path: BlogConfig.review.directoryPath,
+        blogSidebarTitle: BlogConfig.review.blogSidebarTitle,
+        blogSidebarCount: BlogConfig.review.blogSidebarCount(0),
+      },
+    ],
+    // ===// Blog ===
+    // === Docs ===
     [
       '@docusaurus/plugin-content-docs',  // multi docs
       { // de.log docs
-        id: DocsConfig.delogDocs.id,
-        path: DocsConfig.delogDocs.directoryPath,
-        routeBasePath: DocsConfig.delogDocs.routeBasePath,
-        sidebarPath: DocsConfig.delogDocs.sidebarPath,
+        id: DocsConfig.delog.id,
+        path: DocsConfig.delog.directoryPath,
+        routeBasePath: DocsConfig.delog.routeBasePath,
+        sidebarPath: DocsConfig.delog.sidebarPath,
       },
     ],
-    [
-      '@docusaurus/plugin-content-docs',  // multi docs
-      { // living.log docs
-        id: DocsConfig.livingLogDocs.id,
-        path: DocsConfig.livingLogDocs.directoryPath,
-        routeBasePath: DocsConfig.livingLogDocs.routeBasePath,
-        sidebarPath: DocsConfig.livingLogDocs.sidebarPath,
-      },
-    ],
+    // ===// Docs ===
   ],
 };
 
