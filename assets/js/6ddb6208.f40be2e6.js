@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[2111],{1465:e=>{e.exports=JSON.parse('{"title":"All posts","items":[{"title":"Welcome","permalink":"/onigiri/blog/review/welcome","unlisted":false}]}')}}]);

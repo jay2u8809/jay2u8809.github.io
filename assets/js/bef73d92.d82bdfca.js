@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[1649],{7012:i=>{i.exports=JSON.parse('{"blogBasePath":"/onigiri/blog/travel","blogTitle":"Blog"}')}}]);

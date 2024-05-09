@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[5796],{7883:i=>{i.exports=JSON.parse('{"permalink":"/onigiri/living/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
