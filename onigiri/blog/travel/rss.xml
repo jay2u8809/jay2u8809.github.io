@@ -4,7 +4,7 @@
         <title>Onigiri Jung Blog</title>
         <link>https://jay2u8809.github.io/onigiri/blog/travel</link>
         <description>Onigiri Jung Blog</description>
-        <lastBuildDate>Thu, 09 May 2024 13:24:18 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 31 Mar 2024 14:08:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Welcome]]></title>
             <link>https://jay2u8809.github.io/onigiri/blog/travel/welcome</link>
             <guid>https://jay2u8809.github.io/onigiri/blog/travel/welcome</guid>
-            <pubDate>Thu, 09 May 2024 13:24:18 GMT</pubDate>
+            <pubDate>Sun, 31 Mar 2024 14:08:32 GMT</pubDate>
             <description><![CDATA[Welcome Travel Blog]]></description>
             <content:encoded><![CDATA[<p>Welcome Travel Blog</p>]]></content:encoded>
             <category>blog</category>

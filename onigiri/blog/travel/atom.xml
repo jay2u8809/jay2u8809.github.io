@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jay2u8809.github.io/onigiri/blog/travel</id>
     <title>Onigiri Jung Blog</title>
-    <updated>2024-05-09T13:24:18.639Z</updated>
+    <updated>2024-03-31T14:08:32.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jay2u8809.github.io/onigiri/blog/travel"/>
     <subtitle>Onigiri Jung Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://jay2u8809.github.io/onigiri/blog/travel/welcome</id>
         <link href="https://jay2u8809.github.io/onigiri/blog/travel/welcome"/>
-        <updated>2024-05-09T13:24:18.639Z</updated>
+        <updated>2024-03-31T14:08:32.000Z</updated>
         <summary type="html"><![CDATA[Welcome Travel Blog]]></summary>
         <content type="html"><![CDATA[<p>Welcome Travel Blog</p>]]></content>
         <author>
