@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[8765],{4366:l=>{l.exports=JSON.parse('{"tags":[{"label":"blog","permalink":"/onigiri/blog/travel/tags/blog","count":1},{"label":"travel","permalink":"/onigiri/blog/travel/tags/travel","count":1}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[3567],{428:i=>{i.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"wiki-delog"}')}}]);
