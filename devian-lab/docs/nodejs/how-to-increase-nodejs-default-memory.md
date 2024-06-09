@@ -1,6 +1,6 @@
 ---
-# slug: /wiki/nodejs/how-to-increase-nodejs-default-memory-ja
-id: how-to-increase-nodejs-default-memory-ja
+# slug: /wiki/nodejs/how-to-increase-nodejs-default-memory
+id: how-to-increase-nodejs-default-memory
 title: NodeJs 메모리 사이즈 늘리기
 tags: [devian-lab, nodejs, memory]
 # sidebar_position: 1
