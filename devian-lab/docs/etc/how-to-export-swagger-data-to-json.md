@@ -10,12 +10,20 @@ tags: [devian-lab, project, javaScript, typescript, nestjs, swagger, export, jso
 # Swagger 의 API 명세를 JSON 으로 Export 하기
 <!--//title -->
 
+<!-- 
 ```json
 {
   "author": "Dev.ian",
   "createdAt": "2024-06-23",
   "updatedAt": "2024-06-23"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-06-23
+  updatedAt: 2024-06-23
 ```
 
 ---
@@ -28,14 +36,14 @@ tags: [devian-lab, project, javaScript, typescript, nestjs, swagger, export, jso
 
 ## Contents
 
-### Swagger Page Link
+### - Swagger Page Link
  Swagger UI 는 Swagger 페이지의 데이터를 JSON 형태로 볼수 있는 링크를 제공한다.
  아래의 데모 사이트를 보면 `https://petstore.swagger.io/v2/swagger.json` 라는 URL 링크가 있다. 해당 링크를 누르면 JSON 형태의 데이터가 나오는 페이지로 이동한다. 
   
  - https://petstore.swagger.io/
 
 
-### api-json
+### - api-json
  하지만 간혹 각 팀의 운영 사정상 해당 JSON 데이터를 볼 수 있는 링크가 없는 경우도 있다. 만약, 자신의 팀 Swagger 의 URL 이 `~/api` 로 끝나는지 확인해보자. `~/api` 로 끝나는 URL 이라면 다른 특별한 설정없이 아래와 같은 URL 로 JSON 데이터를 가져올 수 있다.
  
  - ex) `https://sample-swaggerXXXXX.com/api` 의 경우

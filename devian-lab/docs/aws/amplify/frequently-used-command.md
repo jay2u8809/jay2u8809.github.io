@@ -10,12 +10,20 @@ tags: [devian-lab, project, javaScript, amplfiy, aws, memo, serverless, typescri
 # AWS Amplify 명령어 메모
 <!--//title -->
 
+<!-- 
 ```json
 {
   "author": "Dev.ian",
   "createdAt": "2024-06-23",
   "updatedAt": "2024-06-23"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-06-23
+  updatedAt: 2024-06-23
 ```
 
 ---
@@ -26,7 +34,7 @@ tags: [devian-lab, project, javaScript, amplfiy, aws, memo, serverless, typescri
  
 ## Contents
 
-### Amplify CLI install
+### - Amplify CLI install
 - `npm i @aws-amplify/cli` or `npm install -g @aws-amplify/cli@${VERSION}`
 
 ```shell
@@ -37,7 +45,7 @@ $ amplify -v
 8.5.1
 ```
 
-### Amplify Init
+### - Amplify Init
 - `amplify init`
   + 로컬에 amplify 환경을 구축하는 명령어
   + 이미 클라우드(AWS)에 존재하는 환경(기존 환경)을 그대로 사용할 때에도 `amplify init` 을 이용해 기존 환경 정보를 가져온다.
@@ -59,7 +67,7 @@ Overrides functionality is not implemented for this category
 ✔ Initialized provider successfully.
 ```
 
-### Amplify Status
+### - Amplify Status
 - `amplify status`
   + 로컬의 현재 amplify 상태를 확인하는 명령어
   + 현재 작업 중인 환경이 어디인지, 클라우드(AWS)와의 내용 차이가 있는지 확인할 수 있다.
@@ -86,7 +94,7 @@ Hosting endpoint: XXXX
 ```
 
 
-### Amplify Env List 
+### - Amplify Env List 
 - `amplify env list`
   + Amplify 의 여러 환경 리스트를 확인하는 명령어
   + 생성한 모든 환경들을 확인할 수 있다.
@@ -103,7 +111,7 @@ $ amplify env list
 ```
 
 
-### Amplify Env Checkout
+### - Amplify Env Checkout
 - `amplify env checkout ${ENV_NAME}`
   + 작업하려는 환경을 바꾸는 명령어
   
@@ -112,7 +120,7 @@ $ amplify env list
 $ amplify env checkout staging
 ```
 
-### Amplify Pull
+### - Amplify Pull
 - `amplify pull`
   + 클라우드(AWS)에 있는 데이터를 로컬에 받기 위한 명령어
   + 로컬의 데이터를 클라우드와 동기화할 때 사용한다.
@@ -149,7 +157,7 @@ Post-pull status:
 ```
 
   
-### Amplify Push
+### - Amplify Push
 - `amplify push`
   + 변경 된 내용을 클라우드(AWS)에 반영할 때 사용하는 명령어
   + api, auth 등 로컬에서 변경한 amplify 내용을 클라우드 상에 반영하기 위해 사용한다.
@@ -181,7 +189,7 @@ This will overwrite your current graphql queries, mutations and subscriptions Ye
 ✨  Done in 291.02s.
 ```
   
-### Amplify Publish
+### - Amplify Publish
 - `amplify publish`
   + html, js, css, image 등의 호스팅 리소스들을 S3 등에 업로드할 때 사용
   

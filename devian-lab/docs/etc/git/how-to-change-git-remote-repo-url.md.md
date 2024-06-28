@@ -10,17 +10,26 @@ tags: [devian-lab, project, git]
 # Git remote repository URL 변경하려면?
 <!--//title -->
 
+<!-- 
 ```json
 {
   "author": "Dev.ian",
   "createdAt": "2024-06-20",
   "updatedAt": "2024-06-23"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-06-20
+  updatedAt: 2024-06-23
 ```
 
 ---
 
 ## Intro
+
  회사의 gitlab 플랜을 변경하게 되면서 URL 도 함께 변경했다. 플랜 변경과 URL 변경은 관계가 없지만, 그동안 우리 팀의 repository 가 다른 팀의 repository 내에 있었다. 플랜 변경을 하면서 이번 기회에 Repository 구조도 바꾸게 되어 URL 까지 함께 바뀌게 되었다.
 
  그러다보니 각자의 로컬에 있는 여러 프로젝트들의 Repository remote URL 을 모두 바꿔야만 했다. 간단하지만 처음 해보는 작업이라 정리해두려 한다.

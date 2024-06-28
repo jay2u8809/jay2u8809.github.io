@@ -10,20 +10,31 @@ tags: [devian-lab, wiki, aws, ec2, linux, apache, config, run level, 실행레�
 # Route53 설명
 <!--//title -->
 
-
+<!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Dev.ian",
   "createdAt": "2024-05-21",
   "updatedAt": "2024-05-21"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-05-21
+  updatedAt: 2024-05-21
 ```
 
-## Remark
+---
+
+## Intro
 - 53은 대표적인 DNS 포트번호이다.
 
 
-## Route 53 의 대표 기능
+## Contents
+
+### - Route 53 의 대표 기능
 |No |Title     |Desc|
 |---|---       |---|
 |1  |도메인 등록|도메인 네임을 구입/관리 가능한 Registra |
@@ -34,7 +45,7 @@ tags: [devian-lab, wiki, aws, ec2, linux, apache, config, run level, 실행레�
 - Fail Over: 장애극복기능, 컴퓨터 서버/시스템/네트워크 등에서 이상이 생겼을 때 예비 시스템으로 자동 전환되는 기능 
 
 
-## Hosting Zone(호스팅 영역)
+### - Hosting Zone(호스팅 영역)
 - 레코드의 컨테이너
   + 도메인 네임을 관리하기 위한 다양한 정보가 있는 논리적인 분류
 - 레코드
@@ -50,7 +61,7 @@ tags: [devian-lab, wiki, aws, ec2, linux, apache, config, run level, 실행레�
     - 비공개 URL 이기 때문에 private DNS 레코드가 존재
     -  VPC 에서만 작동을 하고 비공개 도메인 명의 프라이빗 리소스를 식별할 수 있게 한다.
 
-### DNS 레코드
+#### DNS 레코드
 
 |No |Record Name|Desc|
 |---|---  |---|
@@ -69,12 +80,12 @@ tags: [devian-lab, wiki, aws, ec2, linux, apache, config, run level, 실행레�
   + [DNS NS 레코드](https://www.cloudflare.com/ko-kr/learning/dns/dns-records/dns-ns-record/)
 
 
-## 정방향/역방향(Forward/Backward) DNS Lookup
+### - 정방향/역방향(Forward/Backward) DNS Lookup
 - **Forward DNS Lookup** : `도메인 네임 -> IP 주소` 
 - **Backward DNS Lookup** : `IP 주소 -> 도메인 네임`
 - 도메인 이름 분석(Domain Name Resolution): IP 주소와 도메인 네임을 대응시키는 것
 
-### URL 의 구성
+#### URL 의 구성
 ```text
   scheme://<user>:<password>@<host>:<port>/<url-path>?<searchepart>
 ```
@@ -106,7 +117,7 @@ tags: [devian-lab, wiki, aws, ec2, linux, apache, config, run level, 실행레�
 - searchpart: QueryString
   + 생략가능
 
-### FQDN (Fully Qualified Domain Name)
+#### FQDN (Fully Qualified Domain Name)
 ```text
   www.example.com
 ```

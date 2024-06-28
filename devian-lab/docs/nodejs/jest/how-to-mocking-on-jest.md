@@ -10,16 +10,34 @@ tags: [devian-lab, wiki, nodejs, js, javascript, ts, typescript, test, jest, moc
 # [Jest] 다양한 Mocking 방법
 <!--//title -->
 
-> Jest 로 할 수 있는 다양한 Mocking 방법들
+<!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Dev.ian",
   "createdAt": "2024-05-27",
   "updatedAt": "2024-05-28"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-05-27
+  updatedAt: 2024-05-28
 ```
 
-## Remark
+---
+
+## Intro
+ 유닛테스트를 할 때 자주 사용하는 jest 를 이용해 mocking 하는 법이 아직 서툴다. 
+
+적어도 데이터를 변경하는 기능 (put, update, delete) 은 반드시 유닛테스트를 만들어 두려고 하는 편인데 mocking 이 서툴다보니 시간이 너무 오래걸린다.
+
+jest 의 mocking 관련 메소드, private 메소드의 mocking 방법 등을 잘 정리해두어 활용하고자 한다.
+
+
+## Contents
+
 - Nest.js 프로젝트
 - Jest 로 Test 하려는 Method 들은 아래의 UserService 에 있다.
 
@@ -45,12 +63,11 @@ export class UserService {
 }
 ```
 
-
-## 알맞는 Error 를 던지는가?
+### - 알맞는 Error 를 던지는가?
 - Remark 의 `UserSerivce.fetchUser` 메소드는 파라미터인 id 가 없다면 에러를 던진다.
 - fetchUser 메소드가 알맞는 에러를 던지는지 테스트한다.
 
-### toThrowError
+#### toThrowError
 - Test code 를 작성할 때, _비동기처리인 경우_ Test 의 결과가 Promise 이기 때문에 `await` 와 `rejects` or `resolves` 를 이용해 작성해야 한다.
 
 ```typescript
@@ -75,11 +92,11 @@ or
 ```
 
 
-## Private function mocking
+### - Private function mocking
 - Remark 의 `UserSerivce.getUser` 메소드는 _private_ 이다.
 - 경우에 따라서는 Class 의 private 메소드가 아직 구현되지 않았거나 다른 이유들로 인해서 Mocking 이 필요한 경우가 있다.
 
-### spyOn
+#### spyOn
 - `jest.spyOn` 함수는 Mocking 용 함수나 값을 만들어준다.
 - private 메소드가 있는 class 를 _any 타입으로 형 변환_ 하여 mocking 메소드를 만들어준다.
 -  `toHaveBeenCalled` 나 `toHaveBeenCalledTimes` 를 이용해 mocking 한 메소드가 제대로 호출되었는지 확인할 수 있다. 
@@ -121,12 +138,12 @@ or
   
 ```
 
-## Class Mocking
+### - Class Mocking
 - Remark 의 `UserService` class 를 상속받아 Class 를 Mocking 할수도 있다.
 - UserService 의 메소드나 생성자등을 오버라이딩하는 형태로 Mocking 한다.
 
 
-### overrideProvider
+#### overrideProvider
 - Mocking 한 Class 를 Jest 에서 사용하기 위해서는 Mocking 한 Class 가 있는 Module 에서 오버라이드를 해야한다.
 - 오버라이드하려는 Class 를 대신해 Mocking 한 Class 를 지정해주면 Jest 에서 Mocking 한 Class 를 사용할 수 있다.
 
@@ -167,10 +184,10 @@ or
   });
 ```
 
-## Object 비교
+### - Object 비교
 - 객체의 모든 키와 값이 예상한 값과 동일한지 비교할 수 있다.
 
-### toStrictEqual
+#### toStrictEqual
 ```typescript
   it('Object: equal', async () =>{
     // given

@@ -1,7 +1,7 @@
 ---
 # slug: /aws/serverless/how-to-reduce-lambda-usage
 id: how-to-reduce-lambda-usage
-title: NestJs Webpack 적용 방법
+title: AWS Lambda 용량 확보하기
 tags: [devian-lab, project, aws, Code storage limit exceeded, deploy, lambda, prune plugin, serverless, serverless framework, 람다버전, 용량부족]
 # sidebar_position: 1
 ---
@@ -10,12 +10,20 @@ tags: [devian-lab, project, aws, Code storage limit exceeded, deploy, lambda, pr
 # AWS Lambda 의 예전 버전을 삭제해 용량을 확보하자
 <!--//title -->
 
+<!-- 
 ```json
 {
   "author": "Dev.ian",
   "createdAt": "2024-06-26",
   "updatedAt": "2024-06-26"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-06-26
+  updatedAt: 2024-06-26
 ```
 
 ---

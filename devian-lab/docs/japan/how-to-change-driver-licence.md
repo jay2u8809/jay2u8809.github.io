@@ -11,13 +11,23 @@ authors: [jian]
 # 운전면허증(한국 → 일본) 변경하기
 <!--//title -->
 
+<!-- 
 ```json
 {
   "author": "Onigiri.J",
   "createdAt": "2024-04-02",
   "updatedAt": "2024-04-02"
 }
+``` 
+-->
+
+```yaml
+  author: Onigiri.J
+  createdAt: 2024-04-02
+  updatedAt: 2024-04-02
 ```
+
+---
 
 ## 1. 영사관에서 관련 서류 발급 및 공증
 

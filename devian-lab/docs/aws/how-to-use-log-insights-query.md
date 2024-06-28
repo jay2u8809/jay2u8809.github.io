@@ -10,6 +10,24 @@ tags: [devian-lab, wiki, aws, cloudwatch, log, log insights]
 # Log Insights 로 CloudWatch Log 검색하기
 <!--//title -->
 
+<!-- 
+```json
+{
+  "author": "Dev.ian",
+  "createdAt": "2024-05-21",
+  "updatedAt": "2024-05-21"
+}
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-05-21
+  updatedAt: 2024-05-21
+```
+
+---
+
 ## Log Insights Query
 
 ### Keyword 검색

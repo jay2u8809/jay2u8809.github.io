@@ -9,11 +9,22 @@ tags: [onigiri, blog, japan-lifelog, japan-company, word, 일본생활, 해외�
 # 나 빼고 다 아는 일본어
 <!--//title -->
 
+<!-- 
+```json
+{
+  "author": "Onigiri.J",
+  "createdAt": "2024-06-20",
+  "updatedAt": "2024-06-26"
+}
+``` 
+-->
+
 ```yaml
  author: Onigiri.J
  createdAt: 2024-06-20
  updatedAt: 2024-06-26
 ```
+
 ---
 
 > 일본에서 일하면서, 살면서 알게된 미쳐몰랐었던 일본어를 정리본다.

@@ -1,7 +1,7 @@
 ---
-# slug: /wiki/serverless-framework/how-to-set-webpack-multiple-entry
+# slug: /aws/serverless-framework/how-to-set-webpack-multiple-entry
 id: how-to-set-webpack-multiple-entry
-title: NestJs Webpack 적용 방법
+title: Nest.js Webpack 적용 방법
 tags: [devian-lab, project, serverless framework, aws lambda, webpack, multiple entry, nest.js]
 # sidebar_position: 1
 ---
@@ -10,12 +10,20 @@ tags: [devian-lab, project, serverless framework, aws lambda, webpack, multiple 
 # AWS Lambda 다이어트 - Webpack 으로 소스코드의 사이즈를 줄이자
 <!--//title -->
 
+<!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Dev.ian",
   "createdAt": "2024-05-28",
   "updatedAt": "2024-05-28"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-05-28
+  updatedAt: 2024-05-28
 ```
 
 ---
@@ -30,7 +38,7 @@ tags: [devian-lab, project, serverless framework, aws lambda, webpack, multiple 
 여러 번의 개선을 통해 다시 업로드가 되기도 했지만 커져가는 소스코드 용량을 감당하지 못하게 되어 결국 Webpack 을 도입하자고 제안하게 되었고 이번 Node 20 버전 업 작업을 통해 모든 AWS Lambda 에 webpack 을 적용했다.
 
 
-## Problem
+## Contents
 
  지금까지는 소스코드의 용량이 늘어날 때에 아래와 같은 방법으로 대응을 했다.
 
@@ -43,7 +51,7 @@ tags: [devian-lab, project, serverless framework, aws lambda, webpack, multiple 
 
  어떻게든 최소한의 파일만 업로드하도록 수정하였으나 프로젝트가 커지고 소스코드가 늘어나면서 점점 한계에 이르렀다. 
 
-### Error : AWS Lambda Size Limit
+### - Error : AWS Lambda Size Limit
 
  AWS Lambda 를 serverless framework 로 Deploy 하면 이와 같은 에러로 Deploy 에 실패했다. 
 
@@ -63,15 +71,15 @@ error Command failed with exit code 1.
 
 
 
-## Solution
-### Nest.js Build: Webpack 적용하여 빌드하기
+### - Solution
+#### Nest.js Build: Webpack 적용하여 빌드하기
 
  결국에는 Webpack 을 이용해 소스코드의 사이즈를 줄여보기로 헀고, 다양한 Webpack 툴들이 있었지만 Nest.js 에서 공식적으로 지원하는 방식을 사용하기로 했다.
 
  [Nest.js 의 공식 문서](https://docs.nestjs.com/cli/monorepo#webpack-options) 를 보면 `webpack.config.js` 파일이 필요하다. 이 파일부터 만들어보자.
 
 
-### 1) webpack.config.js
+#### 1) webpack.config.js
 
  여러 개의 AWS Lambda 함수를 Deploy 할 때는 각 Handler 마다 Webpack Bundling (Webpack의 결과물) 파일이 필요하다.
   
@@ -128,7 +136,7 @@ module.exports = (options, webpack) => {
     - 하나의 파일이 아닌 여러 개의 파일로 분할 될 수 있으므로 파일의 갯수를 지정할 경우 사용한다.
 
 
-### 2) Nest.js Build 
+#### 2) Nest.js Build 
 
  webpack.config.js 파일을 작성했다면 올바르게 build 가 되는지 확인해보자. nest.js 의 webpack 옵션을 이용하여 build 한다. (Webpack bundling 파일은 dist 디렉토리에서 확인할 수 있다.)
 
@@ -152,7 +160,7 @@ $ nest build --webpack --webpackPath src/app/webpack.config.js
 ```
 
 
-### 3) Deploy: Serverless Framework
+#### 3) Deploy: Serverless Framework
 
  webpack 을 적용해 bundling 한 파일들이 Deploy 할 때 정확하게 업로드 될 수 있도록 Serverless Framework 의 `yaml` 파일의 수정도 필요하다. 
 

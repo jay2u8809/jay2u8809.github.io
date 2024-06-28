@@ -1,14 +1,33 @@
 ---
 # slug: /aws/cli/s3/create-bucket
 id: create-s3-bucket
-title: CLI 로 S3 Bucket 만들기
+title: Aws Cli 으로 S3 Bucket 만들기
 tags: [devian-lab, wiki, aws, aws cli, s3, bucket, create s3 bucket]
 # sidebar_position: 1
 ---
 
 <!--title -->
-# CLI 로 S3 Bucket 만들기
+# AWS CLI 로 S3 Bucket 만들기
 <!--//title -->
+
+<!-- 
+```json
+{
+  "author": "Dev.ian",
+  "createdAt": "2024-05-21",
+  "updatedAt": "2024-05-21"
+}
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-05-21
+  updatedAt: 2024-05-21
+```
+
+
+---
 
 ## Command
 ```shell

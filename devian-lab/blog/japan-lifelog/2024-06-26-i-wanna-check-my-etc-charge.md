@@ -9,11 +9,20 @@ tags: [onigiri, blog, japan-lifelog, etc charge, drive, 일본생활, 해외살�
 # ETC 카드를 사용 요금이 카드 요금에 반영 되지 않았다면?
 <!--//title -->
 
+<!-- 
+```json
+{
+  "author": "Onigiri.J",
+  "createdAt": "2024-06-26",
+  "updatedAt": "2024-06-27"
+}
+``` 
+-->
+
 ```yaml
   author: Onigiri.J
   createdAt: 2024-06-26
   updatedAt: 2024-06-27
-
 ```
 
 ---

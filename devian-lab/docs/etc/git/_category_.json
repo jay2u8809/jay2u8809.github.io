@@ -1,8 +1,8 @@
 {
-  "label": "AWS",
+  "label": "Git",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "about amazon web service"
+    "description": "about git"
   }
 }

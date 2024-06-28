@@ -10,21 +10,32 @@ tags: [devian-lab, wiki, aws, ec2, linux, apache, config, run level, 실행레�
 # Linux(EC2) 기동 시에 Apache 자동으로 실행하기
 <!--//title -->
 
-
+<!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Dev.ian",
   "createdAt": "2024-05-21",
   "updatedAt": "2024-05-21"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-05-21
+  updatedAt: 2024-05-21
 ```
 
-## Remark
+---
+
+## Intro
 - Apache 의 서비스명은 httpd 이다.
 - chkconfig 는 Redhat 계열 리눅스에서만 사용가능하다.
 
 
-## Apache (httpd) 시작
+## Contents
+
+### - Apache (httpd) 시작
 - 수동으로 시작할 때 명령어
 - Apache 자동 실행을 설정하지 않았다면 EC2 인스턴스를 시작할 때마다 실행시켜야 한다.
 ```shell
@@ -32,7 +43,7 @@ $ sudo service httpd start
 ```
 
 
-## Apache (httpd) 상태 확인
+### - Apache (httpd) 상태 확인
 - Apache 가 자동 실행되는 상태인지 확인하는 명령어
 - Linux 실행레벨 0 ~ 6 까지 httpd(Apache) 는 off(실행X) 로 한다.
 ```shell
@@ -41,7 +52,7 @@ $ sudo chkconfig --list httpd
 httpd 0:off 1:off 2:off 3:off 4:off 5:off 6:off
 ```
 
-### Linux 실행 레벨(Run Level)
+#### Linux 실행 레벨(Run Level)
 - 실행레벨, Run Level, 부팅레벨 등으로 불린다.
 - 0 ~ 6 까지 7가지의 레벨
 
@@ -71,7 +82,7 @@ $ init 6  # reboot
 ```
 
 
-## Apache (httpd) 자동 실행 설정
+### - Apache (httpd) 자동 실행 설정
 - 인스터스 실행 시 항상 Apache 가 실행되도록 하는 명령어
 ```shell
 $ sudo chkconfig httpd on
@@ -89,7 +100,7 @@ httpd 0:off 1:off 2:on 3:on 4:on 5:on 6:off
 ```
 
 
-## httpd 자동 시작 설정 해제
+### - httpd 자동 시작 설정 해제
 - Apache 가 자동 실행되는 것을 해제할 때 명령어
 ```shell
 $ sudo chkconfig httpd off

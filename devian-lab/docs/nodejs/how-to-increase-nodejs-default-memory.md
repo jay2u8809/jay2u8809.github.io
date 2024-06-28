@@ -1,22 +1,31 @@
 ---
-# slug: /wiki/nodejs/how-to-increase-nodejs-default-memory
+# slug: /nodejs/how-to-increase-nodejs-default-memory
 id: how-to-increase-nodejs-default-memory
-title: NodeJs 메모리 사이즈 늘리기
+title: Node.js 메모리 사이즈 늘리기
 tags: [devian-lab, nodejs, memory]
 # sidebar_position: 1
 ---
 
 <!--title -->
-# NodeJs 메모리 사이즈를 늘리는 방법
+# Node.js 메모리 사이즈를 늘리는 방법
 <!--//title -->
 
+<!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Dev.ian",
   "createdAt": "2024-05-29",
   "updatedAt": "2024-05-29"
 }
+``` 
+-->
+
+```yaml
+  author: Dev.ian
+  createdAt: 2024-05-29
+  updatedAt: 2024-05-29
 ```
+
 
 ---
 
@@ -41,7 +50,7 @@ tags: [devian-lab, nodejs, memory]
 
 
 
-## Solution
+## Contents
 
 ### 1) 일시적으로 NodeJs 의 heap memory size 를 지정하는 방법
 
