@@ -4,10 +4,124 @@
         <title>Dev.ian Lab Blog</title>
         <link>https://jay2u8809.github.io/blog</link>
         <description>Dev.ian Lab Blog</description>
-        <lastBuildDate>Sun, 31 Mar 2024 14:08:32 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Jun 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[ETC 카드 사용 요금은 언제 정산되나]]></title>
+            <link>https://jay2u8809.github.io/blog/i-wanna-check-my-etc-charge</link>
+            <guid>https://jay2u8809.github.io/blog/i-wanna-check-my-etc-charge</guid>
+            <pubDate>Wed, 26 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">author</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Onigiri.J</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">createdAt</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token datetime number" style="color:#36acaa">2024-06-26</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">updatedAt</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token datetime number" style="color:#36acaa">2024-06-27</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="intro">Intro<a class="hash-link" aria-label="Intro에 대한 직접 링크" title="Intro에 대한 직접 링크" href="https://jay2u8809.github.io/blog/i-wanna-check-my-etc-charge#intro">​</a></h2>
+<p>일본에서 운전 면허를 바꾸고 나서는 꽤나 자주 운전을 하고 있다. 아직은 자차가 없기에 주로 Orix Car Share(オリックスカーシェア)를 통해 몇 시간씩 빌려서 다닌다.</p>
+<p>얼마 전 코스트코를 갔다오면서 ETC 카드를 처음 사용해 보게 되었다. 네비게이션에 나오는 예상 요금은 약 800엔. 유료 도로에 진입하니 ETC 카드를 넣은 쪽에서 "삐빅" 하는 소리가 나며 작동했고 무사히 집까지 돌아왔다.</p>
+<p>ETC 카드의 사용 요금은 신용카드 결제 내역에 함께 나온다고 알고 있었기에 다음날 바로 확인해봤는데 ETC 카드 사용 내역은 보이지 않았다. 그 다음날도, 다다음날도. 약 20일이 지나도 ETC 카드 사용 요금 나오지 않았다.</p>
+<p>대체 ETC 카드 사용 요금은 언제 확인할 수 있는거지?</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="contents">Contents<a class="hash-link" aria-label="Contents에 대한 직접 링크" title="Contents에 대한 직접 링크" href="https://jay2u8809.github.io/blog/i-wanna-check-my-etc-charge#contents">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="--etc-사용-요금의-정산일은-발급-회사마다-다르다">- ETC 사용 요금의 정산일은 발급 회사마다 다르다?<a class="hash-link" aria-label="- ETC 사용 요금의 정산일은 발급 회사마다 다르다?에 대한 직접 링크" title="- ETC 사용 요금의 정산일은 발급 회사마다 다르다?에 대한 직접 링크" href="https://jay2u8809.github.io/blog/i-wanna-check-my-etc-charge#--etc-%EC%82%AC%EC%9A%A9-%EC%9A%94%EA%B8%88%EC%9D%98-%EC%A0%95%EC%82%B0%EC%9D%BC%EC%9D%80-%EB%B0%9C%EA%B8%89-%ED%9A%8C%EC%82%AC%EB%A7%88%EB%8B%A4-%EB%8B%A4%EB%A5%B4%EB%8B%A4">​</a></h3>
+<p>　ETC 카드는 여러 은행이나 금용 관련 회사를 통해 만들 수 있다. 발급 받을 수 있는 회사들이 다양하다 보니 정산일도 제각각이다.  사용한 당월의 10일, 18일, 25일 또는 다음 달 1일 등.</p>
+<blockquote>
+<p><strong>ETCカード締め日</strong> 나 <strong>ETCカード支払い日</strong> 를 검색해보면 ETC 카드를 발급한 여러 회사들이 정산일을 안내하는 페이지가 나온다.</p>
+</blockquote>
+<p>내가 발급받은 회사의 Q&amp;A 페이지에서 겨우 ETC 사용 요금 정산일을  알아 낼 수 있었다. 문제는 이미 그 정산일을 지났다는 사실. 정산일이 지났는데도 사용내역은 여전히 나오지 않고 있었다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="--정산일과-사용-내역에-반영되는-시간은-차이가-있다">- 정산일과 사용 내역에 반영되는 시간은 차이가 있다?<a class="hash-link" aria-label="- 정산일과 사용 내역에 반영되는 시간은 차이가 있다?에 대한 직접 링크" title="- 정산일과 사용 내역에 반영되는 시간은 차이가 있다?에 대한 직접 링크" href="https://jay2u8809.github.io/blog/i-wanna-check-my-etc-charge#--%EC%A0%95%EC%82%B0%EC%9D%BC%EA%B3%BC-%EC%82%AC%EC%9A%A9-%EB%82%B4%EC%97%AD%EC%97%90-%EB%B0%98%EC%98%81%EB%90%98%EB%8A%94-%EC%8B%9C%EA%B0%84%EC%9D%80-%EC%B0%A8%EC%9D%B4%EA%B0%80-%EC%9E%88%EB%8B%A4">​</a></h3>
+<p>무작정 ETC 카드 사용 내역이 나오길 기다리고 있었는데 약 23일이 지난 날 ETC 카드 사용 내역이 드디어 나왔다. 내가 쓴 결제 내역을 보는게 이렇게 오래 걸릴 줄이야...</p>
+<p>대체 왜 이렇게 늦게 반영되나 하고 찾아보니 ETC 카드 사용 요금은 각 회사의 사용 내역으로 반영되기까지 최대 2달 정도도 걸릴수 있다는 것을 보았다. 오늘 쓴걸 2달 뒤에나 알수 있다니. 그나마 20일 정도에 확인할 수 있는건 다행인건가 싶었다.(최대 2달 정도고 보통은 1달안에 처리되는 듯하다.)</p>
+<p>어찌 됐든 ETC 카드가 잘 작동하고 정산도 잘 되는 것을 확인했으니 이제 편안하게 쓸 수 있겠다. 처음 사용했기에 제대로 동작하는지 궁금해서 이렇게 오매불망 기다렸지 이제는 딱히 기다릴 일은 없을 듯 하다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="--etc-사용을-조회할-수-있는-서비스">- ETC 사용을 조회할 수 있는 서비스<a class="hash-link" aria-label="- ETC 사용을 조회할 수 있는 서비스에 대한 직접 링크" title="- ETC 사용을 조회할 수 있는 서비스에 대한 직접 링크" href="https://jay2u8809.github.io/blog/i-wanna-check-my-etc-charge#--etc-%EC%82%AC%EC%9A%A9%EC%9D%84-%EC%A1%B0%ED%9A%8C%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EC%84%9C%EB%B9%84%EC%8A%A4">​</a></h3>
+<p>이번 기회에 알게 된 ETC 카드 관련 사이트가 있다.</p>
+<p>ETC 카드를 사용한 이력을 확인할 수 있는 사이트인데, 요금도 조회가 가능한지는 모르지만 어느 인터체인지에서 시작해서 어디로 나왔는지 등 ETC 카드를 사용한 이력을 알아볼 수 있다고 한다.</p>
+<p>다만 차량의 정보가 필요한데 자동차 번호판의 번호가 아니라 등록 번호 같은 구체적인 정보가 필요했다. 나는 카쉐어 서비스를 이용해서 빌렸기에 이 서비스를 이용할 수는 없었지만, 나중에라도 필요할 일이 있을거 같아 즐겨찾기 해두었다.
+(카쉐어 서비스 회사에 부탁하면 알려주는 정보라고는 하는데 그렇게까지 하고 싶지는 않았다.)</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a class="hash-link" aria-label="Conclusion에 대한 직접 링크" title="Conclusion에 대한 직접 링크" href="https://jay2u8809.github.io/blog/i-wanna-check-my-etc-charge#conclusion">​</a></h2>
+<p>ETC 카드 사용 내역은 기다리고 있으면 언젠가 확인할 수 있다.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<ul>
+<li>Refs<!-- -->
+<ul>
+<li><a href="https://www.etc-meisai.jp/" target="_blank" rel="noopener noreferrer">ETC利用照会サービス</a></li>
+<li><a href="https://www.go-etc.jp/deal/history.html" target="_blank" rel="noopener noreferrer">ＥＴＣ利用照会サービス事務局</a></li>
+<li><a href="https://www.go-etc.jp/contact/" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>onigiri</category>
+            <category>blog</category>
+            <category>japan-lifelog</category>
+            <category>etc charge</category>
+            <category>drive</category>
+            <category>일본생활</category>
+            <category>해외살이</category>
+            <category>운전</category>
+        </item>
+        <item>
+            <title><![CDATA[나 빼고 다 아는 일본어]]></title>
+            <link>https://jay2u8809.github.io/blog/japanese-word-everyone-knows-except-me</link>
+            <guid>https://jay2u8809.github.io/blog/japanese-word-everyone-knows-except-me</guid>
+            <pubDate>Thu, 20 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">author</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Onigiri.J</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">createdAt</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token datetime number" style="color:#36acaa">2024-06-20</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">updatedAt</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token datetime number" style="color:#36acaa">2024-06-26</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<blockquote>
+<p>일본에서 일하면서, 살면서 알게된 미쳐몰랐었던 일본어를 정리본다.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="間取り">間取り<a class="hash-link" aria-label="間取り에 대한 직접 링크" title="間取り에 대한 직접 링크" href="https://jay2u8809.github.io/blog/japanese-word-everyone-knows-except-me#%E9%96%93%E5%8F%96%E3%82%8A">​</a></h3>
+<ul>
+<li>방의 배치, (부동산) 평면도.</li>
+</ul>
+<p>주로 부동산에서 집을 소개할때 평면도를 보여주는데 그 평면도를 間取り라고 한다.
+UR 방을 구할 때, 조건에 맞는 방이 나오면 UR 사무실에서 전화가 올 때마다 「メールで間取りも送ってください。」라고 하며 받았던 기억이 있다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="前撮り">前撮り<a class="hash-link" aria-label="前撮り에 대한 직접 링크" title="前撮り에 대한 직접 링크" href="https://jay2u8809.github.io/blog/japanese-word-everyone-knows-except-me#%E5%89%8D%E6%92%AE%E3%82%8A">​</a></h3>
+<ul>
+<li>(결혼식 전에 촬영하는)웨딩촬영.</li>
+</ul>
+<p>결혼식 준비에서 빠질 수 없는 것이 웨딩촬영이다. 前撮り는 결혼식이나 행사 전에 기념 사진을 촬영하는 것으로 한국의 결혼식의 스드메 중 스튜디오 촬영에 해당한다.(스튜디오에서의 촬영을 의미한다기 보다 식 이전에 촬영한다는 의미)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="組込みプログラミング">組込みプログラミング<a class="hash-link" aria-label="組込みプログラミング에 대한 직접 링크" title="組込みプログラミング에 대한 직접 링크" href="https://jay2u8809.github.io/blog/japanese-word-everyone-knows-except-me#%E7%B5%84%E8%BE%BC%E3%81%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0">​</a></h3>
+<ul>
+<li>임베디드(Embedded) 프로그래밍</li>
+</ul>
+<p>회사에 경력직으로 입사하신 분의 자기소개를 들으며 처음 알게되었다. 임베디드란 말보다 더 자주 사용하지는 모르겠으니 그 분이 전 직장에서는 組込みエンジニア로서 일하셨다기에 못알아듣고 찾아보았다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="しきい値閾値しきいち">しきい値（閾値）：しきいち<a class="hash-link" aria-label="しきい値（閾値）：しきいち에 대한 직접 링크" title="しきい値（閾値）：しきいち에 대한 직접 링크" href="https://jay2u8809.github.io/blog/japanese-word-everyone-knows-except-me#%E3%81%97%E3%81%8D%E3%81%84%E5%80%A4%E9%96%BE%E5%80%A4%E3%81%97%E3%81%8D%E3%81%84%E3%81%A1">​</a></h3>
+<ul>
+<li>임계값, 역치, Absolute threshold</li>
+</ul>
+<p>주로 서버 모니터링할 때 자주 들은 단어이다. 에러가 일정비율이나 일정 횟수 이상 발생할 경우, 경보(Alert)메시지가 오도록 설정되어있는데 그 일정비율이나 횟수를 しきい値라고 한다. 「このアラートのしきい値は平均10％で設定しました。」라는 식으로 사용하고 있다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ベタ書き">ベタ書き<a class="hash-link" aria-label="ベタ書き에 대한 직접 링크" title="ベタ書き에 대한 직접 링크" href="https://jay2u8809.github.io/blog/japanese-word-everyone-knows-except-me#%E3%83%99%E3%82%BF%E6%9B%B8%E3%81%8D">​</a></h3>
+<ul>
+<li>Hard coding, 하드코딩</li>
+</ul>
+<p>코드를 작성할 때, 데이터를 코드에 그대로 넣는(변수를 이용하지 않고) 하드코딩을 의미한다.
+「テストコードはベタ書きでも良さそうです。」 라는 리뷰를 받은적이 있다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="退社">退社<a class="hash-link" aria-label="退社에 대한 직접 링크" title="退社에 대한 직접 링크" href="https://jay2u8809.github.io/blog/japanese-word-everyone-knows-except-me#%E9%80%80%E7%A4%BE">​</a></h3>
+<ul>
+<li>퇴근하다.</li>
+</ul>
+<p>일본에서 일하면서 처음에 가장 어색햇던 단어이다. 한국에서 "퇴사" 라함은 회사를 그만두는 의미가 있지만, 일본에서는 "퇴근" 의 의미가 있다. (한국과 마찬가지로 회사를 그만둔다는 뜻이 있는지는 잘 모르겠다.)
+물론 退勤이라는 말도 같이 쓰긴 하던데 주로 出社、退社로 출근과 퇴근을 말하기에 지금은 나도 자연스럽게 出社しました 라던가 退社しました。라는 말을 쓰고 있다. 참고로 회사를 그만둘때는 退職 라는 말을 주로 쓰는 듯하다.</p>
+<br>
+<br>
+<br>
+<br>
+<br>]]></content:encoded>
+            <category>onigiri</category>
+            <category>blog</category>
+            <category>japan-lifelog</category>
+            <category>japan-company</category>
+            <category>word</category>
+            <category>일본생활</category>
+            <category>해외살이</category>
+            <category>일본어</category>
+            <category>해외취업</category>
+        </item>
         <item>
             <title><![CDATA[Intro]]></title>
             <link>https://jay2u8809.github.io/blog/Intro</link>
