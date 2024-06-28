@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[776],{4395:s=>{s.exports=JSON.parse('{"tag":{"label":"s3","permalink":"/docs/tags/s-3","allTagsPath":"/docs/tags","count":1,"items":[{"id":"aws/create-s3-bucket","title":"CLI \ub85c S3 Bucket \ub9cc\ub4e4\uae30","description":"Command","permalink":"/docs/aws/create-s3-bucket"}],"unlisted":false}}')}}]);
