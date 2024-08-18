@@ -99,6 +99,7 @@ tags: [
   `package.json` 파일에 웹팩을 적용해 빌드하도록 설정하고, 웹팩 설정을 위해 `webpack.config.js` 파일을 만들었다. 좀 더 자세한 내용은 [Nest.js Webpack 적용 방법](../../../docs/aws/serverless-framework/how-to-set-webpack-multiple-entry)에서 확인할 수 있다.
 
   - package.json
+
     ```json
       "scripts": {
         "build": "nest build --webpack --webpackPath ${PATH}/webpack.config.js"
@@ -106,6 +107,7 @@ tags: [
     ```
 
   - webpack.config.js
+
     ```javascript
       module.exports = (options, webpack) => {
         return {
@@ -128,6 +130,7 @@ tags: [
     ```
 
 ### main.js
+
   웹팩을 적용해 Nest.js 를 빌드하면 `dist` 디렉토리에 **main.js** 파일이 생성된다. 이 파일은 _웹팩이 적용된 빌드 결과 파일_ 이다. 파일을 확인해보면 의존성을 포함한 관련 소스코드가 1개의 파일로 만들어져 있다. 
 
   - main.js 라는 이름은 변경할 수 있으며 기본값이 main.js 이다.
@@ -138,6 +141,7 @@ tags: [
   Nest.js 프로젝트에 웹팩을 적용했다면 웹팩이 적용된 파일을 deploy 할 수있도록 해야한다. package.json 와 sls YAML 파일을 아래와 같이 수정한다.
 
   - package.json
+
     ```json
       "scripts": {
         "deploy:example": "nest build --webpack --webpackPath ${PATH}/webpack.config.js && sls deploy -c ./${YAML_PATH}/serverless.yaml"
@@ -146,19 +150,21 @@ tags: [
 
   - YAML
     + main.js 파일을 그대로 업로드 하는 방식이기에 더 이상 Lambda Layer 를 사용하지 않는다.
+
     ```yaml
       functions: 
-      exampleLambdaIndex:
-        handler: dist/main.handler  # main.js 의 handler 함수
-        package:
-          patterns: 
-            - '!**'
-            - dist/main.js # webpack result
-          individually: true
+        exampleLambdaIndex:
+          handler: dist/main.handler  # main.js 의 handler 함수
+          package:
+            patterns: 
+              - '!**'
+              - dist/main.js # webpack result
+            individually: true
     ```
 
 
   웹팩 적용을 끝내고 deploy 해보면 문제 없이 소스코드가 업로드되는 것을 확인할 수 있다.
+  
     ```shell
       $ npm run deploy:example
     ```

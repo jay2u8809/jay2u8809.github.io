@@ -51,6 +51,7 @@ CloudWatch 는 실행한 AWS Lambda 의 인스턴스를 기준으로 로그를 �
 
 
 ## CloudWatch 의 로그 구조
+
   CloudWatch 는 로그를 로그 그룹(Log Group)과 로그 스트림(`Log Stream`)이라는 단위로 작성하고 저장한다. **로그 그룹은 로그 스트림의 모음이며 로그스트림에 실제 로그가 기록** 된다.
   
   - [로그 그룹 및 로그 스트림 작업](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html)
@@ -75,6 +76,7 @@ CloudWatch 는 실행한 AWS Lambda 의 인스턴스를 기준으로 로그를 �
 
 
 ## Log Insight 를 사용해야하는 이유
+
   문제는 이 로그 스트림을 이용해 원하는 로그를 확인하기 어렵다는 것이다. 
 
   AWS Lambda 의 경우, 로그 스트림은 lambda 가 실행된 인스턴스를 기준으로 생성된다. 1개의 lambda 인스턴스당 1개의 로그 스트림이 생성된다.
@@ -117,6 +119,7 @@ CloudWatch 는 실행한 AWS Lambda 의 인스턴스를 기준으로 로그를 �
 
 
 ## Log Insights Query
+
   Log Insights 는 AWS CloudWatch 콘솔에서 사용할 수 있다. 찾고자 하는 로그의 로그 그룹과 시간을 지정한 뒤, 아래와 같은 쿼리를 이용하면 로그를 손쉽게 검색할 수 있다.
 
   좀더 자세한 내용은 [AWS Cloudwatch - Log Insights 검색 쿼리](../../../docs/aws/tips/how-to-use-log-insights-query)에서 확인할 수 있다.
@@ -129,6 +132,7 @@ CloudWatch 는 실행한 AWS Lambda 의 인스턴스를 기준으로 로그를 �
 
 
 ## 주의점
+
   Log Insights 는 AWS가 제공하는 서비스이다. 따라서 검색 용량에 따른 비용이 발생한다.
 
   - [Understanding AWS CloudWatch Pricing: A Comprehensive Guide](https://blog.awsfundamentals.com/understanding-aws-cloudwatch-pricing-a-comprehensive-guide)

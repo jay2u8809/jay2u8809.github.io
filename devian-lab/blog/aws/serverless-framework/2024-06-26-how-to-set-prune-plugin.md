@@ -61,6 +61,7 @@ tags: [
 
 
 ## AWS Lambda Code Storage?
+
   AWS Lambda 는 소스코드를 컨테이너Container를 통해 바로 실행하는 구조이기에 **소스코드 (_직접 코딩한 소스코드 및 의존성 코드_) 를 업로드해둘 스토리지** 가 필요하다. 이 저장 공간을 `코드 스토리지code storage` 라 한다.
   
   AWS Lambda 서비스에서 제공하는 코드 스토리지는 **75GB** 이고 이 스토리지 용량을 모두 사용하면 소스코드를 업로드할 때 아래와 같은 에러가 발생한다. (※ [Monitoring Lambda code storage](https://docs.aws.amazon.com/lambda/latest/operatorguide/code-storage.html))
@@ -72,9 +73,11 @@ tags: [
 
 
 ## 해결 방법
+
   sls 로 AWS Lambda 를 Deploy 하던 중 발생한 `Code storage limit exceeded` 에러를 어떻게 해결해야할까? 우리 팀에서 해결한 방법을 차례로 설명해 본다.
     
 ### 1) 코드 스토리지 용량 확보
+
   코드 스토리지의 용량이 부족하기 때문에 가장 먼저 한 일은 _스토리지 용량 확보_ 이다. 필요없는 람다 함수Lambda Function 를 찾아 삭제하거나 각 람다 함수의 버전Version을 확인해 오래된 버전이 많이 존재한다면 그 버전들을 삭제하는 작업을 진행했다.
 
   - 필요없는(사용하지 않는) 람다 함수 삭제
@@ -93,6 +96,7 @@ tags: [
   그리고 이 작업은 한 번이라도 sls 로 deploy 가 가능해질만큼의 용량을 확보할 때까지 계속되었다.
 
 ### ※ Lambda Function Version
+
   AWS Lambda 의 콘솔에서 아무 함수Function를 선택해보면 `버전Version` 이라는 탭이 있다. 이 **"버전"이 이번 코드 스토리지를 가득 차게 한 원인** 이었다.
   
   _sls 로 새로운 소스코드를 deploy 할 때, AWS Lambda는 버전이라는 형태로 파일을 생성해 코드 스토리지에 저장_ 한다. 특별한 설정이 없다면, sls 로 **deploy 할 때마다 매번 새로운 버전의 파일을 생성하고 저장** 한다. (과거의 버전을 그대로 deploy 해서 Rollback 할 수 있는 기능)
@@ -102,6 +106,7 @@ tags: [
   지금껏 한 번도 이 버전 파일들을 따로 관리한 적이 없었다. 서비스 초반에 만든 어떤 람다함수는 버전 파일만 300개가 넘었다. 이러한 버전 파일들이 쌓이고 쌓여 75GB 의 코드 스토리지를 가득차게 했다.
 
 ### 2) Serverless Framework 설정
+
   sls 로 AWS Lambda 를 deploy 할 수 있을만큼의 최소한의 코드 스토리지의 용량을 확보했다면, sls 의 플러그인Plugin을 이용해 필요없는 버전 파일을 모두 삭제할 수 있도록 했다. 
 
   - [Serverless Prune Plugin](https://www.serverless.com/plugins/serverless-prune-plugin)
@@ -111,6 +116,7 @@ tags: [
   이 플러그인의 설정 방법은 [Prune Plugin: AWS Lambda Storage Limit Error](../../../docs/aws/serverless-framework/how-to-set-prune-plugin) 에서 확인 할 수 있다.
 
 ### 3) Deploy
+
   시험 삼아 1개의 Sereverless Framework 설정 파일(YAML)에 Serverless Prune Plugin을 설정하고 sls 로 deploy 했다. 예상대로 오래된 버전의 파일들이 모두 삭제되었다. 나머지 Sereverless Framework 설정 파일(YAML)에도 플러그인을 설정하고 모두 deploy 를 해서 오래된 버전 파일들을 삭제했다. 개발환경(Dev)의 람다함수들의 deploy 횟수가 많았었기에 개발환경만 deploy 해도 상당한 양의 코드 스토리지를 확보할 수 있었다.  
 
   - 75GB -> 22GB
@@ -120,6 +126,7 @@ tags: [
 
 
 ## Conclusion
+
   AWS Lambda 를 Deploy 할 때, 버전을 생성하지 않도록 하는 설정이나 방법에 대한 논의도 있었으나 최종적으로는 지금처럼 플러그인을 이용한 방법을 유지하는 것으로 결론이 났다.
   
   이유는 버전을 생성하지 않는 설정이나 방법이 Serverless Framework 를 이용한 방법이 아니라면 따로 문서를 만들어 내용을 관리해야 하기 때문이고 Serverless Framework 를 이용할 수 있는 방법이라도 현재의 플러그인을 이용한 방법과 중복되기 때문이다. 우리 팀은 인프라에 관한 내용은 YAML 파일 자체가 문서로서의 기능을 하기 때문에 최대한 YAML 파일을 통해서만 관리하고 싶어한다.
@@ -130,6 +137,7 @@ tags: [
 
 
 <br /><br /><br /><br /><br />
+
 --- 
 - Refs
   + [【ServerlessFramework】LambdaがCode storage limit exceededになってしまった時の対処法](https://qiita.com/spring_i/items/40cfc99504d26b0834cc)
