@@ -1,6 +1,6 @@
 ---
-# slug: /aws/amplify/frequently-used-command
-id: frequently-used-command
+slug: /aws/amplify/frequently-used-command
+# id: frequently-used-command
 title: 자주 사용하는 명령어
 tags: [
   devian-lab, 

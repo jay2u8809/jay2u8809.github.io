@@ -2,6 +2,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 import { AWSSidebar } from './src/config/custom-sidebar/aws-sidebar';
 import { NodeJsSidebar } from './src/config/custom-sidebar/nodejs-sidebar';
 import { JapanSidebar } from './src/config/custom-sidebar/japan-sidebar';
+import { ToolSidebar } from './src/config/custom-sidebar/tool-sidebar';
 
 /**
  * Creating a sidebar enables you to:
@@ -21,6 +22,7 @@ const sidebars: SidebarsConfig = {
   labDocsSidebar: [
     'intro',
     AWSSidebar,
+    ToolSidebar,
     NodeJsSidebar,
     JapanSidebar,
   ],
