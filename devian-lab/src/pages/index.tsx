@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import { DocsConfig } from '@site/src/config/common.config';
+import { BlogConfig } from '@site/src/config/common.config';
 
 import styles from '@site/src/css/index.module.css';
 
@@ -20,8 +20,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to={DocsConfig.defaultDocs.introPath}>
-            View Lab Docs ...
+            to={BlogConfig.defaultBlog.routeBasePath}>
+            View Blog Posts...
           </Link>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Onigiri.J's Tech Blog <head />">
+      description="Onigiri.J's Blog <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -1,8 +1,9 @@
 ---
-slug: Intro
+slug: intro
 title: Intro
 authors: [jian]
-tags: [onigiri, blog]
+tags: [
+  devian-lab, 
+  blog
+]
 ---
-
-Welcome Onigiri Blog

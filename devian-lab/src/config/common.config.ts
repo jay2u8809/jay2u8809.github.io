@@ -20,9 +20,9 @@ export const DocsConfig = {
   docsType: 'docSidebar',
   // default
   defaultDocs: {
-    label: 'Dev.ian Lab',
+    label: 'Docs',
     sidebarPath: './sidebars.ts',
-    sidebarId: 'defaultSidebar',
+    sidebarId: 'labDocsSidebar',
     routeBasePath: '/docs',
     introPath: '/docs/intro',
     directoryPath: './docs',
@@ -43,7 +43,7 @@ const config = {
         label: BlogConfig.defaultBlog.label,
         to: BlogConfig.defaultBlog.routeBasePath, 
         visible: true,
-        sort: 2,
+        sort: 1,
       },
       // ===// Blog ===
       // === Docs ===
@@ -54,7 +54,7 @@ const config = {
         type: DocsConfig.docsType,
         sidebarId: DocsConfig.defaultDocs.sidebarId,
         visible: true,
-        sort: 1,
+        sort: 2,
       },
       // ===// Docs ===
     ],

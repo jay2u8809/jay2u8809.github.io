@@ -12,12 +12,12 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: DocsConfig.defaultDocs.label,
-    Svg: require('@site/static/img/wiki-icon-code.svg').default,
+    title: BlogConfig.defaultBlog.label,
+    Svg: require('@site/static/img/blog-icon-note.svg').default,
     image: null,
     description: (
       <>
-        Development <br /> Wiki <br /> Debugging 
+        Essay <br /> Travel <br /> Review
       </>
     ),
   },
@@ -28,12 +28,12 @@ const FeatureList: FeatureItem[] = [
     description: (<></>),
   },
   {
-    title: BlogConfig.defaultBlog.label,
-    Svg: require('@site/static/img/blog-icon-note.svg').default,
+    title: DocsConfig.defaultDocs.label,
+    Svg: require('@site/static/img/wiki-icon-code.svg').default,
     image: null,
     description: (
       <>
-        Essay <br /> Travel <br /> Review
+        Development <br /> Wiki <br /> Debugging 
       </>
     ),
   },

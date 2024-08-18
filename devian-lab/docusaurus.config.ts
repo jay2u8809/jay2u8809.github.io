@@ -30,6 +30,9 @@ const config: Config = {
     defaultLocale: 'ko',
     locales: ['ko'],
   },
+  markdown: {
+    mermaid: true,
+  },
 
   presets: [
     [
@@ -136,10 +139,7 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 
   plugins: [
-    // === Blog ===
-    // ===// Blog ===
-    // === Docs ===
-    // ===// Docs ===
+    '@docusaurus/theme-mermaid',
   ],
 };
 

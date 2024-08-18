@@ -1,13 +1,21 @@
 ---
 # slug: /aws/amplify/frequently-used-command
 id: frequently-used-command
-title: Command 정리
-tags: [devian-lab, project, javaScript, amplfiy, aws, memo, serverless, typescript, 서버리스, 자바스크립트, 타입스크립트]
+title: 자주 사용하는 명령어
+tags: [
+  devian-lab, 
+  dev.ian,
+  Jobː談,
+  wiki,
+  aws,
+  amplfiy,
+  command,
+]
 # sidebar_position: 1
 ---
 
 <!--title -->
-# AWS Amplify 명령어 메모
+# AWS Amplify 명령어
 <!--//title -->
 
 <!-- 
@@ -15,7 +23,7 @@ tags: [devian-lab, project, javaScript, amplfiy, aws, memo, serverless, typescri
 {
   "author": "Dev.ian",
   "createdAt": "2024-06-23",
-  "updatedAt": "2024-06-23"
+  "updatedAt": "2024-08-14"
 }
 ``` 
 -->
@@ -23,16 +31,12 @@ tags: [devian-lab, project, javaScript, amplfiy, aws, memo, serverless, typescri
 ```yaml
   author: Dev.ian
   createdAt: 2024-06-23
-  updatedAt: 2024-06-23
+  updatedAt: 2024-08-14
 ```
 
 ---
-
-## Intro
- 회사 프로젝트는 AWS Amplify 를 이용해 로그인(Cognito)이나 GrapthQL(AppSync) 을 사용하고 있다. Amplify 는 주로 프론트엔드에서 사용하고는 있지만(명령어보다는 라이브러리 API), 백엔드에서도 DynamoDB의 테이블의 작성, 갱신, 인덱스 설정 등을 schema.graphql 파일에 정의하여 관리하고 있기에 가끔이지만 Amplify 명령어를 사용할 필요가 있다. 회사에서 주로 사용하는 명령어 위주로 정리하여 메모해두려 한다.
  
- 
-## Contents
+## Amplify Commands
 
 ### - Amplify CLI install
 - `npm i @aws-amplify/cli` or `npm install -g @aws-amplify/cli@${VERSION}`
@@ -200,7 +204,6 @@ $ amplify publish
 
 
 <br /><br /><br /><br /><br />
-
 --- 
 - Refs
   + [Github-Amplify/cli](https://github.com/aws-amplify/amplify-cli#readme)
