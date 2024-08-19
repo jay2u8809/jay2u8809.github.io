@@ -119,6 +119,22 @@ tags: [
       remotes/origin/main
     ```
 
+  - To see branch name
+
+    ```shell
+      $ git branch --show-current
+
+      feature/example
+    ```
+
+  - To see revision
+
+    ```shell
+      $ git rev-parse HEAD
+
+      14c65656386493c2108355a6d7345259bcf3f55d
+    ```
+
 ### Create
 
   - create a new branch
