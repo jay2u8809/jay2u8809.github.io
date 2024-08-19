@@ -1,6 +1,6 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 import { AWSSidebar } from './src/config/custom-sidebar/aws-sidebar';
-import { NodeJsSidebar } from './src/config/custom-sidebar/nodejs-sidebar';
+import { ProgrammingSidebar } from './src/config/custom-sidebar/programming-sidebar';
 import { JapanSidebar } from './src/config/custom-sidebar/japan-sidebar';
 import { ToolSidebar } from './src/config/custom-sidebar/tool-sidebar';
 
@@ -23,7 +23,7 @@ const sidebars: SidebarsConfig = {
     'intro',
     AWSSidebar,
     ToolSidebar,
-    NodeJsSidebar,
+    ProgrammingSidebar,
     JapanSidebar,
   ],
 };
