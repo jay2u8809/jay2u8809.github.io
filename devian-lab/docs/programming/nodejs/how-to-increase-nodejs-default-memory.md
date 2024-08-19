@@ -23,7 +23,7 @@ tags: [
 {
   "author": "Dev.ian",
   "createdAt": "2024-05-29",
-  "updatedAt": "2024-05-29"
+  "updatedAt": "2024-08-20"
 }
 ``` 
 -->
@@ -31,88 +31,70 @@ tags: [
 ```yaml
   author: Dev.ian
   createdAt: 2024-05-29
-  updatedAt: 2024-05-29
+  updatedAt: 2024-08-20
 ```
 
 
 ---
 
-## Intro
+## 일시적으로 메모리 사이즈를 설정
 
-  > Node.js 의 heap memory 를 늘리는 방법을 정리한다.
+  - 일시적으로 메모리가 많이 필요한 작업을 할 경우 변경할 수 있다.
+    + 쉘Shell을 종료하면 변경 내용은 사라진다.
 
-  종종 기획팀이나 다른 부서에서 데이터 분석을 위한 데이터 집계 의뢰가 온다. 필요한 데이터를 DB 에서 뽑아 정리해 넘기는 단순한 작업이다. 
+  #### Example
+  
+    - 4GB (1024 * 4) 지정
 
-  DB 가 DynamoDB 이기 때문에 SQL 보다는 로컬 환경에서 javascript 코드를 작성해서 실행하는 방식으로 집계를 한다.
+      ```shell
+        $ export NODE_OPTIONS=--max_old_space_size=4096
+      ```
 
-    - 1) DynamoDB Query API 실행
-      + 필요한 데이터를 Table 로부터 가져온다
-    - 2) 데이터 가공
-      + 계산이 필요한 데이터나 조건에 따라 처리해야할 데이터를 적절히 가공한다
-    - 3) csv 파일 생성
-      + 타 부서에 필요한 형식으로 맞춰 csv 파일을 만든다
+    - 8GB (1024 * 8) 지정
 
-  꽤나 단순한 프로세스이지만 데이터가 많아지면서 1)Query API 를 실행하는 시간이 길어지고 2)데이터 가공을 할때 메모리 부족으로 코드가 종료되는 경우가 많아졌다. 종종 데이터를 가져오다가도 종료되는 경우가 많다.
-
-  그럴 때마다 nodejs 의 heap memory 를 늘려 다시 실행하게 되는데 그 방법을 정리하려고 한다.
-
-
-
-## Contents
-
-### 1) 일시적으로 NodeJs 의 heap memory size 를 지정하는 방법
-
-  데이터 집계를 해야할 때처럼 평소보다 많은 양의 메모리가 필요한 경우 일시적으로 변경할 수 있다. 
-
-  - 4GB (1024 * 4) 지정
-
-    ```shell
-      $ export NODE_OPTIONS=--max_old_space_size=4096
-    ```
-
-  - 8GB (1024 * 8) 지정
-
-    ```shell
-      $ export NODE_OPTIONS=--max_old_space_size=8192
-    ```
+      ```shell
+        $ export NODE_OPTIONS=--max_old_space_size=8192
+      ```
 
 
-### 2) Javascript 실행할 때 heap memory size 를 지정하는 방법
+## 메모리 사이즈를 지정해서 Node.js 를 실행
 
-  node 를 실행할 때, 옵션을 주어 메모리 사이즈를 지정할 수 있다.
+  - node.js 를 실행할 때, 옵션을 주어 메모리 사이즈를 지정할 수 있다.
 
-  - Example
-    + ```node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js```
+  #### Example
+   
+    - ```node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js```
 
-  - Sample Code
+    - Sample Code
 
-    ```shell
-    $ node --max_old_space_size=4096 sample-script.js
-    ```
+      ```shell
+        $ node --max_old_space_size=4096 sample-script.js
+      ```
 
-### 3) package.json 을 수정하는 방법
+## package.json 에서 설정
 
-  2)의 명령어를 `package.json` 에 지정해 두면 간단하게 실행할 수 있다.
+  node.js 를 실행하는 명령어를 `package.json` 에 설정해 두면 간단하게 메모리 사이즈를 지정해서 실행할 수 있다.
 
-  - Example
-    + ``` "start": "node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js" ```
+  #### Example
+    
+    - ``` "start": "node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js" ```
 
-  - Sample Code
+    - Sample Code
 
-    ```json
-      {
-        // other package.json stuff
-        "scripts": {
-          "start": "node --max_old_space_size=4096 sample-script.js"
+      ```json
+        {
+          // other package.json stuff
+          "scripts": {
+            "start": "node --max_old_space_size=4096 sample-script.js"
+          }
         }
-      }
-    ```
+      ```
 
-  - run
+    - run
 
-    ```shell
-      $ npm run start
-    ```
+      ```shell
+        $ npm run start
+      ```
 
 
 <br /><br /><br /><br /><br />
