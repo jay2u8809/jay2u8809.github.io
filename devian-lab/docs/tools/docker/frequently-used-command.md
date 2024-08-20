@@ -22,7 +22,7 @@ tags: [
 {
   "author": "Dev.ian",
   "createdAt": "2024-08-18",
-  "updatedAt": "2024-08-18"
+  "updatedAt": "2024-08-20"
 }
 ``` 
 -->
@@ -30,7 +30,7 @@ tags: [
 ```yaml
   author: Dev.ian
   createdAt: 2024-08-18
-  updatedAt: 2024-08-18
+  updatedAt: 2024-08-20
 ```
 
 ---
@@ -69,7 +69,21 @@ tags: [
       $ docker stop $(docker ps -q)
     ```
 
+### Access Container
 
+  - Check docker container id
+
+    ```shell
+      $ docker ps
+    ```
+  
+  - Access docker container
+    + **-it**: `i` (STDIN 표준 입력), `t`(가상 tty) 을 통한 접속
+      - **tty**: teletypewriter, 리눅스의 디바이스 드라이브 중 콘솔 or 터미널을 의미 (※ [Linux - 콘솔, 터미널, TTY 이해하기](https://booolean.tistory.com/666))
+
+    ```shell
+      $ docker exec -it ${CONTAINER_ID} /bin/bash
+    ```
 
 ## List Container and Image
 ### List Container (Process)
