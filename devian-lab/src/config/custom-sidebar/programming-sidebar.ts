@@ -22,6 +22,7 @@ const SubSidebarList: SidebarItemConfig[] = [
           `${SubSidebarRootPath.NodeJs}/jest/how-to-do-unit-test-on-jest`,
         ],
       },
+      `${SubSidebarRootPath.NodeJs}/how-to-convert-data-type`,
       `${SubSidebarRootPath.NodeJs}/how-to-increase-nodejs-default-memory`,
     ],
   },
