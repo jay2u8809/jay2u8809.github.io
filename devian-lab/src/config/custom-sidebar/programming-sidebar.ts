@@ -4,6 +4,7 @@ const SidebarRootPath = 'programming';
 const SubSidebarRootPath = {
   NodeJs: `${SidebarRootPath}/nodejs`,
   ShellScript: `${SidebarRootPath}/shell-script`,
+  React: `${SidebarRootPath}/react`,
 };
 
 const SubSidebarList: SidebarItemConfig[] = [
@@ -24,6 +25,7 @@ const SubSidebarList: SidebarItemConfig[] = [
       },
       `${SubSidebarRootPath.NodeJs}/how-to-convert-data-type`,
       `${SubSidebarRootPath.NodeJs}/how-to-increase-nodejs-default-memory`,
+      `${SubSidebarRootPath.NodeJs}/func-localecompare`,
     ],
   },
   // shell script
@@ -33,6 +35,16 @@ const SubSidebarList: SidebarItemConfig[] = [
     description: `About Shell Script`,
     items: [
       `${SubSidebarRootPath.ShellScript}/how-to-set-default-value`,
+    ],
+  },
+  // react
+  {
+    type: 'category',
+    label: `React`,
+    description: `About React`,
+    items: [
+      `${SubSidebarRootPath.React}/how-to-use-if-else`,
+      `${SubSidebarRootPath.React}/how-to-use-map`,
     ],
   },
 ]
