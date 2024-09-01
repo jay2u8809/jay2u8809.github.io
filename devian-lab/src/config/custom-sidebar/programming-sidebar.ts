@@ -21,11 +21,11 @@ const SubSidebarList: SidebarItemConfig[] = [
         items: [
           `${SubSidebarRootPath.NodeJs}/jest/how-to-mocking-on-jest`,
           `${SubSidebarRootPath.NodeJs}/jest/how-to-do-unit-test-on-jest`,
+          `${SubSidebarRootPath.NodeJs}/jest/how-to-adopt-jest`,
         ],
       },
       `${SubSidebarRootPath.NodeJs}/how-to-convert-data-type`,
       `${SubSidebarRootPath.NodeJs}/how-to-increase-nodejs-default-memory`,
-      `${SubSidebarRootPath.NodeJs}/func-localecompare`,
     ],
   },
   // shell script
