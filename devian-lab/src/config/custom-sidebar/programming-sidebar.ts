@@ -26,6 +26,7 @@ const SubSidebarList: SidebarItemConfig[] = [
       },
       `${SubSidebarRootPath.NodeJs}/how-to-convert-data-type`,
       `${SubSidebarRootPath.NodeJs}/how-to-increase-nodejs-default-memory`,
+      `${SubSidebarRootPath.NodeJs}/how-to-install-nodenv`
     ],
   },
   // shell script

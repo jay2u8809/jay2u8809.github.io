@@ -40,6 +40,13 @@ tags: [
 
 ## Install Jest Packages
 
+  ### All Packages
+
+    ```shell
+      $ npm i --save-dev @types/jest jest ts-jest
+      $ yarn add -D @types/jest jest ts-jest
+    ```
+
   ### Jest
 
     ```shell

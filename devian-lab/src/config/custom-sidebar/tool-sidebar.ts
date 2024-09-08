@@ -4,6 +4,8 @@ const SidebarRootPath = 'tools';
 const SubSidebarRootPath = {
   Docker: `${SidebarRootPath}/docker`,
   Git: `${SidebarRootPath}/git`,
+  WSL: `${SidebarRootPath}/wsl`,
+  EDITOR: `${SidebarRootPath}/editor`,
 };
 
 const SubSidebarList: SidebarItemConfig[] = [
@@ -13,6 +15,7 @@ const SubSidebarList: SidebarItemConfig[] = [
     description: `How to use Docker`,
     items: [
       `${SubSidebarRootPath.Docker}/frequently-used-command`,
+      `${SubSidebarRootPath.Docker}/how-to-install-docker`,
     ],
   },
   {
@@ -21,6 +24,23 @@ const SubSidebarList: SidebarItemConfig[] = [
     description: `How to use Git`,
     items: [
       `${SubSidebarRootPath.Git}/frequently-used-command`,
+    ],
+  },
+  {
+    type: 'category',
+    label: `WSL`,
+    description: `How to use wsl`,
+    items: [
+      `${SubSidebarRootPath.WSL}/how-to-use-vscode`,
+      `${SubSidebarRootPath.WSL}/how-to-use-wsl2-on-windows11`,
+    ],
+  },
+  {
+    type: 'category',
+    label: `Editor`,
+    description: `How to use editor`,
+    items: [
+      `${SubSidebarRootPath.EDITOR}/how-to-add-fonts-to-vscode-for-wsl`,
     ],
   },
 ]
