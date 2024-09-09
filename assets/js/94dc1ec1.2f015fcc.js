@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[7817],{3340:s=>{s.exports=JSON.parse('{"blogBasePath":"/essay","blogTitle":"Blog","authorsListPath":"/essay/authors"}')}}]);
