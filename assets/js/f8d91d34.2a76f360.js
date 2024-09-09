@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[6642],{3609:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Intro","permalink":"/essay/intro","unlisted":false,"date":"2024-03-31T14:08:32.000Z"}]}')}}]);
