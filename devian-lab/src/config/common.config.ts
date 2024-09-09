@@ -13,6 +13,14 @@ export const BlogConfig = {
     blogSidebarTitle: undefined,
     blogSidebarCount: sidebarCount,
   },
+  essayBlog: {
+    id:'essay-blog',
+    label: 'Essay',
+    routeBasePath: '/essay',
+    directoryPath: './essay',
+    blogSidebarTitle: undefined,
+    blogSidebarCount: sidebarCount,
+  }
 }
 
 export const DocsConfig = {
@@ -44,6 +52,13 @@ const config = {
         to: BlogConfig.defaultBlog.routeBasePath, 
         visible: true,
         sort: 1,
+      },
+      {
+        // Essay Blog
+        label: BlogConfig.essayBlog.label,
+        to: BlogConfig.essayBlog.routeBasePath, 
+        visible: false,
+        sort: 2,
       },
       // ===// Blog ===
       // === Docs ===

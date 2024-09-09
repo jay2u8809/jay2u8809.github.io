@@ -140,6 +140,24 @@ const config: Config = {
 
   plugins: [
     '@docusaurus/theme-mermaid',
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: BlogConfig.essayBlog.id,
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: BlogConfig.essayBlog.routeBasePath,
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: BlogConfig.essayBlog.directoryPath,
+      },
+    ],
   ],
 };
 
