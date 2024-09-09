@@ -24,6 +24,7 @@ const SubSidebarList: SidebarItemConfig[] = [
     description: `How to use Git`,
     items: [
       `${SubSidebarRootPath.Git}/frequently-used-command`,
+      `${SubSidebarRootPath.Git}/github-ssh-key`,
     ],
   },
   {
@@ -43,6 +44,7 @@ const SubSidebarList: SidebarItemConfig[] = [
       `${SubSidebarRootPath.EDITOR}/how-to-add-fonts-to-vscode-for-wsl`,
     ],
   },
+  `${SidebarRootPath}/how-to-adopt-oh-my-zsh`
 ]
 
 export const ToolSidebar: SidebarItemConfig = {
