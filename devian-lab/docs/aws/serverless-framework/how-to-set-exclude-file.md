@@ -13,6 +13,16 @@ tags: [
   serverless framework,
   package exclude,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  aws,
+  lambda,
+  serverless,
+  serverless framework,
+  package exclude,
+]
+description: AWS Lambda 에서 필요한 파일만 Packaging 하는 방법을 정리한다.
 # sidebar_position: 1
 ---
 

@@ -12,6 +12,15 @@ tags: [
   vscode,
   font,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  editor,
+  wsl,
+  vscode,
+  font,
+]
+description: VS Code 에서 WSL 을 사용할 때, VS Code 의 폰트를 바꾸는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

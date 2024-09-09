@@ -11,6 +11,14 @@ tags: [
   nodenv,
   node version,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  nodejs,
+  nodenv,
+  node version,
+]
+description: Nodenv를 설치하여 여러 버전의 Node.js 를 관리하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

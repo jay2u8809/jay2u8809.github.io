@@ -15,6 +15,18 @@ tags: [
   mocking, 
   mock,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  nodejs,
+  javascript,
+  typescript, 
+  jest,
+  unit test, 
+  mocking, 
+  mock,
+]
+description: Jest 를 이용한 Mocking 방법을 정리한다.
 # sidebar_position: 1
 ---
 

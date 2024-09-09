@@ -11,6 +11,14 @@ tags: [
   podman,
   docker install,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  docker,
+  podman,
+  docker install,
+]
+description: Docker 와 Podman 을 설치하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

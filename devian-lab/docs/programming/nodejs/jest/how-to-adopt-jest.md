@@ -1,7 +1,7 @@
 ---
 # slug: /wiki/nodejs/jest/how-to-adopt-jest
 id: how-to-adopt-jest
-title: Jest 적용 방법
+title: Jest 설치 방법
 tags: [
   devian-lab, 
   dev.ian,
@@ -13,11 +13,21 @@ tags: [
   jest,
   unit test,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  nodejs,
+  javascript,
+  typescript, 
+  jest,
+  unit test,
+]
+description: Jest 를 설치하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 
 <!--title -->
-# Jest 를 적용하는 방법
+# Jest 를 설치하는 방법
 <!--//title -->
 
 <!-- 

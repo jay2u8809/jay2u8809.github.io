@@ -10,6 +10,13 @@ tags: [
   shell script,
   default value,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  shell script,
+  default value,
+]
+description: 쉘스크립트에서 디폴트값을 설정하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

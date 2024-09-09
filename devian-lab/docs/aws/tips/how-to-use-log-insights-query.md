@@ -12,6 +12,15 @@ tags: [
   log,
   loginsight,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  aws,
+  cloudwatch,
+  log,
+  loginsight,
+]
+description: CloudWatch - Log Insights 쿼리 사용 방법을 정리한다.
 # sidebar_position: 1
 ---
 

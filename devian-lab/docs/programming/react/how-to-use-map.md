@@ -12,6 +12,15 @@ tags: [
   리액트,
   리스트,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  react,
+  map,
+  리액트,
+  리스트,
+]
+description: Array 를 이용해서 React 컴포넌트를 동적으로 표시하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

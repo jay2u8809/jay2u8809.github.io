@@ -11,6 +11,14 @@ tags: [
   heap memory,
   memory,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  nodejs,
+  heap memory,
+  memory,
+]
+description: Node.js 의 Heap Memory 를 설정하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

@@ -15,6 +15,18 @@ tags: [
   prune,
   코드스토리지,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  aws,
+  lambda,
+  serverless,
+  serverless framework,
+  code storage limit exceeded,
+  prune,
+  코드스토리지,
+]
+description: AWS Lambda 의 Code Storage Limit 해결방법
 ---
 
 <!--title -->

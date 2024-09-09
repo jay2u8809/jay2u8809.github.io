@@ -10,6 +10,13 @@ tags: [
   docker,
   command,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  docker,
+  command,
+]
+description: Docker 의 명령어에 대해 정리한다.
 # sidebar_position: 1
 ---
 

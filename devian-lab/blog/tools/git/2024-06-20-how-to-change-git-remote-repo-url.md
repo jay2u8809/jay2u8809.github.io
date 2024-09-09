@@ -6,11 +6,17 @@ tags: [
   devian-lab, 
   dev.ian,
   Jobː談,
-  wiki,
+  blog,
   git,
   remote repository,
 ]
-# sidebar_position: 1
+keywords: [
+  devian-lab,
+  Jobː談,
+  git,
+  remote repository,
+]
+description: Git 의 Remote Repository URL 을 변경해 본다.
 ---
 
 <!--title -->

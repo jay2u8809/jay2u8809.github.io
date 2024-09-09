@@ -10,6 +10,13 @@ tags: [
   git,
   command,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  git,
+  command,
+]
+description: Git 의 명령어에 대해 정리한다.
 # sidebar_position: 1
 ---
 

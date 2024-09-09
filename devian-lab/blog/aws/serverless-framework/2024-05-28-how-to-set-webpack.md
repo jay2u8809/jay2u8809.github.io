@@ -14,6 +14,17 @@ tags: [
   webpack,
   multiple entry,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  aws,
+  lambda,
+  serverless,
+  serverless framework,
+  webpack,
+  multiple entry,
+]
+description: Webpack 을 이용한 AWS Lambda 소스코드 용량 줄이기
 ---
 
 <!--title -->

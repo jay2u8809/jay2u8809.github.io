@@ -10,6 +10,13 @@ tags: [
   wsl,
   vscode,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  wsl,
+  vscode,
+]
+description: WSL 에서 VS Code 를 열어 사용하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

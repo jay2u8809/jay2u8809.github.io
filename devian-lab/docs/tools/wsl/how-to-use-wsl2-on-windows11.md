@@ -10,6 +10,13 @@ tags: [
   wsl,
   windows11,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  wsl,
+  windows11,
+]
+description: Windows 11 에서 WSL2 설치하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

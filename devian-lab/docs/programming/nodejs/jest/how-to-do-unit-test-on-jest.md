@@ -13,6 +13,16 @@ tags: [
   jest,
   unit test,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  nodejs,
+  javascript,
+  typescript, 
+  jest,
+  unit test,
+]
+description: Jest 를 이용해 테스트를 하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

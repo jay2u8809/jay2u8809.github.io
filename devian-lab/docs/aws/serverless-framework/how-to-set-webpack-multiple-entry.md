@@ -14,6 +14,17 @@ tags: [
   webpack,
   multiple entry,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  aws,
+  lambda,
+  serverless,
+  serverless framework,
+  webpack,
+  multiple entry,
+]
+description: Nest.js 에 Webpack 을 적용하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 

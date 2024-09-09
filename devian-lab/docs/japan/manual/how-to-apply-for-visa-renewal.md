@@ -14,6 +14,17 @@ tags: [
   在留資格更新申請,
   취로비자,
 ]
+keywords: [
+  devian-lab,
+  Japː談,
+  visa, 
+  비자갱신, 
+  비자갱신신청,
+  재류자격,
+  在留資格更新申請,
+  취로비자,
+]
+description: 일본에서 재류 비자를 갱신하는 방법을 정리한다.
 # sidebar_position: 1
 ---
 

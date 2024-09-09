@@ -11,6 +11,14 @@ tags: [
   data type,
   convert,
 ]
+keywords: [
+  devian-lab,
+  Jobː談,
+  nodejs,
+  data type,
+  convert,
+]
+description: Javascript에서 여러 데이터 타입을 변환하는 방법을 정리한다.
 # sidebar_position: 1
 ---
 
