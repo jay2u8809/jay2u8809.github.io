@@ -1,5 +1,5 @@
 ---
-# slug: /japan/manual/how-to-change-driver-licence
+slug: /japan/how-to-change-driver-licence
 # id: how-to-change-driver-licence
 title: 일본 운전면허증으로 변경하기
 authors: [jian]

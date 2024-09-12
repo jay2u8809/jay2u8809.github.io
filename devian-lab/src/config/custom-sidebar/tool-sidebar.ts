@@ -5,7 +5,8 @@ const SubSidebarRootPath = {
   Docker: `${SidebarRootPath}/docker`,
   Git: `${SidebarRootPath}/git`,
   WSL: `${SidebarRootPath}/wsl`,
-  EDITOR: `${SidebarRootPath}/editor`,
+  Editor: `${SidebarRootPath}/editor`,
+  Mac: `${SidebarRootPath}/mac`,
 };
 
 const SubSidebarList: SidebarItemConfig[] = [
@@ -41,10 +42,19 @@ const SubSidebarList: SidebarItemConfig[] = [
     label: `Editor`,
     description: `How to use editor`,
     items: [
-      `${SubSidebarRootPath.EDITOR}/how-to-add-fonts-to-vscode-for-wsl`,
+      `${SubSidebarRootPath.Editor}/how-to-add-fonts-to-vscode-for-wsl`,
     ],
   },
-  `${SidebarRootPath}/how-to-adopt-oh-my-zsh`
+  {
+    type: 'category',
+    label: `Mac`,
+    description: `About Mac`,
+    items: [
+      `${SubSidebarRootPath.Mac}/how-to-install-homebrew`,
+      `${SubSidebarRootPath.Mac}/how-to-adopt-oh-my-zsh`,
+      `${SubSidebarRootPath.Mac}/how-to-use-backslash-ja-keyboard`,
+    ],
+  },
 ]
 
 export const ToolSidebar: SidebarItemConfig = {

@@ -1,5 +1,5 @@
 ---
-# slug: /japan/manual/how-to-apply-for-visa-renewal
+slug: /japan/how-to-apply-for-visa-renewal
 # id: how-to-apply-for-visa-renewal
 title: 일본 재류 비자 갱신 신청
 authors: [jian]

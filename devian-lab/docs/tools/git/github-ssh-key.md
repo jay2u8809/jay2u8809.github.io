@@ -30,16 +30,16 @@ description: Github 를 사용하기 위해 SSH 를 생성하고 등록하는 �
 ```json
 {
   "author": "Dev.ian",
-  "createdAt": "2024-09-09",
-  "updatedAt": "2024-09-09"
+  "createdAt": "2022-09-18",
+  "updatedAt": "2022-09-18"
 }
 ``` 
 -->
 
 ```yaml
   author: Dev.ian
-  createdAt: 2024-09-09
-  updatedAt: 2024-09-09
+  createdAt: 2022-09-18
+  updatedAt: 2022-09-18
 ```
 
 ---

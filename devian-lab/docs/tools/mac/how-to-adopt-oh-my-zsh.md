@@ -1,5 +1,5 @@
 ---
-slug: /tools/how-to-adopt-oh-my-zsh
+slug: /tools/mac/how-to-adopt-oh-my-zsh
 # id: how-to-adopt-oh-my-zsh
 title: oh-my-zsh 세팅 방법
 tags: [
@@ -30,16 +30,16 @@ description: oh-my-zsh 세팅 방법에 대해 정리한다.
 ```json
 {
   "author": "Dev.ian",
-  "createdAt": "2024-09-09",
-  "updatedAt": "2024-09-09"
+  "createdAt": "2022-06-03",
+  "updatedAt": "2022-09-04"
 }
 ``` 
 -->
 
 ```yaml
   author: Dev.ian
-  createdAt: 2024-09-09
-  updatedAt: 2024-09-09
+  createdAt: 2022-06-03
+  updatedAt: 2022-09-04
 ```
 
 ---

@@ -1,6 +1,6 @@
 ---
-# slug: /programming/nodejs/how-to-install-nodenv
-id: how-to-install-nodenv
+slug: /programming/nodejs/how-to-install-nodenv
+# id: how-to-install-nodenv
 title: 여러 버전의 node.js 관리하기
 tags: [
   devian-lab, 
@@ -10,6 +10,7 @@ tags: [
   nodejs,
   nodenv,
   node version,
+  homebrew,
 ]
 keywords: [
   devian-lab,
@@ -17,6 +18,7 @@ keywords: [
   nodejs,
   nodenv,
   node version,
+  homebrew,
 ]
 description: Nodenv를 설치하여 여러 버전의 Node.js 를 관리하는 방법에 대해 정리한다.
 # sidebar_position: 1
@@ -30,16 +32,16 @@ description: Nodenv를 설치하여 여러 버전의 Node.js 를 관리하는 �
 ```json
 {
   "author": "Dev.ian",
-  "createdAt": "2024-09-08",
-  "updatedAt": "2024-09-08"
+  "createdAt": "2022-05-22",
+  "updatedAt": "2022-01-01"
 }
 ``` 
 -->
 
 ```yaml
   author: Dev.ian
-  createdAt: 2024-09-08
-  updatedAt: 2024-09-08
+  createdAt: 2022-05-22
+  updatedAt: 2022-01-01
 ```
 
 
@@ -217,6 +219,69 @@ description: Nodenv를 설치하여 여러 버전의 Node.js 를 관리하는 �
     ```
 
   
+## 4. Uninstall Node.js & Npm
+
+  ### Homebrew 로 설치한 node.js 를 Uninstall
+
+    - uninstall npm
+
+      ```shell
+        $ sudo npm uninstall npm -g
+      ```
+
+    - unintall node.js
+
+      ```shell
+        $ brew uninstall node
+      ```
+
+  ### 설치 파일로 설치한 node 를 Uninstall
+
+    - [Node 공식 사이트](https://nodejs.org/en/download/)에서 설치 파일(`*.dmg`, `*.pkg` 등) 을 다운 받아 설치한 경우, 설치되어있는 각 디렉토리의 파일들을 찾아 하나하나 지워야 한다.
+
+      + uninstall npm
+
+        ```shell
+          $ sudo npm uninstall npm -g
+        ```
+      + remove node files
+      
+        ```shell
+          $ lsbom -f -l -s -pf /var/db/receipts/org.nodejs.node.pkg.bom \
+            > | while read i; do
+            pipe while> sudo rm /usr/local/{i}
+            pipe while> done
+
+          rm: /usr/local/{i}: No such file or directory
+          rm: /usr/local/{i}: No such file or directory
+          rm: /usr/local/{i}: No such file or directory
+          ...
+          rm: /usr/local/{i}: No such file or directory
+          rm: /usr/local/{i}: No such file or directory
+
+        ```
+
+        ```shell
+          $ sudo rm -rf /usr/local/lib/node \
+            > /usr/local/lib/node_modules \
+            > /var/db/receipts/org.nodejs.*
+        ```
+
+        ```shell
+          $ which node
+            /usr/local/bin/node
+
+          $ rm -rf /usr/local/bin/node
+
+          $ which node
+            node not found
+
+          $ which npm
+            npm not found
+        ```
+
+
+
 
 
 <br /><br /><br /><br /><br />

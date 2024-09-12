@@ -1,5 +1,5 @@
 ---
-# slug: /japan/manual/how-to-prepare-for-visa-renewal
+slug: /japan/how-to-prepare-for-visa-renewal
 # id: how-to-prepare-for-visa-renewal
 title: 일본 재류 비자 갱신 서류 준비
 authors: [jian]
