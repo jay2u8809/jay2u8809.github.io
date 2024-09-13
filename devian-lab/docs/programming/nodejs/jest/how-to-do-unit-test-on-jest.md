@@ -1,6 +1,6 @@
 ---
-# slug: /wiki/nodejs/jest/how-to-do-unit-test-on-jest
-id: how-to-do-unit-test-on-jest
+slug: /programming/nodejs/jest/how-to-do-unit-test-on-jest
+# id: how-to-do-unit-test-on-jest
 title: Unit Test 방법
 tags: [
   devian-lab, 

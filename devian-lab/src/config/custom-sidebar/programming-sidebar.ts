@@ -5,6 +5,7 @@ const SubSidebarRootPath = {
   NodeJs: `${SidebarRootPath}/nodejs`,
   ShellScript: `${SidebarRootPath}/shell-script`,
   React: `${SidebarRootPath}/react`,
+  Java: `${SidebarRootPath}/java`,
 };
 
 const SubSidebarList: SidebarItemConfig[] = [
@@ -36,6 +37,7 @@ const SubSidebarList: SidebarItemConfig[] = [
     description: `About Shell Script`,
     items: [
       `${SubSidebarRootPath.ShellScript}/how-to-set-default-value`,
+      `${SubSidebarRootPath.ShellScript}/how-to-check-shell`,
     ],
   },
   // react
@@ -46,6 +48,15 @@ const SubSidebarList: SidebarItemConfig[] = [
     items: [
       `${SubSidebarRootPath.React}/how-to-use-if-else`,
       `${SubSidebarRootPath.React}/how-to-use-map`,
+    ],
+  },
+  // java
+  {
+    type: 'category',
+    label: `Java`,
+    description: `About Java`,
+    items: [
+      `${SubSidebarRootPath.Java}/install-jdk-with-homebrew`,
     ],
   },
 ]

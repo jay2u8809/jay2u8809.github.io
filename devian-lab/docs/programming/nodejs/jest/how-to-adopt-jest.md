@@ -1,6 +1,6 @@
 ---
-# slug: /wiki/nodejs/jest/how-to-adopt-jest
-id: how-to-adopt-jest
+slug: /programming/nodejs/jest/how-to-adopt-jest
+# id: how-to-adopt-jest
 title: Jest 설치 방법
 tags: [
   devian-lab, 

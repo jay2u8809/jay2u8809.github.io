@@ -1,6 +1,6 @@
 ---
-# slug: /programming/react/how-to-use-map
-id: how-to-use-map
+slug: /programming/react/how-to-use-map
+# id: how-to-use-map
 title: 컴포넌트를 리스트로 표시하기 
 tags: [
   devian-lab, 

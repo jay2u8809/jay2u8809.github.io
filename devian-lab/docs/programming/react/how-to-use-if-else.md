@@ -1,6 +1,6 @@
 ---
-# slug: /programming/react/how-to-use-if-else
-id: how-to-use-if-else
+slug: /programming/react/how-to-use-if-else
+# id: how-to-use-if-else
 title: 조건문 사용 방법
 tags: [
   devian-lab, 

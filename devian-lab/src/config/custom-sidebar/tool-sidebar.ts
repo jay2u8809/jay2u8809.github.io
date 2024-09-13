@@ -53,6 +53,8 @@ const SubSidebarList: SidebarItemConfig[] = [
       `${SubSidebarRootPath.Mac}/how-to-install-homebrew`,
       `${SubSidebarRootPath.Mac}/how-to-adopt-oh-my-zsh`,
       `${SubSidebarRootPath.Mac}/how-to-use-backslash-ja-keyboard`,
+      `${SubSidebarRootPath.Mac}/how-to-set-hidden-files-to-be-shown`,
+      `${SubSidebarRootPath.Mac}/how-to-initialize-intel-silicon-mac`,
     ],
   },
 ]

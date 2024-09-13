@@ -1,6 +1,6 @@
 ---
-# slug: /programming/shell-script/how-to-set-default-value
-id: how-to-set-default-value
+slug: /programming/shell-script/how-to-set-default-value
+# id: how-to-set-default-value
 title: Default 값 설정 방법
 tags: [
   devian-lab, 

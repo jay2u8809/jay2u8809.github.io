@@ -1,6 +1,6 @@
 ---
-# slug: /wiki/nodejs/jest/how-to-mocking-on-jest
-id: how-to-mocking-on-jest
+slug: /programming/nodejs/jest/how-to-mocking-on-jest
+# id: how-to-mocking-on-jest
 title: Mocking 방법
 tags: [
   devian-lab, 

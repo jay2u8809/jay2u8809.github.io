@@ -1,6 +1,6 @@
 ---
-# slug: /programming/nodejs/how-to-increase-nodejs-default-memory
-id: how-to-increase-nodejs-default-memory
+slug: /programming/nodejs/how-to-increase-nodejs-default-memory
+# id: how-to-increase-nodejs-default-memory
 title: Heap 메모리 사이즈 설정 방법
 tags: [
   devian-lab, 
