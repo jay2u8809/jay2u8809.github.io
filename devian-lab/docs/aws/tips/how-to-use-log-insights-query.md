@@ -1,6 +1,6 @@
 ---
-# slug: /docs/aws/tips/how-to-use-log-insights-query
-id: how-to-use-log-insights-query
+slug: /docs/aws/tips/how-to-use-log-insights-query
+# id: how-to-use-log-insights-query
 title: CloudWatch - Log Insights 쿼리
 tags: [
   devian-lab, 
@@ -77,7 +77,7 @@ description: CloudWatch - Log Insights 쿼리 사용 방법을 정리한다.
 <br /><br /><br /><br /><br />
 
 --- 
-- Refs:
+- Refs
   + [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
   + [CloudWatch Logs Insights query syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html)
   + [CloudWatch Logs Insightsでログを調査する前に読む記事](https://dev.classmethod.jp/articles/how-to-cloudwatch-logs-insights/)

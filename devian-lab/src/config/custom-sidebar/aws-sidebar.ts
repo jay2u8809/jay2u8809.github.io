@@ -24,6 +24,7 @@ const SubSidebarList: SidebarItemConfig[] = [
     description: `About How to use AWS Services`,
     items: [
       `${SubSidebarRootPath.Tips}/how-to-use-log-insights-query`,
+      `${SubSidebarRootPath.Tips}/how-to-set-crontab`,
     ],
   },
   {
