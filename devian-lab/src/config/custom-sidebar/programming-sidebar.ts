@@ -33,6 +33,7 @@ const SubSidebarList: SidebarItemConfig[] = [
       `${SubSidebarRootPath.NodeJs}/how-to-use-variable-arguments-func`,
       `${SubSidebarRootPath.NodeJs}/comparison-of-loop`,
       `${SubSidebarRootPath.NodeJs}/how-to-use-operator-logical-and-or`,
+      `${SubSidebarRootPath.NodeJs}/how-to-use-promise-all`,
     ],
   },
   // shell script
