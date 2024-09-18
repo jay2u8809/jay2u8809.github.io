@@ -131,7 +131,7 @@ CloudWatch 는 실행한 AWS Lambda 의 인스턴스를 기준으로 로그를 �
 
   Log Insights 는 AWS CloudWatch 콘솔에서 사용할 수 있다. 찾고자 하는 로그의 로그 그룹과 시간을 지정한 뒤, 아래와 같은 쿼리를 이용하면 로그를 손쉽게 검색할 수 있다.
 
-  좀더 자세한 내용은 [AWS Cloudwatch - Log Insights 검색 쿼리](../../../docs/aws/tips/how-to-use-log-insights-query)에서 확인할 수 있다.
+  좀더 자세한 내용은 [AWS Cloudwatch - Log Insights 검색 쿼리](/docs/aws/tips/how-to-use-log-insights-query)에서 확인할 수 있다.
 
   ```text
     filter @message like /${SEARCH_KEYWORD}/

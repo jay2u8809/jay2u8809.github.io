@@ -1,5 +1,5 @@
 ---
-slug: /docs/aws/tips/how-to-use-log-insights-query
+slug: /aws/tips/how-to-use-log-insights-query
 # id: how-to-use-log-insights-query
 title: CloudWatch - Log Insights 쿼리
 tags: [

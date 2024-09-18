@@ -1,5 +1,5 @@
 ---
-slug: /docs/aws/tips/how-to-set-crontab
+slug: /aws/tips/how-to-set-crontab
 # id: how-to-set-crontab
 title: Crontab(크론탭) 시간 설정
 tags: [
