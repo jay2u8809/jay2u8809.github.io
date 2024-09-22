@@ -223,5 +223,5 @@ description: js 의 Promise.all 함수를 이용해 병렬 처리를 하는 방�
 
 --- 
 - Refs
-    - [MDN - Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+  + [MDN - Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
 

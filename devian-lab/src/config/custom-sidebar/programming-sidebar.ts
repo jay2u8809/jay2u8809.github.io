@@ -28,14 +28,14 @@ const SubSidebarList: SidebarItemConfig[] = [
     label: `Node.js`,
     description: `About JS, TS and Node.js`,
     items: [
-      // {
-      //   type: 'category',
-      //   label: `Nest.js`,
-      //   description: `About Nest.js`,
-      //   items: [
-      //     `${Category2.NodeJs.NestJs}/how-to-mocking-on-jest`,
-      //   ],
-      // },
+      {
+        type: 'category',
+        label: `Nest.js`,
+        description: `About Nest.js`,
+        items: [
+          `${Category2.NodeJs.NestJs}/how-to-setup-nestjs`,
+        ],
+      },
       {
         type: 'category',
         label: `Jest`,
@@ -67,6 +67,7 @@ const SubSidebarList: SidebarItemConfig[] = [
           `${Category2.NodeJs.Tips}/how-to-increase-nodejs-default-memory`,
           `${Category2.NodeJs.Tips}/how-to-install-nodenv`,
           `${Category2.NodeJs.Tips}/how-to-encode-base64`,
+          `${Category2.NodeJs.Tips}/how-to-convert-json-to-csv`,
         ],
       },
     ],
@@ -89,6 +90,14 @@ const SubSidebarList: SidebarItemConfig[] = [
     items: [
       `${Category1.React}/how-to-use-if-else`,
       `${Category1.React}/how-to-use-map`,
+      {
+        type: 'category',
+        label: `ReactNative`,
+        description: `About react native`,
+        items: [
+          `${Category2.React.ReactNative}/how-to-setup-react-native`,
+        ],
+      },
     ],
   },
   // java
