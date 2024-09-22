@@ -1,5 +1,5 @@
 ---
-slug: /programming/nodejs/how-to-install-nodenv
+slug: /programming/nodejs/tips/how-to-install-nodenv
 # id: how-to-install-nodenv
 title: 여러 버전의 node.js 관리하기
 tags: [

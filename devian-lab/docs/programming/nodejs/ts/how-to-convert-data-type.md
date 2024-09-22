@@ -1,5 +1,5 @@
 ---
-slug: /programming/nodejs/how-to-convert-data-type
+slug: /programming/nodejs/ts/how-to-convert-data-type
 # id: how-to-convert-data-type
 title: Data Type 변경 방법
 tags: [

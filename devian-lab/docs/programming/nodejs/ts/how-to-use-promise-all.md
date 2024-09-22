@@ -1,5 +1,5 @@
 ---
-slug: /programming/nodejs/how-to-use-promise-all
+slug: /programming/nodejs/ts/how-to-use-promise-all
 # id: how-to-use-promise-all
 title: Promise.all() - 병렬 처리 방법
 tags: [

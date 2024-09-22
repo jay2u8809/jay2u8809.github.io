@@ -1,5 +1,5 @@
 ---
-slug: /programming/nodejs/how-to-encode-base64
+slug: /programming/nodejs/tips/how-to-encode-base64
 # id: how-to-encode-base64
 title: Base64 인코딩하는 방법
 tags: [

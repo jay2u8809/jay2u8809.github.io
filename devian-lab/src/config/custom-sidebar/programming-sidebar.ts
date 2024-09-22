@@ -1,11 +1,24 @@
-import { SidebarItemConfig } from "@docusaurus/plugin-content-docs/lib/sidebars/types.js";
+import { SidebarItemConfig } from '@docusaurus/plugin-content-docs/lib/sidebars/types.js';
 
 const SidebarRootPath = 'programming';
-const SubSidebarRootPath = {
+
+const Category1 = {
   NodeJs: `${SidebarRootPath}/nodejs`,
   ShellScript: `${SidebarRootPath}/shell-script`,
   React: `${SidebarRootPath}/react`,
   Java: `${SidebarRootPath}/java`,
+};
+
+const Category2 = {
+  NodeJs: {
+    NestJs: `${Category1.NodeJs}/nestjs`,
+    Jest: `${Category1.NodeJs}/jest`,
+    Tips: `${Category1.NodeJs}/tips`,
+    TS: `${Category1.NodeJs}/ts`,
+  },
+  React: {
+    ReactNative: `${Category1.React}/react-native`,
+  }
 };
 
 const SubSidebarList: SidebarItemConfig[] = [
@@ -15,25 +28,47 @@ const SubSidebarList: SidebarItemConfig[] = [
     label: `Node.js`,
     description: `About JS, TS and Node.js`,
     items: [
+      // {
+      //   type: 'category',
+      //   label: `Nest.js`,
+      //   description: `About Nest.js`,
+      //   items: [
+      //     `${Category2.NodeJs.NestJs}/how-to-mocking-on-jest`,
+      //   ],
+      // },
       {
         type: 'category',
         label: `Jest`,
         description: `How to use Jest`,
         items: [
-          `${SubSidebarRootPath.NodeJs}/jest/how-to-mocking-on-jest`,
-          `${SubSidebarRootPath.NodeJs}/jest/how-to-do-unit-test-on-jest`,
-          `${SubSidebarRootPath.NodeJs}/jest/how-to-adopt-jest`,
+          `${Category2.NodeJs.Jest}/how-to-mocking-on-jest`,
+          `${Category2.NodeJs.Jest}/how-to-do-unit-test-on-jest`,
+          `${Category2.NodeJs.Jest}/how-to-adopt-jest`,
         ],
       },
-      `${SubSidebarRootPath.NodeJs}/how-to-convert-data-type`,
-      `${SubSidebarRootPath.NodeJs}/how-to-use-map-type`,
-      `${SubSidebarRootPath.NodeJs}/how-to-increase-nodejs-default-memory`,
-      `${SubSidebarRootPath.NodeJs}/how-to-install-nodenv`,
-      `${SubSidebarRootPath.NodeJs}/how-to-encode-base64`,
-      `${SubSidebarRootPath.NodeJs}/how-to-use-variable-arguments-func`,
-      `${SubSidebarRootPath.NodeJs}/comparison-of-loop`,
-      `${SubSidebarRootPath.NodeJs}/how-to-use-operator-logical-and-or`,
-      `${SubSidebarRootPath.NodeJs}/how-to-use-promise-all`,
+      {
+        type: 'category',
+        label: `Typescript`,
+        description: `About typescript`,
+        items: [
+          `${Category2.NodeJs.TS}/how-to-convert-data-type`,
+          `${Category2.NodeJs.TS}/how-to-use-map-type`,
+          `${Category2.NodeJs.TS}/how-to-use-variable-arguments-func`,
+          `${Category2.NodeJs.TS}/comparison-of-loop`,
+          `${Category2.NodeJs.TS}/how-to-use-operator-logical-and-or`,
+          `${Category2.NodeJs.TS}/how-to-use-promise-all`,
+        ],
+      },
+      {
+        type: 'category',
+        label: `Tips`,
+        description: `About node.js tips`,
+        items: [
+          `${Category2.NodeJs.Tips}/how-to-increase-nodejs-default-memory`,
+          `${Category2.NodeJs.Tips}/how-to-install-nodenv`,
+          `${Category2.NodeJs.Tips}/how-to-encode-base64`,
+        ],
+      },
     ],
   },
   // shell script
@@ -42,8 +77,8 @@ const SubSidebarList: SidebarItemConfig[] = [
     label: `ShellScript`,
     description: `About Shell Script`,
     items: [
-      `${SubSidebarRootPath.ShellScript}/how-to-set-default-value`,
-      `${SubSidebarRootPath.ShellScript}/how-to-check-shell`,
+      `${Category1.ShellScript}/how-to-set-default-value`,
+      `${Category1.ShellScript}/how-to-check-shell`,
     ],
   },
   // react
@@ -52,8 +87,8 @@ const SubSidebarList: SidebarItemConfig[] = [
     label: `React`,
     description: `About React`,
     items: [
-      `${SubSidebarRootPath.React}/how-to-use-if-else`,
-      `${SubSidebarRootPath.React}/how-to-use-map`,
+      `${Category1.React}/how-to-use-if-else`,
+      `${Category1.React}/how-to-use-map`,
     ],
   },
   // java
@@ -62,7 +97,7 @@ const SubSidebarList: SidebarItemConfig[] = [
     label: `Java`,
     description: `About Java`,
     items: [
-      `${SubSidebarRootPath.Java}/install-jdk-with-homebrew`,
+      `${Category1.Java}/install-jdk-with-homebrew`,
     ],
   },
 ]

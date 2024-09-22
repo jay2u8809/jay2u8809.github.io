@@ -1,5 +1,5 @@
 ---
-slug: /programming/nodejs/how-to-use-map-type
+slug: /programming/nodejs/ts/how-to-use-map-type
 # id: how-to-use-map-type
 title: Map 타입 사용방법
 tags: [

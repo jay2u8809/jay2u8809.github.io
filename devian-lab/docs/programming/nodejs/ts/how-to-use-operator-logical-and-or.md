@@ -1,5 +1,5 @@
 ---
-slug: /programming/nodejs/how-to-use-operator-logical-and-or
+slug: /programming/nodejs/ts/how-to-use-operator-logical-and-or
 # id: how-to-use-operator-logical-and-or
 title: Logical AND(&&) 와 Logical OR(||) 연산자
 tags: [

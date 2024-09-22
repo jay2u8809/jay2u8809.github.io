@@ -1,5 +1,5 @@
 ---
-slug: /programming/nodejs/comparison-of-loop
+slug: /programming/nodejs/ts/comparison-of-loop
 # id: comparison-of-loop
 title: for of 와 for in 반복문 비교
 tags: [

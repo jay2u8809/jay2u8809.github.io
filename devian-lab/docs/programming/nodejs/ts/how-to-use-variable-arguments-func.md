@@ -1,5 +1,5 @@
 ---
-slug: /programming/nodejs/how-to-use-variable-arguments-func
+slug: /programming/nodejs/ts/how-to-use-variable-arguments-func
 # id: how-to-use-variable-arguments-func
 title: 가변 인수 함수
 tags: [
