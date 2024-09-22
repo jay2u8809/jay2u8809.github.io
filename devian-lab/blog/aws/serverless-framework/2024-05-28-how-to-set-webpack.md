@@ -51,6 +51,8 @@ description: Webpack 을 이용한 AWS Lambda 소스코드 용량 줄이기
 
 > "Webpack 을 적용하여 AWS Lambda 에 업로드할 소스코드의 사이즈를 줄여본다"
 
+<!-- truncate -->
+
 ## Intro
 
   ```shell

@@ -53,6 +53,10 @@ description: React Native 에서 발생한 Android 빌드 에러를 해결해 �
 
 ---
 
+> ReactNative 의 안드로이드 빌드 에러(DeviceException)를 해결해 본다.
+
+<!-- truncate -->
+
 ## Intro
 
   React Native 를 이용해 Android 빌드 중 아래의 에러로 빌드에 실패했다.

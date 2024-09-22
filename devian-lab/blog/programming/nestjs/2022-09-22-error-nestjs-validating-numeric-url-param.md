@@ -49,6 +49,10 @@ description: Nest.js 에서 request 을 받을 때 발생한 validate 에러를 
 
 ---
 
+> Nest.js 에서 request 을 받을 때 발생한 validate 에러를 해결해 본다.
+
+<!-- truncate -->
+
 ## Intro
 
   Client 에서 URL에 데이터를 넣는 Request (QueryString 또는 Path Variable) 를 보낼 때, 문자열이 아닌 데이터(숫자 등)를 보내면 발생하는 에러를 해결해 본다.

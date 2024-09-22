@@ -51,6 +51,10 @@ description: React Native 에서 ES Lint 의 Parsing error 를 해결해 본다.
 
 ---
 
+> ReactNative 의 EsLint 에러를 해결해 본다.
+
+<!-- truncate -->
+
 ## Intro
 
   React Native 프로젝트에서 ES Lint 설정을 한 뒤, `.eslintrc.js` 파일을 조금 수정했다.

@@ -47,6 +47,10 @@ description: Git 의 adding files failed 에러를 알아보고 해결해 본다
 
 ---
 
+> Git 의 adding files failed 에러를 알아보고 해결해 본다.
+
+<!-- truncate -->
+
 ## Intro
 
   여러 개의 프로젝트를 하나의 Git Repository 에서 관리하고 있었다. 새롭게 Nest.js 프로젝트를 명령어(nest cli)를 통해 생성했고 생성한 프로젝트를 Git 에 Commit 하려고 하니 add 가 되지 않았다.  

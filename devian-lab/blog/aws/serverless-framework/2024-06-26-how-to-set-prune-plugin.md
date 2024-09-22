@@ -53,6 +53,8 @@ description: AWS Lambda 의 Code Storage Limit 해결방법
 
 > "Serverless Framework 의 Prune Plugin 으로 AWS Lambda 의 Code Storage Limit 을 해결한다."
 
+<!-- truncate -->
+
 ## Intro
 
   AWS 를 이용한 Serverless 아키텍쳐로 서비스를 운영한다면 AWS Lambda 를 반드시 쓰게 된다. AWS Lambda 는 가장 간편하고 저렴하며 활용도가 높은 서비스 중 하나이기에 다양한 처리에 사용할 수 있다. 

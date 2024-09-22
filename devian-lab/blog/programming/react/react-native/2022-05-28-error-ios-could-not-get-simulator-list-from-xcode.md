@@ -51,6 +51,10 @@ description: React Native 에서 발생한 xcode, podfile 관련 에러를 알�
 
 ---
 
+> ReactNative 의 iOS 빌드 에러(xcode, podfile)를 해결해 본다.
+
+<!-- truncate -->
+
 ## Intro
 
   React Native 를 이용해 iOS 빌드 중 아래의 2가지 에러로 빌드에 실패했다. 2가지 에러에 대한 원인을 찾아보고 해결해 보기로 했다.

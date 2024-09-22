@@ -41,6 +41,10 @@ description: Git 의 Remote Repository URL 을 변경해 본다.
 
 ---
 
+> Git 의 Remote Repository URL 을 변경해 본다.
+
+<!-- truncate -->
+
 ## Intro
 
   회사의 Gitlab 플랜을 변경하면서 사내 Gitlab 의 URL 도 함께 변경했다. 회사 자체적으로 운영하던 Git 서버를 다른 대행 업체를 통해 맡기는 형태로 운영 방식을 바꾸게 되면서 URL 로 함께 바뀌게 되었다. Git 의 URL 이 바뀌면서 그동안 사용하던 Git Repository 의 URL 도 모두 바뀌게 된 것이다.

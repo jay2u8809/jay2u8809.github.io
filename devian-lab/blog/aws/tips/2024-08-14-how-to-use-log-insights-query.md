@@ -47,6 +47,8 @@ description: AWS Cloudwatch 의 로그를 Log Insights 를 이용해 간편하�
 
 > "AWS Cloudatch 의 Log Insights 를 이용해 Cloudwatch 의 Log 를 검색한다."
 
+<!-- truncate -->
+
 ## Intro
 
   어플리케이션의 장애가 발생하거나 에러가 발생했을 때 또는 사용자User로부터의 문의를 받았을 때, 가장 먼저해야 할 일은? 당연히 로그Log를 찾아보는 일이다. 
