@@ -21,9 +21,9 @@ const sidebars: SidebarsConfig = {
   // But you can create a sidebar manually
   labDocsSidebar: [
     'intro',
+    ProgrammingSidebar,
     AWSSidebar,
     ToolSidebar,
-    ProgrammingSidebar,
     JapanSidebar,
   ],
 };
