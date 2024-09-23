@@ -82,6 +82,18 @@ description: Nodenv를 설치하여 여러 버전의 Node.js 를 관리하는 �
         export PATH="$HOME/.nodenv/bin:$PATH"
         eval "$(nodenv init -)"
       ```
+    
+    - 확인
+         
+      ```shell
+        $ curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
+        
+        Checking for `nodenv' in PATH: /usr/local/bin/nodenv
+        Checking for nodenv shims in PATH: OK
+        Checking `nodenv install' support: /usr/local/bin/nodenv-install (node-build 4.9.43)
+        Counting installed Node versions: 1 versions
+        Auditing installed plugins: OK
+      ```
 
   
 

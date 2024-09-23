@@ -133,7 +133,7 @@ description: Nest.js 로 어플리케이션을 개발할 환경을 구축하는 
 
   > Docker 를 이용해 PostreSQL 을 사용하도록 설정
 
-  - 참고: [Docker(Podman) 설치하기]('http://localhost:3000/docs/tools/docker/how-to-install-docker')
+  - 참고: [Docker(Podman) 설치하기](/docs/tools/docker/how-to-install-docker)
 
   ### 2-1) Docker-Compose 파일 작성
 
