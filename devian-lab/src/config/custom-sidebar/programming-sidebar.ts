@@ -57,6 +57,7 @@ const SubSidebarList: SidebarItemConfig[] = [
           `${Category2.NodeJs.TS}/comparison-of-loop`,
           `${Category2.NodeJs.TS}/how-to-use-operator-logical-and-or`,
           `${Category2.NodeJs.TS}/how-to-use-promise-all`,
+          `${Category2.NodeJs.TS}/how-to-use-nullish-coalescing`,
         ],
       },
       {
