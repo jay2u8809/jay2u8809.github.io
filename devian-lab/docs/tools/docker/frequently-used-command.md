@@ -46,119 +46,127 @@ description: Docker 의 명령어에 대해 정리한다.
 
   - include Podman commands
 
-### Build
+  ### Build
 
-  - Docker
+    - Docker
 
-    ```shell
-      $ docker build -f Dockerfile -t devian/spring-boot-docker-test:0.0.1 .
-    ```
+      ```shell
+        $ docker build -f Dockerfile -t devian/spring-boot-docker-test:0.0.1 .
+      ```
 
-  - Podman
+    - Podman
 
-    ```shell
-      $ podman build -f Dockerfile -t devian/spring-boot-docker-test:0.0.1 .
-    ```
+      ```shell
+        $ podman build -f Dockerfile -t devian/spring-boot-docker-test:0.0.1 .
+      ```
 
-### Run
+  ### Run
 
-  - Docker
+    - Docker
+      + `port`: _8080:80_ 은 **로컬PC의 포트번호(8080):컨테이너의 포트번호(80)** 를 의미
 
-    ```shell
-      $ docker run -p 8080:80 devian/spring-boot-docker-test:0.0.1
-    ```
+      ```shell
+        $ docker run -p 8080:80 devian/spring-boot-docker-test:0.0.1
+      ```
 
-### Stop
+  ### Stop
 
-  - Docker
+    - Docker
 
-    ```shell
-      $ docker stop $(docker ps -q)
-    ```
+      ```shell
+        $ docker stop $(docker ps -q)
+      ```
 
-### Access Container
+  ### Access Container
 
-  - Check docker container id
+    - Check docker container id
 
-    ```shell
-      $ docker ps
-    ```
-  
-  - Access docker container
-    + **-it**: `i` (STDIN 표준 입력), `t`(가상 tty) 을 통한 접속
-      - **tty**: teletypewriter, 리눅스의 디바이스 드라이브 중 콘솔 or 터미널을 의미 (※ [Linux - 콘솔, 터미널, TTY 이해하기](https://booolean.tistory.com/666))
+      ```shell
+        $ docker ps
+      ```
+    
+    - Access docker container
+      + **-it**: `i` (STDIN 표준 입력), `t`(가상 tty) 을 통한 접속
+        - **tty**: teletypewriter, 리눅스의 디바이스 드라이브 중 콘솔 or 터미널을 의미 (※ [Linux - 콘솔, 터미널, TTY 이해하기](https://booolean.tistory.com/666))
 
-    ```shell
-      $ docker exec -it ${CONTAINER_ID} /bin/bash
-    ```
+      ```shell
+        $ docker exec -it ${CONTAINER_ID} /bin/bash
+      ```
 
 ## List Container and Image
-### List Container (Process)
+  ### List Container (Process)
 
-  - Docker
+    - Docker
 
-    ```shell
-      $ docker ps
-      $ docker ps -a
+      ```shell
+        $ docker ps
+        $ docker ps -a
 
-      $ docker container
-      $ docker container -a
-    ```
+        $ docker container
+        $ docker container -a
+      ```
 
-  - Podman
+    - Podman
 
-    ```shell
-      $ podman ps
-      $ podman ps -a
+      ```shell
+        $ podman ps
+        $ podman ps -a
 
-      $ podman container
-      $ podman container -a
-    ```
+        $ podman container
+        $ podman container -a
+      ```
 
-### List Image
+  ### List Image
 
-  - Docker
+    - Docker
 
-    ```shell
-      $ docker image ls
-      $ docker image ls -a
-    ```
+      ```shell
+        $ docker image ls
+        $ docker image ls -a
+      ```
 
 
 
 ## Remove Container and Image
-<!-- ## Prune -->
-### Remove Container (Process)
 
-  - Docker
+  ### Prune
 
     ```shell
-      $ docker rm ${CONTAINER_ID}
-      $ docker rm $(docker ps -q -a)  # remove all container
+      $ docker system prune -a  # Remove all unused images not just dangling ones
+      $ docker system prune # Remove unused data
+      $ docker volume prune # Remove unused local volumes
     ```
+  ### Remove Container (Process)
 
-  - Podman
+    - Docker
 
-    ```shell
-      $ podman rm ${CONTAINER_ID}
-      $ podman rm -f ${CONTAINER_ID} # force option
-    ```
+      ```shell
+        $ docker rm ${CONTAINER_ID}
+        $ docker rm $(docker ps -q -a)  # remove all container
+      ```
 
-### Remove Image
+    - Podman
 
-  - Docker
+      ```shell
+        $ podman rm ${CONTAINER_ID}
+        $ podman rm -f ${CONTAINER_ID} # force option
+      ```
 
-    ```shell
-      $ docker rmi ${IMAGE_ID}
-      $ docker rmi $(docker images -q)  # remove all images
-    ```
+  ### Remove Image
 
-  - Podman
+    - Docker
 
-    ```shell
-      $ podman rmi ${IMAGE_ID}
-      $ podman rmi -f ${IMAGE_ID} # force option
-    ```
+      ```shell
+        $ docker rmi ${IMAGE_ID}
+        $ docker rmi $(docker images -q)  # remove all images
+      ```
+
+    - Podman
+
+      ```shell
+        $ podman rmi ${IMAGE_ID}
+        $ podman rmi -f ${IMAGE_ID} # force option
+      ```
 
 
 
