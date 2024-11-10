@@ -3,23 +3,26 @@ type SidebarCountType = number | 'ALL';
 
 const sidebarCount = (count?: number): SidebarCountType => count || 'ALL';
 export const BlogConfig = {
-  showReadingTime: false,
   editUrl: undefined,
   // default
   defaultBlog: {
-    label: 'Blog',
+    label: 'Posts',
     routeBasePath: '/blog',
     directoryPath: './blog',
     blogSidebarTitle: undefined,
+    showReadingTime: true,
     blogSidebarCount: sidebarCount,
+    postsPerPage: sidebarCount,
   },
-  essayBlog: {
-    id:'essay-blog',
-    label: 'Essay',
-    routeBasePath: '/essay',
-    directoryPath: './essay',
+  devPosts: {
+    id:'dev-posts',
+    label: 'Dev',
+    routeBasePath: '/dev-posts',
+    directoryPath: './dev-posts',
     blogSidebarTitle: undefined,
+    showReadingTime: true,
     blogSidebarCount: sidebarCount,
+    postsPerPage: sidebarCount,
   }
 }
 
@@ -28,7 +31,7 @@ export const DocsConfig = {
   docsType: 'docSidebar',
   // default
   defaultDocs: {
-    label: 'Docs',
+    label: 'Wiki',
     sidebarPath: './sidebars.ts',
     sidebarId: 'labDocsSidebar',
     routeBasePath: '/docs',
@@ -47,17 +50,17 @@ const config = {
     menu: [
       // === Blog ===
       {
-        // Defualt Blog
-        label: BlogConfig.defaultBlog.label,
-        to: BlogConfig.defaultBlog.routeBasePath, 
+        // Dev Blog
+        label: BlogConfig.devPosts.label,
+        to: BlogConfig.devPosts.routeBasePath, 
         visible: true,
         sort: 1,
       },
       {
-        // Essay Blog
-        label: BlogConfig.essayBlog.label,
-        to: BlogConfig.essayBlog.routeBasePath, 
-        visible: false,
+        // Defualt Blog
+        label: BlogConfig.defaultBlog.label,
+        to: BlogConfig.defaultBlog.routeBasePath, 
+        visible: true,
         sort: 2,
       },
       // ===// Blog ===
@@ -69,17 +72,40 @@ const config = {
         type: DocsConfig.docsType,
         sidebarId: DocsConfig.defaultDocs.sidebarId,
         visible: true,
-        sort: 2,
+        sort: 3,
       },
       // ===// Docs ===
     ],
-    community: [
+    Tags: [
       {
-        label: 'Velog',
-        href: 'https://velog.io/@jay2u8809/posts',
+        // Dev Blog
+        label: `${BlogConfig.devPosts.label}`,
+        to: `${BlogConfig.devPosts.routeBasePath}/tags`, 
         visible: true,
         sort: 1,
-      }
+      },
+      {
+        // Defualt Blog
+        label: `${BlogConfig.defaultBlog.label}`,
+        to: `${BlogConfig.defaultBlog.routeBasePath}/tags`, 
+        visible: true,
+        sort: 2,
+      },
+      {
+        // Docs
+        label: `${DocsConfig.defaultDocs.label}`,
+        to: `${DocsConfig.defaultDocs.routeBasePath}/tags`, 
+        visible: true,
+        sort: 3,
+      },
+    ],
+    community: [
+      // {
+      //   label: 'Velog',
+      //   href: 'https://velog.io/@jay2u8809/posts',
+      //   visible: true,
+      //   sort: 1,
+      // }
     ],
     more: [
       {
@@ -89,10 +115,16 @@ const config = {
         sort: 1,
       },
       {
+        label: 'Velog',
+        href: 'https://velog.io/@jay2u8809/posts',
+        visible: true,
+        sort: 2,
+      },
+      {
         label: 'About Onigiri.J',
         href: '/page/resume/profile',
         visible: false,
-        sort: 2,
+        sort: 3,
       },
     ],
   },

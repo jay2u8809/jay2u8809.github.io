@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import CommonConfig, { BlogConfig, DocsConfig, PositionType } from './src/config/common.config';
 
 const config: Config = {
-  title: 'Dev.ian Lab',
+  title: 'Dev.ian',
   tagline: '잡ː담(談)',
   favicon: 'img/onigiri_favicon.jpg',
 
@@ -44,10 +44,11 @@ const config: Config = {
           editUrl: DocsConfig.editUrl,
         },
         blog: {
-          showReadingTime: BlogConfig.showReadingTime,
+          showReadingTime: BlogConfig.defaultBlog.showReadingTime,
           editUrl: BlogConfig.editUrl,
           blogSidebarTitle: BlogConfig.defaultBlog.blogSidebarTitle,
-          blogSidebarCount: BlogConfig.defaultBlog.blogSidebarCount(0),
+          blogSidebarCount: BlogConfig.defaultBlog.blogSidebarCount(8),
+          postsPerPage: BlogConfig.defaultBlog.postsPerPage(5),
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -102,19 +103,33 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Tags',
           items: [
-            ...CommonConfig.links.community
+            ...CommonConfig.links.Tags
               .filter(item => !!item.visible)
               .sort((before, after) => before.sort - after.sort)
               .map(item => {
                 return {
                   label: item.label,
-                  href: item.href,
+                  to: item.to,
                 }
               }),
           ],
         },
+        // {
+        //   title: 'Community',
+        //   items: [
+        //     ...CommonConfig.links.community
+        //       .filter(item => !!item.visible)
+        //       .sort((before, after) => before.sort - after.sort)
+        //       .map(item => {
+        //         return {
+        //           label: item.label,
+        //           href: item.href,
+        //         }
+        //       }),
+        //   ],
+        // },
         {
           title: 'More',
           items: [
@@ -144,18 +159,15 @@ const config: Config = {
       '@docusaurus/plugin-content-blog',
       {
         /**
-         * Required for any multi-instance plugin
+         * Docs: https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog
          */
-        id: BlogConfig.essayBlog.id,
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
-        routeBasePath: BlogConfig.essayBlog.routeBasePath,
-        /**
-         * Path to data on filesystem relative to site dir.
-         */
-        path: BlogConfig.essayBlog.directoryPath,
+        id: BlogConfig.devPosts.id,
+        routeBasePath: BlogConfig.devPosts.routeBasePath,
+        path: BlogConfig.devPosts.directoryPath,
+        showReadingTime: BlogConfig.devPosts.showReadingTime,
+        blogSidebarCount: BlogConfig.devPosts.blogSidebarCount(8),
+        blogSidebarTitle: BlogConfig.devPosts.blogSidebarTitle,
+        postsPerPage: BlogConfig.devPosts.postsPerPage(5),
       },
     ],
   ],
