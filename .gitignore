@@ -24,3 +24,6 @@ yarn-error.log*
 /nest-example-project
 /**/onigiri-samples
 /**/sh
+
+# idea
+/**/.idea
