@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[890],{10890:(e,i,r)=>{r.d(i,{createInfoServices:()=>s.v});var s=r(97021);r(19369)}}]);

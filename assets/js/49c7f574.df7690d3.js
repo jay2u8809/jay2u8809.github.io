@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[1426],{67540:(e,i,r)=>{r.r(i),r.d(i,{default:()=>u});var n=r(31054),s=r(74848);function u(){return(0,s.jsx)(n.A,{title:"resume page",description:"resume",children:"RESUME"})}}}]);
