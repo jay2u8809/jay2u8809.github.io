@@ -3,12 +3,9 @@ slug: 2024-08-14-how-to-change-git-remote-repo-url
 title: Git - Remote Repository URL 을 바꿔보자
 authors: [devian]
 tags: [
-  devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
+  devian-lab,
+  dev-posts,
   git,
-  remote repository,
 ]
 keywords: [
   devian-lab,

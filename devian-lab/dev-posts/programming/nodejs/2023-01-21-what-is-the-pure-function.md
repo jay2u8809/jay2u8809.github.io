@@ -4,17 +4,10 @@ title: Typescript - 순수함수란?
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
-  javascript,
-  typescript,
-  js,
-  ts,
-  자바스크립트,
-  타입스크립트,
+  dev-posts,
+  JavaScript,
+  TypeScript,
   pure function,
-  순수함수,
 ]
 keywords: [
   devian-lab,

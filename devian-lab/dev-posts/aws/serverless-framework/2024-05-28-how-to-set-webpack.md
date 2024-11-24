@@ -4,15 +4,11 @@ title: AWS Lambda - Webpack 으로 Upload Size Limit 해결하기
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
+  dev-posts,
   aws,
   lambda,
-  serverless,
   serverless framework,
   webpack,
-  multiple entry,
 ]
 keywords: [
   devian-lab,

@@ -4,16 +4,9 @@ title: ReactNative - [Error] ES Lint - Parsing error
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
+  dev-posts,
   react native,
-  ios,
-  error,
   trouble shooting,
-  ios build failed,
-  could not get the simulator list from xcode,
-  could not find podfile,
 ]
 keywords: [
   devian-lab,

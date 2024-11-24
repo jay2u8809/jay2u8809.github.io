@@ -4,13 +4,10 @@ title: AWS Cloudwatch - 로그를 간편하게 검색하는 방법
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
+  dev-posts,
   aws,
   cloudwatch,
-  log,
-  loginsight,
+  log insights,
 ]
 keywords: [
   devian-lab,

@@ -4,17 +4,10 @@ title: Typescript - filter 함수의 사용법
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
-  javascript,
-  typescript,
-  js,
-  ts,
-  filter,
-  자바스크립트,
-  타입스크립트,
-  필터함수,
+  dev-posts,
+  JavaScript,
+  TypeScript,
+  filter 함수,
 ]
 keywords: [
   devian-lab,

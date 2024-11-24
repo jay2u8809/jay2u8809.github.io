@@ -4,16 +4,11 @@ title: AWS Lambda - Code Storage Limit 해결방법
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
+  dev-posts,
   aws,
   lambda,
-  serverless,
   serverless framework,
-  code storage limit exceeded,
   prune,
-  코드스토리지,
 ]
 keywords: [
   devian-lab,

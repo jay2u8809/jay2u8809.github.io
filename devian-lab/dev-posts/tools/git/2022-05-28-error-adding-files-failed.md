@@ -4,14 +4,9 @@ title: Git - [Error] adding files failed
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
+  dev-posts,
   git,
-  error,
   trouble shooting,
-  adding files failed,
-  does not have a commit checked out,
 ]
 keywords: [
   devian-lab,

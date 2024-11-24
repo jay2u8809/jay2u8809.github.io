@@ -4,17 +4,10 @@ title: ReactNative - [Error] Android - DeviceException
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
+  dev-posts,
   react native,
-  android,
-  error,
   trouble shooting,
-  android build failed,
-  installDebug,
-  DeviceException,
-  JAVA_HOME,
+  android,
 ]
 keywords: [
   devian-lab,

@@ -4,15 +4,10 @@ title: Nest.js - [Error] number 유효성 체크
 authors: [devian]
 tags: [
   devian-lab, 
-  dev.ian,
-  Jobː談,
-  blog,
+  dev-posts,
   nest.js,
-  error,
   trouble shooting,
-  validate,
-  query string,
-  path variable,
+  validation,
 ]
 keywords: [
   devian-lab,
