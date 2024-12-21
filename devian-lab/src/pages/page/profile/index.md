@@ -11,43 +11,16 @@ title: Resume - Profile
 ---
 
   - 6 years web application engineer experience
-  - Proficient in Typescript, Java
+  - Proficient in Typescript
   - Hand-on experience in AWS Serverless Architecture
     + AWS Certification
 
 <br />
 
-
-
-<!-- ## Working Experience
----
-
-  #### 株式会社
-
-    - 2021.06 ~ Present
-      + Geolocation Information Service (Map, LBS Mobile App)
-      + [Official Homepage]()
-    - DevOps Engineer
-      + Mobile App Service Back-End & Infra
-    - Develop applications using Typecript, AWS
-    - Conduct troubleshooting, analysis and support
-
-  #### 株式会社
-
-    - 2018.10 ~ 2021.05
-      + E-Commerce System Integration
-      + [Official Homepage]()
-    - Software Engineer
-    - Develop multiple E-commerce web applications using Java, Javascript, AWS
-
-<br /> -->
-
-
-
 ## Projects
 ---
     
-  #### LBS Mobile App Service
+  ### LBS Mobile App Service
 
     - 2021.06 ~ Present
     - DevOps Engineer
@@ -59,18 +32,26 @@ title: Resume - Profile
         - Batch app for data statistics
         - Back-office web app
     - Skills
-      ```text
-        - Typescript
-        - Nest.js(8.x), React
-        - DyanmoDB
-        - Serverless Framework
-        - Serverless Architecture
-          + ECS Fargate
-          + AWS Lambda
-          + API Gateway
+      ```yaml
+        Language:
+          - Typescript
+        Framework:
+          - Nest.js(8.x)
+          - React
+        Architecture: 
+          - Serverless: 
+            - ECS Fargate
+            - AWS Lambda
+            - API Gateway
+            - DynamoDB
+        Deployment:
+          - Serverless Framework
+          - Terraform
+        Etc:
+          - GraphQL
       ```
 
-  #### E-commerce System Integration
+  ### E-commerce System Integration
 
     - Projects
       + 2020.10 ~ 2021.05
@@ -84,12 +65,21 @@ title: Resume - Profile
     - Software Engineer
       + Develop multiple E-commerce web applications using Java, Javascript, AWS
     - Skills
-      ```text
-        - Java8, Javascript
-        - SpringBoot(2.x), Vaddin, ThymeLeaf, Vue.js(1.x)
-        - PostgreSQL(9.x), Oracle Database(12.x)
-        - Jenkins
-        - Tomcat(EC2)
+      ```yaml
+        Language:
+          - Java8
+          - Javascript
+        Framework:
+          - SpringBoot(2.x)
+          - Vaddin
+          - ThymeLeaf
+          - Vue.js(1.x)
+        DB: 
+          - PostgreSQL(9.x)
+          - Oracle Database(12.x)
+        Deployment:
+          - Jenkins
+          - Tomcat(EC2)
       ```
 
 <br />
@@ -119,9 +109,8 @@ title: Resume - Profile
 
 ## Diagram
 ---
-
+<p align="center">
   ```mermaid
-
     pie 
     
       title Rate of Experience
@@ -130,6 +119,4 @@ title: Resume - Profile
       "Infra" : 35
       "Front-End" : 10
   ```
-
-
-
+</p>
