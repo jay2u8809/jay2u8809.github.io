@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Dev.ian Blog</title>
+        <title>Dev.ian Lab Blog</title>
         <link>https://jay2u8809.github.io/blog</link>
-        <description>Dev.ian Blog</description>
+        <description>Dev.ian Lab Blog</description>
         <lastBuildDate>Sun, 24 Nov 2024 06:44:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>

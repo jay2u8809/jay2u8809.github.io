@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jay2u8809.github.io/dev-posts</id>
-    <title>Dev.ian Blog</title>
+    <title>Dev.ian Lab Blog</title>
     <updated>2024-08-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jay2u8809.github.io/dev-posts"/>
-    <subtitle>Dev.ian Blog</subtitle>
+    <subtitle>Dev.ian Lab Blog</subtitle>
     <icon>https://jay2u8809.github.io/img/onigiri_favicon.jpg</icon>
     <entry>
         <title type="html"><![CDATA[AWS Cloudwatch - 로그를 간편하게 검색하는 방법]]></title>
