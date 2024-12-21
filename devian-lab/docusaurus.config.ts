@@ -4,8 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 import CommonConfig, { BlogConfig, DocsConfig, PositionType } from './src/config/common.config';
 
 const config: Config = {
-  title: 'Dev.ian',
-  tagline: '잡ː담(談)',
+  title: 'Dev.ian Lab',
+  tagline: '<code> 잡ː담(談) </code>',
   favicon: 'img/onigiri_favicon.jpg',
 
   // Set the production url of your site here
@@ -48,7 +48,7 @@ const config: Config = {
           editUrl: BlogConfig.editUrl,
           blogSidebarTitle: BlogConfig.defaultBlog.blogSidebarTitle,
           blogSidebarCount: BlogConfig.defaultBlog.blogSidebarCount(8),
-          postsPerPage: BlogConfig.defaultBlog.postsPerPage(5),
+          postsPerPage: BlogConfig.defaultBlog.postsPerPage(3),
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -61,7 +61,8 @@ const config: Config = {
     // Replace with your project's social card
     image: undefined,
     navbar: {
-      title: 'Onigiri',
+      style: 'dark',
+      title: 'Dev.ian Lab',
       logo: {
         alt: 'Onigiri Logo',
         src: 'img/onigiri_icon.jpg',
@@ -167,7 +168,7 @@ const config: Config = {
         showReadingTime: BlogConfig.devPosts.showReadingTime,
         blogSidebarCount: BlogConfig.devPosts.blogSidebarCount(8),
         blogSidebarTitle: BlogConfig.devPosts.blogSidebarTitle,
-        postsPerPage: BlogConfig.devPosts.postsPerPage(5),
+        postsPerPage: BlogConfig.devPosts.postsPerPage(3),
       },
     ],
   ],

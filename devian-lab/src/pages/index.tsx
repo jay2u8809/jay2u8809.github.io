@@ -20,8 +20,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to={BlogConfig.defaultBlog.routeBasePath}>
-            View Blog Posts...
+            to={BlogConfig.devPosts.routeBasePath}>
+            View Posts...
           </Link>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Onigiri.J's Blog <head />">
+      description="Dev.ian's Blog <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -17,7 +17,7 @@ const FeatureList: FeatureItem[] = [
     image: null,
     description: (
       <>
-        Essay <br /> Travel <br /> Review
+        {/* Essay <br /> Travel <br /> Review */}
       </>
     ),
   },
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     image: null,
     description: (
       <>
-        Development <br /> Wiki <br /> Debugging 
+        {/* Development <br /> Wiki <br /> Debugging  */}
       </>
     ),
   },
