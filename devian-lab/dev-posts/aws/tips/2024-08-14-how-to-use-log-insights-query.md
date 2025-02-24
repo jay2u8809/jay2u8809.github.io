@@ -3,7 +3,8 @@ slug: 2024-08-14-how-to-use-log-insights-query
 title: AWS Cloudwatch - 로그를 간편하게 검색하는 방법
 authors: [devian]
 tags: [
-  devian-lab, 
+  devian-lab,
+  Jobː談,
   dev-posts,
   aws,
   cloudwatch,
@@ -20,11 +21,13 @@ keywords: [
 description: AWS Cloudwatch 의 로그를 Log Insights 를 이용해 간편하게 검색해 본다.
 ---
 
-<!--title -->
-## [Jobː談] Log Insights 로 CloudWatch Log 검색하기
-<!--//title -->
-
+> "AWS Cloudatch 의 Log Insights 를 이용해 Cloudwatch 의 Log 를 검색한다."
 <!-- truncate -->
+
+
+
+
+
 
 <!-- 
 ```json
@@ -38,14 +41,13 @@ description: AWS Cloudwatch 의 로그를 Log Insights 를 이용해 간편하�
 
 ```yaml
   author: Dev.ian
-  createdAt: 2024-05-21
-  updatedAt: 2024-08-14
+  createdAt: 2024/05/21
+  updatedAt: 2024/08/14
 ```
 
----
-
-> "AWS Cloudatch 의 Log Insights 를 이용해 Cloudwatch 의 Log 를 검색한다."
-
+<!--title -->
+## Log Insights 로 CloudWatch Log 검색하기
+<!--//title -->
 
 
 ## Intro
