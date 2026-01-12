@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkonigiri=globalThis.webpackChunkonigiri||[]).push([[7472],{55513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"index","permalink":"/blog/index","unlisted":false,"date":"2024-11-24T06:44:46.000Z"}]}')}}]);

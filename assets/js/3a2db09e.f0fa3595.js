@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[8121],{68070:a=>{a.exports=JSON.parse('{"tags":[{"label":"devian-lab","permalink":"/blog/tags/devian-lab","count":1},{"label":"blog","permalink":"/blog/tags/blog","count":1}]}')}}]);

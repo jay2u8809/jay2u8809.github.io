@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkonigiri=self.webpackChunkonigiri||[]).push([[104],{57723:(e,i,r)=>{r.d(i,{createPieServices:()=>s.f});var s=r(88685);r(19369)}}]);
