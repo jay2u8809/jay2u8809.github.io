@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkonigiri=globalThis.webpackChunkonigiri||[]).push([[890],{10890(i,e,a){a.d(e,{createInfoServices:()=>r.v});var r=a(97021);a(19369)}}]);

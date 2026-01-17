@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkonigiri=globalThis.webpackChunkonigiri||[]).push([[2116],{96098(e){e.exports=JSON.parse('{"metadata":{"permalink":"/dev-posts","page":1,"postsPerPage":3,"totalPages":5,"totalCount":13,"nextPage":"/dev-posts/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkonigiri=globalThis.webpackChunkonigiri||[]).push([[5901],{75901(i,e,a){a.d(e,{createTreemapServices:()=>r.d});var r=a(51633);a(87960)}}]);

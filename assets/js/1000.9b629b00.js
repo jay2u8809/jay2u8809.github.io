@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkonigiri=globalThis.webpackChunkonigiri||[]).push([[1e3],{91e3(i,e,a){a.d(e,{createRadarServices:()=>r.f});var r=a(87846);a(87960)}}]);
