@@ -1,0 +1,90 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.labDocsSidebar.category.Promgramming": {
+    "message": "Promgramming",
+    "description": "The label for category 'Promgramming' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Node.js": {
+    "message": "Node.js",
+    "description": "The label for category 'Node.js' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Nest.js": {
+    "message": "Nest.js",
+    "description": "The label for category 'Nest.js' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Jest": {
+    "message": "Jest",
+    "description": "The label for category 'Jest' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Typescript": {
+    "message": "Typescript",
+    "description": "The label for category 'Typescript' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.nodejs-tips": {
+    "message": "Tips",
+    "description": "The label for category 'Tips' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.ShellScript": {
+    "message": "ShellScript",
+    "description": "The label for category 'ShellScript' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.React": {
+    "message": "React",
+    "description": "The label for category 'React' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.ReactNative": {
+    "message": "ReactNative",
+    "description": "The label for category 'ReactNative' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Java": {
+    "message": "Java",
+    "description": "The label for category 'Java' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.AWS": {
+    "message": "AWS",
+    "description": "The label for category 'AWS' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Serverless Framework": {
+    "message": "Serverless Framework",
+    "description": "The label for category 'Serverless Framework' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.aws-tips": {
+    "message": "Tips",
+    "description": "The label for category 'Tips' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Amplify": {
+    "message": "Amplify",
+    "description": "The label for category 'Amplify' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Tools": {
+    "message": "Tools",
+    "description": "The label for category 'Tools' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Docker": {
+    "message": "Docker",
+    "description": "The label for category 'Docker' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Git": {
+    "message": "Git",
+    "description": "The label for category 'Git' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.WSL": {
+    "message": "WSL",
+    "description": "The label for category 'WSL' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Editor": {
+    "message": "Editor",
+    "description": "The label for category 'Editor' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.Mac": {
+    "message": "Mac",
+    "description": "The label for category 'Mac' in sidebar 'labDocsSidebar'"
+  },
+  "sidebar.labDocsSidebar.category.일본 생활": {
+    "message": "일본 생활",
+    "description": "The label for category '일본 생활' in sidebar 'labDocsSidebar'"
+  }
+}
