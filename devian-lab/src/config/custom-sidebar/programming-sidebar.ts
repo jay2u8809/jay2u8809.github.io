@@ -3,6 +3,7 @@ import { SidebarItemConfig } from '@docusaurus/plugin-content-docs/lib/sidebars/
 const SidebarRootPath = 'programming';
 
 const Category1 = {
+  TypeScript: `${SidebarRootPath}/typescript`,
   NodeJs: `${SidebarRootPath}/nodejs`,
   ShellScript: `${SidebarRootPath}/shell-script`,
   React: `${SidebarRootPath}/react`,
@@ -14,7 +15,6 @@ const Category2 = {
     NestJs: `${Category1.NodeJs}/nestjs`,
     Jest: `${Category1.NodeJs}/jest`,
     Tips: `${Category1.NodeJs}/tips`,
-    TS: `${Category1.NodeJs}/ts`,
   },
   React: {
     ReactNative: `${Category1.React}/react-native`,
@@ -22,11 +22,28 @@ const Category2 = {
 };
 
 const SubSidebarList: SidebarItemConfig[] = [
+  // typescript
+  {
+    type: 'category',
+    label: `TypeScript`,
+    description: `About TypeScript`,
+    items: [
+      `${Category1.TypeScript}/how-to-convert-data-type`,
+      `${Category1.TypeScript}/how-to-use-map-type`,
+      `${Category1.TypeScript}/how-to-use-variable-arguments-func`,
+      `${Category1.TypeScript}/comparison-of-loop`,
+      `${Category1.TypeScript}/how-to-use-operator-logical-and-or`,
+      `${Category1.TypeScript}/how-to-use-promise-all`,
+      `${Category1.TypeScript}/how-to-use-nullish-coalescing`,
+      `${Category1.TypeScript}/how-to-use-filter-func`,
+      `${Category1.TypeScript}/what-is-the-pure-function`,
+    ],
+  },
   // node.js
   {
     type: 'category',
     label: `Node.js`,
-    description: `About JS, TS and Node.js`,
+    description: `About Node.js`,
     items: [
       {
         type: 'category',
@@ -48,20 +65,7 @@ const SubSidebarList: SidebarItemConfig[] = [
       },
       {
         type: 'category',
-        label: `Typescript`,
-        description: `About typescript`,
-        items: [
-          `${Category2.NodeJs.TS}/how-to-convert-data-type`,
-          `${Category2.NodeJs.TS}/how-to-use-map-type`,
-          `${Category2.NodeJs.TS}/how-to-use-variable-arguments-func`,
-          `${Category2.NodeJs.TS}/comparison-of-loop`,
-          `${Category2.NodeJs.TS}/how-to-use-operator-logical-and-or`,
-          `${Category2.NodeJs.TS}/how-to-use-promise-all`,
-          `${Category2.NodeJs.TS}/how-to-use-nullish-coalescing`,
-        ],
-      },
-      {
-        type: 'category',
+        key: 'nodejs-tips',
         label: `Tips`,
         description: `About node.js tips`,
         items: [
@@ -114,7 +118,7 @@ const SubSidebarList: SidebarItemConfig[] = [
 
 export const ProgrammingSidebar: SidebarItemConfig = {
   type: 'category',
-  label: 'Promgramming',
+  label: 'Programming',
   description: 'About P.L',
   items: [...SubSidebarList],
 };

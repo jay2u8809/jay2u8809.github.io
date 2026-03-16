@@ -28,7 +28,12 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ko',
-    locales: ['ko'],
+    locales: ['ko', 'en', 'ja'],
+    localeConfigs: {
+      ko: { label: '한국어' },
+      en: { label: 'English' },
+      ja: { label: '日本語' },
+    },
   },
   markdown: {
     mermaid: true,
@@ -80,6 +85,10 @@ const config: Config = {
               position: 'left' as PositionType,
             }
           }),
+        {
+          type: 'localeDropdown',
+          position: 'right' as PositionType,
+        },
         {
           ...CommonConfig.links.more.find(item => item.label.toLowerCase() === 'github' && item.visible),
           position: 'right' as PositionType,

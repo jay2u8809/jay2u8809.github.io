@@ -20,6 +20,7 @@ const SubSidebarList: SidebarItemConfig[] = [
   },
   {
     type: 'category',
+    key: 'aws-tips',
     label: `Tips`,
     description: `About How to use AWS Services`,
     items: [
