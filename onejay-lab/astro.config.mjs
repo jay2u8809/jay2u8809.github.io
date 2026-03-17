@@ -10,6 +10,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Onejay Lab',
+			customCss: ['./src/styles/global.css'],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/jay2u8809' }],
 			defaultLocale: 'root',
 			locales: {

@@ -1,0 +1,10 @@
+/*
+ * Fix: starlight-blog의 Blog.astro가 프로덕션 빌드 시
+ * `:global(.content-panel:first-of-type) { display: none }` 를
+ * 홈페이지(splash 템플릿)에도 주입하는 버그를 수정한다.
+ *
+ * .hero를 포함한 content-panel = splash 템플릿 페이지이므로 표시를 복원한다.
+ */
+.content-panel:first-of-type:has(.hero) {
+  display: block !important;
+}
