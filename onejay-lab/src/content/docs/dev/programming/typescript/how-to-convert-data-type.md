@@ -11,7 +11,7 @@ description: Javascript에서 여러 데이터 타입을 변환하는 방법을 
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-05-28",
   "updatedAt": "2024-08-25"
 }
@@ -19,7 +19,7 @@ description: Javascript에서 여러 데이터 타입을 변환하는 방법을 
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-05-28
   updatedAt: 2024-08-25
 ```

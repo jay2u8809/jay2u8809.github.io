@@ -11,7 +11,7 @@ description: js 의 map 타입의 자료구조를 사용하는 방법에 대해 
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2021-10-10",
   "updatedAt": "2021-10-10"
 }
@@ -19,7 +19,7 @@ description: js 의 map 타입의 자료구조를 사용하는 방법에 대해 
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2021-10-10
   updatedAt: 2021-10-10
 ```

@@ -10,7 +10,7 @@ description: Git 의 Remote Repository URL 을 변경해 본다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-06-20",
   "updatedAt": "2024-08-18"
 }
@@ -18,7 +18,7 @@ description: Git 의 Remote Repository URL 을 변경해 본다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-06-20
   updatedAt: 2024-08-18
 ```

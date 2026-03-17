@@ -11,7 +11,7 @@ description: Node.js 의 Heap Memory 를 설정하는 방법에 대해 정리한
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-05-29",
   "updatedAt": "2024-08-20"
 }
@@ -19,7 +19,7 @@ description: Node.js 의 Heap Memory 를 설정하는 방법에 대해 정리한
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-05-29
   updatedAt: 2024-08-20
 ```
@@ -34,17 +34,17 @@ description: Node.js 의 Heap Memory 를 설정하는 방법에 대해 정리한
 
   #### Example
   
-    - 4GB (1024 * 4) 지정
+  - 4GB (1024 * 4) 지정
 
-      ```shell
-        $ export NODE_OPTIONS=--max_old_space_size=4096
-      ```
+    ```shell
+      $ export NODE_OPTIONS=--max_old_space_size=4096
+    ```
 
-    - 8GB (1024 * 8) 지정
+  - 8GB (1024 * 8) 지정
 
-      ```shell
-        $ export NODE_OPTIONS=--max_old_space_size=8192
-      ```
+    ```shell
+      $ export NODE_OPTIONS=--max_old_space_size=8192
+    ```
 
 
 ## 메모리 사이즈를 지정해서 Node.js 를 실행
@@ -53,13 +53,13 @@ description: Node.js 의 Heap Memory 를 설정하는 방법에 대해 정리한
 
   #### Example
    
-    - ```node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js```
+  - ```node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js```
 
-    - Sample Code
+  - Sample Code
 
-      ```shell
-        $ node --max_old_space_size=4096 sample-script.js
-      ```
+    ```shell
+      $ node --max_old_space_size=4096 sample-script.js
+    ```
 
 ## package.json 에서 설정
 
@@ -67,24 +67,24 @@ description: Node.js 의 Heap Memory 를 설정하는 방법에 대해 정리한
 
   #### Example
     
-    - ``` "start": "node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js" ```
+  - ``` "start": "node --max_old_space_size=4096 ${NODE_SCRIPT_FILE}.js" ```
 
-    - Sample Code
+  - Sample Code
 
-      ```json
-        {
-          // other package.json stuff
-          "scripts": {
-            "start": "node --max_old_space_size=4096 sample-script.js"
-          }
+    ```json
+      {
+        // other package.json stuff
+        "scripts": {
+          "start": "node --max_old_space_size=4096 sample-script.js"
         }
-      ```
+      }
+    ```
 
-    - run
+  - run
 
-      ```shell
-        $ npm run start
-      ```
+    ```shell
+      $ npm run start
+    ```
 
 
 <br /><br /><br /><br /><br />

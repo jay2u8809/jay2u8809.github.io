@@ -12,8 +12,12 @@
   "dependencies": {
     "@astrojs/starlight": "^0.38.1",
     "astro": "^6.0.1",
+    "rehype-mermaid": "^3.0.0",
     "sharp": "^0.34.2",
     "starlight-blog": "^0.26.1",
     "starlight-sidebar-topics": "^0.7.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
   }
 }

@@ -21,7 +21,7 @@ tags:
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-05-21",
   "updatedAt": "2024-08-14"
 }
@@ -29,7 +29,7 @@ tags:
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024/05/21
   updatedAt: 2024/08/14
 ```

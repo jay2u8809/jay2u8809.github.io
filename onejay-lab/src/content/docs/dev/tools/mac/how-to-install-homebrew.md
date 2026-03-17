@@ -11,7 +11,7 @@ description: 맥에서 Homebrew 를 설치하는 방법에 대해 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-09-04",
   "updatedAt": "2022-09-04"
 }
@@ -19,7 +19,7 @@ description: 맥에서 Homebrew 를 설치하는 방법에 대해 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-09-04
   updatedAt: 2022-09-04
 ```

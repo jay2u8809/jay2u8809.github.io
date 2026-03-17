@@ -3,10 +3,14 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
 import starlightSidebarTopics from 'starlight-sidebar-topics';
+import rehypeMermaid from 'rehype-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://jay2u8809.github.io',
+	markdown: {
+		rehypePlugins: [rehypeMermaid],
+	},
 	integrations: [
 		starlight({
 			title: 'Onejay Lab',

@@ -11,7 +11,7 @@ description: Array 를 이용해서 React 컴포넌트를 동적으로 표시하
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-08-29",
   "updatedAt": "2024-08-29"
 }
@@ -19,7 +19,7 @@ description: Array 를 이용해서 React 컴포넌트를 동적으로 표시하
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-08-29
   updatedAt: 2024-08-29
 ```

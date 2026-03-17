@@ -1,6 +1,6 @@
 ---
 title: Typescript - 순수함수란? 
-authors: [devian]
+authors: [onejay]
 description: js 의 순수 함수에 대해 알아본다.
 ---
 

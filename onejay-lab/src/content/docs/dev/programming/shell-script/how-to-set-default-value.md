@@ -11,7 +11,7 @@ description: 쉘스크립트에서 디폴트값을 설정하는 방법에 대해
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-08-20",
   "updatedAt": "2024-08-25"
 }
@@ -19,7 +19,7 @@ description: 쉘스크립트에서 디폴트값을 설정하는 방법에 대해
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-08-20
   updatedAt: 2024-08-25
 ```
@@ -29,16 +29,16 @@ description: 쉘스크립트에서 디폴트값을 설정하는 방법에 대해
 
 ## Shell Script 에서 기본값(Default Value)을 설정하는 방법
 
-  쉘스크립트ShellSCript에서 기본값은 `:`을 이용해 지정할 수 있는데 `:`과 함께 사용되는 `=`, `+` 등에 따라 조건이 달라진다.
+쉘스크립트ShellSCript에서 기본값은 `:`을 이용해 지정할 수 있는데 `:`과 함께 사용되는 `=`, `+` 등에 따라 조건이 달라진다.
 
-  ### := 
-    - 변수가 null 인 경우에 기본값을 설정
+### := 
+  - 변수가 null 인 경우에 기본값을 설정
 
-    ```sh
-      declare num
-      declare amount=32
-      "${num:="${amount}"}" # num 이 null 인 경웅 amount 의 값을 대입
-    ```
+  ```sh
+    declare num
+    declare amount=32
+    "${num:="${amount}"}" # num 이 null 인 경웅 amount 의 값을 대입
+  ```
 
 
 <br /><br /><br /><br /><br />

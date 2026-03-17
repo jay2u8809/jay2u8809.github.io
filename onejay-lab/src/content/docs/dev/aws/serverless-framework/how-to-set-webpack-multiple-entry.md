@@ -13,7 +13,7 @@ description: Nest.js 에 Webpack 을 적용하는 방법에 대해 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-05-28",
   "updatedAt": "2024-08-16"
 }
@@ -21,7 +21,7 @@ description: Nest.js 에 Webpack 을 적용하는 방법에 대해 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-05-28
   updatedAt: 2024-08-16
 ```
@@ -69,64 +69,64 @@ description: Nest.js 에 Webpack 을 적용하는 방법에 대해 정리한다.
 
   #### 1개의 Entry 설정
 
-    ```javascript
-      module.exports = (options, webpack) => {
-        return {
-          ...options,
-          entry: `./src/lambda/handler.ts`,
-          externals: [],
-          output: {
-            ...options.output,
-            clean: true,
-            libraryTarget: 'commonjs2'
-          },
-          plugins: [
-            ...options.plugins,
-            new webpack.optimize.LimitChunkCountPlugin({
-              maxChunks: 1,
-            }),
-          ],
-        }
-      };
-    ```
+  ```javascript
+    module.exports = (options, webpack) => {
+      return {
+        ...options,
+        entry: `./src/lambda/handler.ts`,
+        externals: [],
+        output: {
+          ...options.output,
+          clean: true,
+          libraryTarget: 'commonjs2'
+        },
+        plugins: [
+          ...options.plugins,
+          new webpack.optimize.LimitChunkCountPlugin({
+            maxChunks: 1,
+          }),
+        ],
+      }
+    };
+  ```
 
   #### 여러 개의 Entry 설정
 
-    여러 개의 AWS Lambda 함수를 Deploy 할 때는 각 Handler 마다 Webpack Bundling (Webpack의 결과물) 파일이 필요하다.
+  여러 개의 AWS Lambda 함수를 Deploy 할 때는 각 Handler 마다 Webpack Bundling (Webpack의 결과물) 파일이 필요하다.
 
-    예를 들어 아래의 3개 AWS Lambda 를 Deploy 한다고 가정하자.
+  예를 들어 아래의 3개 AWS Lambda 를 Deploy 한다고 가정하자.
 
-      - convertImage: 이미지를 변환하는 Lambda
-      - backup: 이미지를 백업하는 Lambda
-      - statisticUser: 유저정보의 통계를 내는 Lambda
+    - convertImage: 이미지를 변환하는 Lambda
+    - backup: 이미지를 백업하는 Lambda
+    - statisticUser: 유저정보의 통계를 내는 Lambda
 
-    이 경우, 각 Lambda Handler 별로 Webpack bundling 을 한 파일들이 필요하다. 소스코드의 내용이 중복되더라도 각 handler 마다 webpack 이 적용된 파일들이 있어야한다는 뜻이다.
+  이 경우, 각 Lambda Handler 별로 Webpack bundling 을 한 파일들이 필요하다. 소스코드의 내용이 중복되더라도 각 handler 마다 webpack 이 적용된 파일들이 있어야한다는 뜻이다.
 
-    ```javascript
-      module.exports = (options, webpack) => {
-        return {
-          ...options,
-          entry: {
-            convertImage: './src/lambda/convert-image.ts',
-            backupS3: './src/lambda/backup-s3.ts',
-            statisticsUsers: './src/statistics/statistics-users.ts',
-          },
-          externals: [],
-          output: {
-            ...options.output,
-            clean: true,
-            libraryTarget: 'commonjs2'
-            filename: '[name]-bundle.js',
-          },
-          plugins: [
-            ...options.plugins,
-            new webpack.optimize.LimitChunkCountPlugin({
-              maxChunks: 1,
-            }),
-          ],
-        }
-      };
-    ```
+  ```javascript
+    module.exports = (options, webpack) => {
+      return {
+        ...options,
+        entry: {
+          convertImage: './src/lambda/convert-image.ts',
+          backupS3: './src/lambda/backup-s3.ts',
+          statisticsUsers: './src/statistics/statistics-users.ts',
+        },
+        externals: [],
+        output: {
+          ...options.output,
+          clean: true,
+          libraryTarget: 'commonjs2'
+          filename: '[name]-bundle.js',
+        },
+        plugins: [
+          ...options.plugins,
+          new webpack.optimize.LimitChunkCountPlugin({
+            maxChunks: 1,
+          }),
+        ],
+      }
+    };
+  ```
 
   #### plugins
 
@@ -159,17 +159,32 @@ description: Nest.js 에 Webpack 을 적용하는 방법에 대해 정리한다.
 
 ## Deploy: Serverless Framework
 
-  webpack 을 적용해 bundling 한 파일들이 Deploy 할 때 정확하게 업로드 될 수 있도록 한다.
+webpack 을 적용해 bundling 한 파일들이 Deploy 할 때 정확하게 업로드 될 수 있도록 한다.
 
-    ```yaml
-      ...
-      functions: 
-        handleConvertImage:
-          handler: dist/convertImage-bundle.handler
+  ```yaml
+    ...
+    functions: 
+      handleConvertImage:
+        handler: dist/convertImage-bundle.handler
+        package:
+          individually: true
+          include:
+            - dist/convertImage-bundle.js
+            - dist/?-bundule.js
+            - dist/??-bundule.js
+          exclude:
+            - '**'
+        timeout: 900
+        memorySize: 1024
+        events:
+          - sns: XXXXXXXXX
+
+      handleBackupS3:
+        handler: dist/backupS3-bundle.backupUserHandler
           package:
             individually: true
             include:
-              - dist/convertImage-bundle.js
+              - dist/backupS3-bundle.js
               - dist/?-bundule.js
               - dist/??-bundule.js
             exclude:
@@ -177,38 +192,23 @@ description: Nest.js 에 Webpack 을 적용하는 방법에 대해 정리한다.
           timeout: 900
           memorySize: 1024
           events:
-            - sns: XXXXXXXXX
-
-        handleBackupS3:
-          handler: dist/backupS3-bundle.backupUserHandler
-            package:
-              individually: true
-              include:
-                - dist/backupS3-bundle.js
-                - dist/?-bundule.js
-                - dist/??-bundule.js
-              exclude:
-                - '**'
-            timeout: 900
-            memorySize: 1024
-            events:
-              - schedule: cron(10 18 L * ? *)
-        
-        handleStatisticsUsers:
-          handler: dist/statisticsUsers-bundle.handler
-            package:
-              individually: true
-              include:
-                - dist/statisticsUsers-bundle.js
-                - dist/?-bundule.js
-                - dist/??-bundule.js
-              exclude:
-                - '**'
-            timeout: 900
-            memorySize: 4096
-            events:
-              - schedule: cron(30 22 * * ? *)
-    ```
+            - schedule: cron(10 18 L * ? *)
+      
+      handleStatisticsUsers:
+        handler: dist/statisticsUsers-bundle.handler
+          package:
+            individually: true
+            include:
+              - dist/statisticsUsers-bundle.js
+              - dist/?-bundule.js
+              - dist/??-bundule.js
+            exclude:
+              - '**'
+          timeout: 900
+          memorySize: 4096
+          events:
+            - schedule: cron(30 22 * * ? *)
+  ```
 
   #### handler
 

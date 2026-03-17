@@ -32,6 +32,8 @@ firebase-debug.log*
 
 # Firebase local
 *.local
+.firebaserc
+.firebase/
 
 # local
 /nest-example-project

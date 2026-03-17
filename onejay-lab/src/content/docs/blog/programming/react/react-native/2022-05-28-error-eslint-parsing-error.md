@@ -16,7 +16,7 @@ tags:
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-05-28",
   "updatedAt": "2022-05-28"
 }
@@ -24,7 +24,7 @@ tags:
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-05-28
   updatedAt: 2022-05-28
 ```
@@ -37,59 +37,59 @@ tags:
 
 ## Intro
 
-  React Native 프로젝트에서 ES Lint 설정을 한 뒤, `.eslintrc.js` 파일을 조금 수정했다.
+React Native 프로젝트에서 ES Lint 설정을 한 뒤, `.eslintrc.js` 파일을 조금 수정했다.
 
-  Typescript 를 사용하고 있기에 parserOptions 에 project 항목을 추가하여 `tsconfig.json` 파일을 참조하도록 했다.
+Typescript 를 사용하고 있기에 parserOptions 에 project 항목을 추가하여 `tsconfig.json` 파일을 참조하도록 했다.
 
-    - `.eslintrc.js`
+  - `.eslintrc.js`
 
-      ```json
-        ... 
+    ```json
+      ... 
 
-        'parserOptions': {
-          'ecmaFeatures': {
-            'jsx': true
-          },
-          'ecmaVersion': 12,
-          'project': './tsconfig.json',
+      'parserOptions': {
+        'ecmaFeatures': {
+          'jsx': true
         },
+        'ecmaVersion': 12,
+        'project': './tsconfig.json',
+      },
 
+      ...
+      
+    ```
+
+그리고 기본값으로 설정되어 있는 `package.json` 파일의 lint를 실행했다.
+
+  -  `package.json`
+
+    ```json
+      "scripts": {
         ...
-        
-      ```
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+        ...
+      },
+    ```
 
-  그리고 기본값으로 설정되어 있는 `package.json` 파일의 lint를 실행했다.
+  - 실행
 
-    -  `package.json`
+    ```shell
+      $ npm run lint
 
-      ```json
-        "scripts": {
-          ...
-          "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-          ...
-        },
-      ```
+      /${PROJECT_PATH}/${APP_NAME}/.eslintrc.js
+        0:0  error  Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
+      The file does not match your project config: .eslintrc.js.
+      The file must be included in at least one of the projects provided
 
-    - 실행
+      /${PROJECT_PATH}/${APP_NAME}/babel.config.js
+        0:0  error  Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
+      The file does not match your project config: babel.config.js.
+      The file must be included in at least one of the projects provided
 
-      ```shell
-        $ npm run lint
-
-        /${PROJECT_PATH}/${APP_NAME}/.eslintrc.js
-          0:0  error  Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
-        The file does not match your project config: .eslintrc.js.
-        The file must be included in at least one of the projects provided
-
-        /${PROJECT_PATH}/${APP_NAME}/babel.config.js
-          0:0  error  Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
-        The file does not match your project config: babel.config.js.
-        The file must be included in at least one of the projects provided
-
-        /${PROJECT_PATH}/${APP_NAME}/metro.config.js
-          0:0  error  Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
-        The file does not match your project config: metro.config.js.
-        The file must be included in at least one of the projects provided
-      ```
+      /${PROJECT_PATH}/${APP_NAME}/metro.config.js
+        0:0  error  Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
+      The file does not match your project config: metro.config.js.
+      The file must be included in at least one of the projects provided
+    ```
 
 
 
@@ -111,16 +111,16 @@ tags:
 
   ### 특정 파일 형식(*.ts, *.tsx) 만 ES Lint 체크 대상에 넣기
 
-    - `package.json`
-      + *.js, *.jsx 파일을 대상에서 제외: `eslint . --ext .ts,.tsx`
+  - `package.json`
+    - *.js, *.jsx 파일을 대상에서 제외: `eslint . --ext .ts,.tsx`
 
-      ```json
-        "scripts": {
-          ...
-          "lint": "eslint . --ext .ts,.tsx",
-          ...
-        },
-      ```
+    ```json
+      "scripts": {
+        ...
+        "lint": "eslint . --ext .ts,.tsx",
+        ...
+      },
+    ```
 
   ### 특정 디렉토리만 ES Lint 체크 대상에 넣기
 

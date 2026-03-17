@@ -11,7 +11,7 @@ description: WSL 에서 VS Code 를 열어 사용하는 방법에 대해 정리�
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-09-08",
   "updatedAt": "2024-09-08"
 }
@@ -19,7 +19,7 @@ description: WSL 에서 VS Code 를 열어 사용하는 방법에 대해 정리�
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-09-08
   updatedAt: 2024-09-08
 ```

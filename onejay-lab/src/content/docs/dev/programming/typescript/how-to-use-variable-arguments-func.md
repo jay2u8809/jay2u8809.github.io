@@ -11,7 +11,7 @@ description: js 에서 가변 인자를 받는 함수를 사용하는 방법에 
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2023-01-23",
   "updatedAt": "2023-01-23"
 }
@@ -19,7 +19,7 @@ description: js 에서 가변 인자를 받는 함수를 사용하는 방법에 
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2023-01-23
   updatedAt: 2023-01-23
 ```

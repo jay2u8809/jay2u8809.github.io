@@ -11,7 +11,7 @@ description: js 의 and 연산자와 or 연산자를 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2021-10-13",
   "updatedAt": "2021-10-13"
 }
@@ -19,7 +19,7 @@ description: js 의 and 연산자와 or 연산자를 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2021-10-13
   updatedAt: 2021-10-13
 ```

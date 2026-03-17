@@ -11,7 +11,7 @@ description: AWS Amplify 의 명령어에 대해 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-06-23",
   "updatedAt": "2024-08-14"
 }
@@ -19,7 +19,7 @@ description: AWS Amplify 의 명령어에 대해 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-06-23
   updatedAt: 2024-08-14
 ```
@@ -217,4 +217,3 @@ description: AWS Amplify 의 명령어에 대해 정리한다.
   + [Github-Amplify/cli](https://github.com/aws-amplify/amplify-cli#readme)
   + [AWS Amplify フレームワーク 入門メモ](https://qiita.com/rubytomato@github/items/5d9b6e184b615f974f28)
   + [AWS Amplify 備忘録](https://qiita.com/propella/items/38e3906a4573fdfca202#%E6%97%A2%E5%AD%98%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%99%E3%82%8B)
-

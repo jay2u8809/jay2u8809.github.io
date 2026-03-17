@@ -10,7 +10,7 @@ description: 자바스크립트의 Filter 함수에 대해 알아본다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-09-07",
   "updatedAt": "2023-01-01"
 }
@@ -18,7 +18,7 @@ description: 자바스크립트의 Filter 함수에 대해 알아본다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-09-07
   updatedAt: 2023-01-01
 ```

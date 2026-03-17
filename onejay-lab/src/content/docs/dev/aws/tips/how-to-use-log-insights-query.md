@@ -11,7 +11,7 @@ description: CloudWatch - Log Insights 쿼리 사용 방법을 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-05-21",
   "updatedAt": "2024-08-14"
 }
@@ -19,7 +19,7 @@ description: CloudWatch - Log Insights 쿼리 사용 방법을 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-05-21
   updatedAt: 2024-08-14
 ```
@@ -32,87 +32,87 @@ description: CloudWatch - Log Insights 쿼리 사용 방법을 정리한다.
 
   #### 단순 Keyword 검색
 
-    ```text
-      filter @message like /${SEARCH_KEYWORD}/
-        | sort @timestamp desc
-    ```
+  ```text
+    filter @message like /${SEARCH_KEYWORD}/
+      | sort @timestamp desc
+  ```
 
-    ```text
-      filter @message like /Android/
-        | sort @timestamp desc
-    ```
+  ```text
+    filter @message like /Android/
+      | sort @timestamp desc
+  ```
 
   #### url path 등 특수 문자가 포함된 Keyword
 
-    - ex) `api/v1/display/`
+  - ex) `api/v1/display/`
 
-      ```text
-      filter @message like /api\/v1\/display\//
-        | sort @timestamp desc
-      ```
+    ```text
+    filter @message like /api\/v1\/display\//
+      | sort @timestamp desc
+    ```
 
   #### Keyword 가 있는 로그의 특정 필드값 만 검색
 
-    - ex) `TransactionConflict` 로그가 있는 RequestId
+  - ex) `TransactionConflict` 로그가 있는 RequestId
 
-      ```text
-      fields @requestId 
-      | filter @message like /TransactionConflict/
-      | sort @timestamp desc
-      ````
+    ```text
+    fields @requestId 
+    | filter @message like /TransactionConflict/
+    | sort @timestamp desc
+    ````
 
-    - ex) `TransactionConflict` 로그가 있는 timestamp, logStream 
+  - ex) `TransactionConflict` 로그가 있는 timestamp, logStream 
+
+    ```text
+    fields @timestamp, @message, @logStream, @log 
+    | filter @message like /TransactionConflict/
+    | sort @timestamp desc
+    ```
+
+    - 정규식 사용
 
       ```text
       fields @timestamp, @message, @logStream, @log 
-      | filter @message like /TransactionConflict/
+      | filter @message like /TransactionConflict(?!.*(dup|Exception)).*$/
       | sort @timestamp desc
       ```
-
-      - 정규식 사용
-
-        ```text
-        fields @timestamp, @message, @logStream, @log 
-        | filter @message like /TransactionConflict(?!.*(dup|Exception)).*$/
-        | sort @timestamp desc
-        ```
 
 ### Stats
 
   #### RequestId 별로 로그 갯수 집계
 
-    ```text
-    stats count(*) by @requestId
-    ```
+  ```text
+  stats count(*) by @requestId
+  ```
 
-    - 결과: `@requestId Count(*) 2323 5`
+  - 결과: `@requestId Count(*) 2323 5`
 
-    ```text
-    FILTER response.code like /0001/
-    | stats count(*) by response.code
-    ```
+  ```text
+  FILTER response.code like /0001/
+  | stats count(*) by response.code
+  ```
 
 
 ### Fields
 
   #### 기본적인 Field 들
 
-    | Field | Desc | Example |
-    | --- | --- | --- |
-    | @ingestionTime | - | 1729743338706 | 
-    | @log | cloudwatch log group 명 | 유저아이디:/aws/lambda/서비스명 |
-    | @logStream | 로그스트림명 | - |
-    | @message | 로그 내용 | - |
-    | @requestId | 리퀘이스트 아이디 | - |
-    | @timestamp | - | 1729743329689 | 
+  | Field | Desc | Example |
+  | --- | --- | --- |
+  | @ingestionTime | - | 1729743338706 | 
+  | @log | cloudwatch log group 명 | 유저아이디:/aws/lambda/서비스명 |
+  | @logStream | 로그스트림명 | - |
+  | @message | 로그 내용 | - |
+  | @requestId | 리퀘이스트 아이디 | - |
+  | @timestamp | - | 1729743329689 | 
 
   #### 그 외
 
-    - 이 외에 `JSON.stringify({name: 'dev.ian', region: 'asia'})` 로 출력한 로그의 경우 name, region 등의 이름으로도 검색이 가능하다.
+  - 이 외에 `JSON.stringify({name: 'onejay', region: 'asia'})` 로 출력한 로그의 경우 name, region 등의 이름으로도 검색이 가능하다.
 
-    ```text
-    FILTER region like /asia/
-    ```
+  ```text
+  FILTER region like /asia/
+  ```
 
 <br /><br /><br /><br /><br />
 
