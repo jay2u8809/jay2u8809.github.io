@@ -130,38 +130,38 @@ description: js 의 map 타입의 자료구조를 사용하는 방법에 대해 
     ```
 
 ### Key 또는 Value 값 구하기
-  - Key 또는 Value를 리스트 형태로 구할 수 있다.
-    + `keys()`, `values()` 메소드를 이용해서 Key, Value 값을 리스트 형태로 얻을 수 있다.
+- Key 또는 Value를 리스트 형태로 구할 수 있다.
+  + `keys()`, `values()` 메소드를 이용해서 Key, Value 값을 리스트 형태로 얻을 수 있다.
 
-  #### keys()
+#### keys()
 
-    ```typescript
-      const mapKeys = map.keys();
-      for (const key of mapKeys) {
-        console.log(`KEY: ${key}`);
-      }
-    ```
-    ```text
-      [Result]
-        KEY: keyOne
-        KEY: keyTwo
-        KEY: keyThree
-    ```
+  ```typescript
+    const mapKeys = map.keys();
+    for (const key of mapKeys) {
+      console.log(`KEY: ${key}`);
+    }
+  ```
+  ```text
+    [Result]
+      KEY: keyOne
+      KEY: keyTwo
+      KEY: keyThree
+  ```
 
-  #### values()
+#### values()
 
-    ```typescript
-      const mapValues = map.values();
-      for (const value of mapValues) {
-        console.log(`VALUES: ${value}`);
-      }
-    ```
-    ```text
-      [Result]
-        VALUES: value1,value2
-        VALUES: value1,value2,value3
-        VALUES: value1,value2,valu3,value4
-    ```
+  ```typescript
+    const mapValues = map.values();
+    for (const value of mapValues) {
+      console.log(`VALUES: ${value}`);
+    }
+  ```
+  ```text
+    [Result]
+      VALUES: value1,value2
+      VALUES: value1,value2,value3
+      VALUES: value1,value2,valu3,value4
+  ```
 
 
 ### 반복문(Loop)
@@ -177,66 +177,66 @@ description: js 의 map 타입의 자료구조를 사용하는 방법에 대해 
 
   #### for ... of
 
-    - map 
-
-      ```typescript
-        for (const [key, values] of map) {
-          console.log(`KEY: ${key}, VALUE: ${values}`);
-        }
-      ```
-    
-    - map 의 entries()
-
-      ```typescript
-        const mapEntries = map.entries()
-        for (const item of mapEntries) {
-          console.log(`KEY: ${item[0]}, VALUE: ${item[1]}`);
-        }
-
-        for (const [key, values] of mapEntries) {
-          console.log(`KEY: ${key}, VALUE: ${values}`);
-        }
-      ```
-
-    - Array 로 변환 후 
-
-      ```typescript
-        const mapArrays = Array.from(map);
-
-        for (const item of mapArrays) {
-          console.log(`KEY: ${item[0]}, VALUE: ${item[1]}`);
-        }
-
-        for (const [key, values] of mapArrays) {
-          console.log(`KEY: ${key}, VALUE: ${values}`);
-        }
-      ```
-
-    - 결과
-
-      ```text
-        [Result]
-          KEY: keyOne,   VALUE: value1,value2
-          KEY: keyTwo,   VALUE: value1,value2,value3
-          KEY: keyThree, VALUE: value1,value2,valu3,value4
-      ```
-
-  #### forEach
-
-    - 매개변수: `value, key , Object(원본 Map 데이터)`
-      + key와 value의 위치에 주의한다.
+  - map 
 
     ```typescript
-      map.forEach((values, key, obj) => {
+      for (const [key, values] of map) {
         console.log(`KEY: ${key}, VALUE: ${values}`);
-      });
+      }
     ```
+  
+  - map 의 entries()
+
+    ```typescript
+      const mapEntries = map.entries()
+      for (const item of mapEntries) {
+        console.log(`KEY: ${item[0]}, VALUE: ${item[1]}`);
+      }
+
+      for (const [key, values] of mapEntries) {
+        console.log(`KEY: ${key}, VALUE: ${values}`);
+      }
+    ```
+
+  - Array 로 변환 후 
+
+    ```typescript
+      const mapArrays = Array.from(map);
+
+      for (const item of mapArrays) {
+        console.log(`KEY: ${item[0]}, VALUE: ${item[1]}`);
+      }
+
+      for (const [key, values] of mapArrays) {
+        console.log(`KEY: ${key}, VALUE: ${values}`);
+      }
+    ```
+
+  - 결과
+
     ```text
       [Result]
         KEY: keyOne,   VALUE: value1,value2
         KEY: keyTwo,   VALUE: value1,value2,value3
         KEY: keyThree, VALUE: value1,value2,valu3,value4
     ```
+
+  #### forEach
+
+  - 매개변수: `value, key , Object(원본 Map 데이터)`
+    + key와 value의 위치에 주의한다.
+
+  ```typescript
+    map.forEach((values, key, obj) => {
+      console.log(`KEY: ${key}, VALUE: ${values}`);
+    });
+  ```
+  ```text
+    [Result]
+      KEY: keyOne,   VALUE: value1,value2
+      KEY: keyTwo,   VALUE: value1,value2,value3
+      KEY: keyThree, VALUE: value1,value2,valu3,value4
+  ```
 
 
 
@@ -246,5 +246,3 @@ description: js 의 map 타입의 자료구조를 사용하는 방법에 대해 
 
 --- 
 - Refs
-
-
