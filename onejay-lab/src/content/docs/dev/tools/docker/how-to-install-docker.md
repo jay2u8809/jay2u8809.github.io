@@ -31,25 +31,25 @@ description: Docker 와 Podman 을 설치하는 방법에 대해 정리한다.
 
   ### Install Docker
 
-    ```shell
-      $ sudo apt update
-      $ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-    ```
+  ```shell
+    $ sudo apt update
+    $ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  ```
 
-    - Hello world
+  - Hello world
 
-    ```shell
-      $ sudo docker run hello-world
-      ...
-      Hello from Docker!
-      ...
-    ```
+  ```shell
+    $ sudo docker run hello-world
+    ...
+    Hello from Docker!
+    ...
+  ```
 
   ### Remove Docker
 
-    ```shell
-      $ sudo apt remove docker docker-engine docker.io containerd runc
-    ```
+  ```shell
+    $ sudo apt remove docker docker-engine docker.io containerd runc
+  ```
 
 
 ## Install Podman
@@ -105,19 +105,19 @@ description: Docker 와 Podman 을 설치하는 방법에 대해 정리한다.
 ## Error
 
   ### Docker Image 를 Pull 할 수 없다
-    - Dockerfile 을 작성해서 build 를 하거나 `podman pull <DOCKER_IMGAE_NAME>` 명령어를 사용할 때 아래와 같은 에러가 발생할 때가 있다.
+  - Dockerfile 을 작성해서 build 를 하거나 `podman pull <DOCKER_IMGAE_NAME>` 명령어를 사용할 때 아래와 같은 에러가 발생할 때가 있다.
 
-      ```shell
-        Error: error creating build container: short-name "eclipse-temurin:17" did not resolve to an alias and no unqualified-search registries are defined in "/etc/containers/registries.conf"
-      ```
+    ```shell
+      Error: error creating build container: short-name "eclipse-temurin:17" did not resolve to an alias and no unqualified-search registries are defined in "/etc/containers/registries.conf"
+    ```
 
-      + _short-name_ : docker image 의 별칭(alias). `docker pull ubuntu` 는 `docker pull docker.io/library/ubuntu` 의 short-name 이다.
+    + _short-name_ : docker image 의 별칭(alias). `docker pull ubuntu` 는 `docker pull docker.io/library/ubuntu` 의 short-name 이다.
 
-    - Docker 레지스트리에서 이미지 파일을 찾을 수 없는 것이 원인이므로 아래의 명령어를 실행해 해결한다.
+  - Docker 레지스트리에서 이미지 파일을 찾을 수 없는 것이 원인이므로 아래의 명령어를 실행해 해결한다.
 
-      ```shell
-        $ echo "unqualified-search-registries = [\"docker.io\"]" | sudo tee -a /etc/containers/registries.conf
-      ```
+    ```shell
+      $ echo "unqualified-search-registries = [\"docker.io\"]" | sudo tee -a /etc/containers/registries.conf
+    ```
 
 
 

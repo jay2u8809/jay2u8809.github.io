@@ -57,21 +57,21 @@ description: js 에서 가변 인자를 받는 함수를 사용하는 방법에 
 
   ### 가변 인수 함수 선언 방법
 
-    - 전개 연산자 (`…`) 을 사용해서 선언할 수 있다.
+  - 전개 연산자 (`…`) 을 사용해서 선언할 수 있다.
 
-    - Code②
-      + Generic 타입으로 함수 선언
+  - Code②
+    + Generic 타입으로 함수 선언
 
-      ```typescript
-        const merge = <T>(...arr: readonly T[][]): T[] => {
-          let result : T[] = [];
-          for (let idx = 0; idx < arr.length; idx++) {
-            const array: T[] = arr[idx];
-            result = [...result, ...array];
-          }
-          return result;
-        };
-      ```
+    ```typescript
+      const merge = <T>(...arr: readonly T[][]): T[] => {
+        let result : T[] = [];
+        for (let idx = 0; idx < arr.length; idx++) {
+          const array: T[] = arr[idx];
+          result = [...result, ...array];
+        }
+        return result;
+      };
+    ```
 
 
 

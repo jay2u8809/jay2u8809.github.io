@@ -71,63 +71,63 @@ description: 자바스크립트의 Filter 함수에 대해 알아본다.
 
   ### - 코드 블럭(`{}`) 을 사용할 때는 Return 값이 필요하다
 
-    아래의 코드(_Code②_)는 _Code①_ 에 없던 코드블럭(`{}`) 이 있다. 그리고 예상과 달리 빈 리스트를 만들어낸다. 
+  아래의 코드(_Code②_)는 _Code①_ 에 없던 코드블럭(`{}`) 이 있다. 그리고 예상과 달리 빈 리스트를 만들어낸다. 
 
-    - Code②
+  - Code②
 
-      ```tsx
-        const list: string[] = ['apple', 'banana', 'kiwi'];
-        const filtered: string[] = list.filter((item: string) => {
-            item.length < 6;
-        });
+    ```tsx
+      const list: string[] = ['apple', 'banana', 'kiwi'];
+      const filtered: string[] = list.filter((item: string) => {
+          item.length < 6;
+      });
 
-        console.log('filtered', filtered);
-        // [LOG]: "filtered",  []
-      ```
+      console.log('filtered', filtered);
+      // [LOG]: "filtered",  []
+    ```
 
-    코드블럭은 보통 복수의 코드 라인을 처리 할 때 사용한다. 
-    
-    `(item: string) => item.length < 6` 는 filter 함수의 콜백Callback 함수이므로 반드시 결과 즉, 반환값(Return) 이 필요하다. (list 변수의 길이만큼의 콜백 함수가 실행되는 것)
+  코드블럭은 보통 복수의 코드 라인을 처리 할 때 사용한다. 
+  
+  `(item: string) => item.length < 6` 는 filter 함수의 콜백Callback 함수이므로 반드시 결과 즉, 반환값(Return) 이 필요하다. (list 변수의 길이만큼의 콜백 함수가 실행되는 것)
 
-    filter 함수가 콜백함수의 _True/False_ 의 결과값을 받아 리스트를 만들기 때문에, _Code②_ 처럼 아무런 결과를 반환하지 않고 끝내버리면 콜백 함수의 결과는 undefined 가 된다. 따라서 filter 함수는 False 로 판단하여 리스트를에 데이터를 추가하지 않는다.
+  filter 함수가 콜백함수의 _True/False_ 의 결과값을 받아 리스트를 만들기 때문에, _Code②_ 처럼 아무런 결과를 반환하지 않고 끝내버리면 콜백 함수의 결과는 undefined 가 된다. 따라서 filter 함수는 False 로 판단하여 리스트를에 데이터를 추가하지 않는다.
 
-    따라서 아래의 _Code③_ 처럼 바꾸면 _Code①_ 와 같은 결과가 나온다. 
+  따라서 아래의 _Code③_ 처럼 바꾸면 _Code①_ 와 같은 결과가 나온다. 
 
-    - Code③
+  - Code③
 
-      ```tsx
-        const list: string[] = ['apple', 'banana', 'kiwi'];
-        const filtered: string[] = list.filter((item: string) => {
-            return item.length < 6;
-        });
+    ```tsx
+      const list: string[] = ['apple', 'banana', 'kiwi'];
+      const filtered: string[] = list.filter((item: string) => {
+          return item.length < 6;
+      });
 
-        console.log('filtered', filtered);
-        // [LOG]: "filtered",  ["apple", "kiwi"]
-      ```
+      console.log('filtered', filtered);
+      // [LOG]: "filtered",  ["apple", "kiwi"]
+    ```
 
 
   ### - 빈 리스트(`[]`)에 filter 함수를 사용한다면?
 
-    그렇다면 원래의 데이터가 빈 리스트(`[]`, 길이가 0인 리스트) 인 경우에 filter 함수를 사용한다면 어떻게 될까?
+  그렇다면 원래의 데이터가 빈 리스트(`[]`, 길이가 0인 리스트) 인 경우에 filter 함수를 사용한다면 어떻게 될까?
 
-    당연하게도 콜백함수가 True/False 를 체크할 데이터가 없기 때문에 filter 함수는 그대로 **빈 리스트(`[]`)** 를 만들어 낸다. 
+  당연하게도 콜백함수가 True/False 를 체크할 데이터가 없기 때문에 filter 함수는 그대로 **빈 리스트(`[]`)** 를 만들어 낸다. 
 
-    아래의 _Code④_ 를 보면 데이터가 없기 때문에 콜백함수가 실행조차 되지 않았다.(`console.log('item', item)` 의 출력 결과가 없다.) 
+  아래의 _Code④_ 를 보면 데이터가 없기 때문에 콜백함수가 실행조차 되지 않았다.(`console.log('item', item)` 의 출력 결과가 없다.) 
 
-    원래 데이터의 갯수만큼 콜백함수가 실행되는데 데이터의 갯수가 0 이기 때문에 콜백함수의 실행도 0 번이 된다.
+  원래 데이터의 갯수만큼 콜백함수가 실행되는데 데이터의 갯수가 0 이기 때문에 콜백함수의 실행도 0 번이 된다.
 
-    - Code④
+  - Code④
 
-      ```tsx
-        const list: string[] = [];
-        const filtered: string[] = list.filter((item: string) => {
-            console.log('item', item);
-            return item.length < 6
-        });
+    ```tsx
+      const list: string[] = [];
+      const filtered: string[] = list.filter((item: string) => {
+          console.log('item', item);
+          return item.length < 6
+      });
 
-        console.log('filtered', filtered);
-        // [LOG]: "filtered",  []
-      ```
+      console.log('filtered', filtered);
+      // [LOG]: "filtered",  []
+    ```
 
 
 

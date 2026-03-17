@@ -50,107 +50,107 @@ description: js 의 Promise.all 함수를 이용해 병렬 처리를 하는 방�
 
   ### Example Code
 
-    - Promise.all() 함수는 여러 개의 Promise 를 동시에 처리하고자 할 때 사용할 수 있다.
+  - Promise.all() 함수는 여러 개의 Promise 를 동시에 처리하고자 할 때 사용할 수 있다.
 
-      + Code①
+    + Code①
 
-        ```typescript
-          // first promise
-          const fetchNameList = async (): Promise<string[]> => {
-            return new Promise((resolve, reject) => {
-              setTimeout(() => {
-                const result: any = ['Jack', 'Joe', 'Beck'];
-                resolve(result);
-              }, 300);
-            });
-          };
-
-          // second promise
-          const fetchFruits = async (): Promise<string[]> => {
-            return new Promise((resolve, reject) => {
-              setTimeout(() => {
-                const result: any = ['Apple', 'Orange', 'Banana'];
-                resolve(result);
-              }, 200);
-            });
-          };
-
-          // third promise
-          const fetchTechCompanies = async (): Promise<string[]> => {
-            return new Promise((resolve, reject) => {
-              setTimeout(() => {
-                const result: any = ['Apple', 'Google', 'Amazon'];
-                resolve(result);
-              }, 400);
-            });
-          };
-        ```
-    
-      + Code②
-
-        ```typescript
-          // time start
-          console.time('promise all example');
-
-          // promise all
-          const result: any[] = await Promise.all([
-            fetchNameList(),
-            fetchFruits(),
-            fetchTechCompanies(),
-          ]);
-          console.log('%j', result);
-
-          // time end
-          console.timeEnd('promise all example');
-        ```
-    
-    - Code②의 Result
-      + 전체 실행 시간: 402ms
-      + 각 Promise 들의 처리 시간(300ms, 200ms, 400ms) 중 가장 긴 시간인 400ms 와 비슷한 시간이다. 이를 통해 3개의 Promise 가 병렬로 실행되었음을 알 수 있다.
-    
-      ```text
-        [["Jack","Joe","Beck"],["Apple","Orange","Banana"],["Apple","Google","Amazon"]]
-
-        promise all example: 402 ms
-      ```
-    
-      + 아래와 같이 각각의 처리 결과를 각각의 변수에 담을 수도 있다.
-          
-        ```typescript
-          const [names, fruits, companies] = await Promise.all([
-            fetchNameList(),
-            fetchFruits(),
-            fetchTechCompanies(),
-          ]);
-          
-          console.log('%j, %j, %j', names, fruits, companies);
-        ```
-    
-  ### Error 처리
-
-    - Promise.all() 함수는 메개변수로 여러 개의 Promise 들이 배열 형태로 들어가게 되는데, 이 중 **하나라도 reject 가 되거나 에러가 발생할 경우, 모든 Promise 들이 reject** 된다. 
-
-    - Code① 의 `fetchFruits()` 함수를 아래와 같이 reject 되도록 수정한다.
       ```typescript
+        // first promise
+        const fetchNameList = async (): Promise<string[]> => {
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              const result: any = ['Jack', 'Joe', 'Beck'];
+              resolve(result);
+            }, 300);
+          });
+        };
+
+        // second promise
         const fetchFruits = async (): Promise<string[]> => {
           return new Promise((resolve, reject) => {
             setTimeout(() => {
               const result: any = ['Apple', 'Orange', 'Banana'];
-              reject(result); // Reject
+              resolve(result);
             }, 200);
           });
         };
-      ```
 
-    - 그리고 Code②를 실행해 보면 아래와 같이 Promise.all() 처리가 실패한다. 따라서 적절한 에러 처리가 필요하다.
-
-      ```text
-        Error: thrown: Array [
-          "Apple",
-          "Orange",
-          "Banana",
-        ]
+        // third promise
+        const fetchTechCompanies = async (): Promise<string[]> => {
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              const result: any = ['Apple', 'Google', 'Amazon'];
+              resolve(result);
+            }, 400);
+          });
+        };
       ```
+  
+    + Code②
+
+      ```typescript
+        // time start
+        console.time('promise all example');
+
+        // promise all
+        const result: any[] = await Promise.all([
+          fetchNameList(),
+          fetchFruits(),
+          fetchTechCompanies(),
+        ]);
+        console.log('%j', result);
+
+        // time end
+        console.timeEnd('promise all example');
+      ```
+  
+  - Code②의 Result
+    + 전체 실행 시간: 402ms
+    + 각 Promise 들의 처리 시간(300ms, 200ms, 400ms) 중 가장 긴 시간인 400ms 와 비슷한 시간이다. 이를 통해 3개의 Promise 가 병렬로 실행되었음을 알 수 있다.
+  
+    ```text
+      [["Jack","Joe","Beck"],["Apple","Orange","Banana"],["Apple","Google","Amazon"]]
+
+      promise all example: 402 ms
+    ```
+  
+    + 아래와 같이 각각의 처리 결과를 각각의 변수에 담을 수도 있다.
+        
+      ```typescript
+        const [names, fruits, companies] = await Promise.all([
+          fetchNameList(),
+          fetchFruits(),
+          fetchTechCompanies(),
+        ]);
+        
+        console.log('%j, %j, %j', names, fruits, companies);
+      ```
+    
+  ### Error 처리
+
+  - Promise.all() 함수는 메개변수로 여러 개의 Promise 들이 배열 형태로 들어가게 되는데, 이 중 **하나라도 reject 가 되거나 에러가 발생할 경우, 모든 Promise 들이 reject** 된다. 
+
+  - Code① 의 `fetchFruits()` 함수를 아래와 같이 reject 되도록 수정한다.
+    ```typescript
+      const fetchFruits = async (): Promise<string[]> => {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            const result: any = ['Apple', 'Orange', 'Banana'];
+            reject(result); // Reject
+          }, 200);
+        });
+      };
+    ```
+
+  - 그리고 Code②를 실행해 보면 아래와 같이 Promise.all() 처리가 실패한다. 따라서 적절한 에러 처리가 필요하다.
+
+    ```text
+      Error: thrown: Array [
+        "Apple",
+        "Orange",
+        "Banana",
+      ]
+    ```
 
 ## Promise.all() 을 사용하지 않는다면?
 
@@ -194,4 +194,3 @@ description: js 의 Promise.all 함수를 이용해 병렬 처리를 하는 방�
 --- 
 - Refs
   + [MDN - Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
-
