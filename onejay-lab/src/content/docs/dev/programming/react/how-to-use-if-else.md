@@ -11,7 +11,7 @@ description: 조건문을 이용해 React 컴포넌트를 표시하는 방법을
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-08-29",
   "updatedAt": "2024-08-29"
 }
@@ -19,7 +19,7 @@ description: 조건문을 이용해 React 컴포넌트를 표시하는 방법을
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-08-29
   updatedAt: 2024-08-29
 ```

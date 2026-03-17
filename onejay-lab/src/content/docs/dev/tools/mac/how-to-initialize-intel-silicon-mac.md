@@ -11,7 +11,7 @@ description:  Mac(Intel) 을 초기화하는 방법에 대해 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-09-04",
   "updatedAt": "2022-09-04"
 }
@@ -19,7 +19,7 @@ description:  Mac(Intel) 을 초기화하는 방법에 대해 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-09-04
   updatedAt: 2022-09-04
 ```

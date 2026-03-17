@@ -10,7 +10,7 @@ description: js 의 순수 함수에 대해 알아본다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2023-01-21",
   "updatedAt": "2023-01-23"
 }
@@ -18,7 +18,7 @@ description: js 의 순수 함수에 대해 알아본다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2023-01-21
   updatedAt: 2023-01-23
 ```

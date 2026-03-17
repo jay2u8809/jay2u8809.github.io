@@ -11,7 +11,7 @@ description: Jest 를 이용해 테스트를 하는 방법에 대해 정리한�
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-08-18",
   "updatedAt": "2024-08-18"
 }
@@ -19,7 +19,7 @@ description: Jest 를 이용해 테스트를 하는 방법에 대해 정리한�
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-08-18
   updatedAt: 2024-08-18
 ```

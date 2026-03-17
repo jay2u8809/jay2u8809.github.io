@@ -11,7 +11,7 @@ description: Node.js 에서 Base64 인코딩하는 방법에 대해 정리한다
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2023-01-12",
   "updatedAt": "2023-01-14"
 }
@@ -19,7 +19,7 @@ description: Node.js 에서 Base64 인코딩하는 방법에 대해 정리한다
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2023-01-12
   updatedAt: 2023-01-14
 ```
@@ -43,19 +43,19 @@ description: Node.js 에서 Base64 인코딩하는 방법에 대해 정리한다
     + js 에서 제공하는 `btoa(’${변환데이터}’)` 함수(Encoding)와 `atob(’${변환데이터}’)` 함수(Decoding)를 이용하여 Base64 인코딩을 할 수 있으나 웹브라우저에서만 사용가능하다. 
 
   ### Base64 Encoding
-    - _Buffer.from('`${Encoding 할 문자열}`', 'utf8').toString('base64')_
+  - _Buffer.from('`${Encoding 할 문자열}`', 'utf8').toString('base64')_
 
-      ```typescript
-        const encoded = Buffer.from('username:password', 'utf8').toString('base64');
-      ```
+    ```typescript
+      const encoded = Buffer.from('username:password', 'utf8').toString('base64');
+    ```
 
  
   ### Base64 Decoding
-    - _Buffer.from('`${Decoding 할 문자열}`', 'base64').toString('utf8')_
+  - _Buffer.from('`${Decoding 할 문자열}`', 'base64').toString('utf8')_
 
-      ```typescript
-        const plain = Buffer.from('dXNlcm5hbWU6cGFzc3dvcmQ=', 'base64').toString('utf8') 
-      ```
+    ```typescript
+      const plain = Buffer.from('dXNlcm5hbWU6cGFzc3dvcmQ=', 'base64').toString('utf8') 
+    ```
 
 
 

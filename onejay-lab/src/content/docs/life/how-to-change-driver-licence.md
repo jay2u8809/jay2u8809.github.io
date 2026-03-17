@@ -12,7 +12,7 @@ description: 한국 운전면허증을 일본 운전면허증으로 변경하는
 <!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Onejay",
   "createdAt": "2024-04-02",
   "updatedAt": "2024-04-02"
 }
@@ -20,7 +20,7 @@ description: 한국 운전면허증을 일본 운전면허증으로 변경하는
 -->
 
 ```yaml
-  author: Onigiri.J
+  author: Onejay
   createdAt: 2024-04-02
   updatedAt: 2024-04-02
 ```

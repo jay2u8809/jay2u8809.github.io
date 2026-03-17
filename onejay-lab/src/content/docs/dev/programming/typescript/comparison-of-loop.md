@@ -11,7 +11,7 @@ description: js 의 for of 반복문과 for in 반복문을 비교하여 정리�
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2021-10-10",
   "updatedAt": "2021-10-10"
 }
@@ -19,7 +19,7 @@ description: js 의 for of 반복문과 for in 반복문을 비교하여 정리�
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2021-10-10
   updatedAt: 2021-10-10
 ```
@@ -104,25 +104,25 @@ description: js 의 for of 반복문과 for in 반복문을 비교하여 정리�
 
 
   ### for
-    - 기본적인 for 문을 이용한 반복처리
+  - 기본적인 for 문을 이용한 반복처리
 
-    ```typescript
-      const plArr: any = ['Java', 'Kotlin', 'Typescript', 'Javascript'];
-      for (let idx = 0; idx < plArr.length; idx++) {
-        const content: string = plArr[idx];
-        console.log(`${content} : ${idx}`);
-      }
-    ```
-    ```text
-      [Result]
-        Java : 0
-        Kotlin : 1
-        Typescript : 2
-        Javascript : 3
-    ```
+  ```typescript
+    const plArr: any = ['Java', 'Kotlin', 'Typescript', 'Javascript'];
+    for (let idx = 0; idx < plArr.length; idx++) {
+      const content: string = plArr[idx];
+      console.log(`${content} : ${idx}`);
+    }
+  ```
+  ```text
+    [Result]
+      Java : 0
+      Kotlin : 1
+      Typescript : 2
+      Javascript : 3
+  ```
 
   ### whlie
-    - 기본적인 while 문을 이용한 반복처리
+  - 기본적인 while 문을 이용한 반복처리
 
   ```typescript
     const plArr: any = ['Java', 'Kotlin', 'Typescript', 'Javascript'];

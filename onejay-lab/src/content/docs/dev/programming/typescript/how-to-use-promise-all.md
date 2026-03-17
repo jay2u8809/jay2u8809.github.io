@@ -11,7 +11,7 @@ description: js 의 Promise.all 함수를 이용해 병렬 처리를 하는 방�
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-12-15",
   "updatedAt": "2022-12-15"
 }
@@ -19,7 +19,7 @@ description: js 의 Promise.all 함수를 이용해 병렬 처리를 하는 방�
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-12-15
   updatedAt: 2022-12-15
 ```

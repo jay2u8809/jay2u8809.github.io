@@ -1,6 +1,6 @@
 ---
 title: Git - Remote Repository URL 을 바꿔보자
-authors: [devian]
+authors: [onejay]
 description: Git 의 Remote Repository URL 을 변경해 본다.
 ---
 

@@ -11,7 +11,7 @@ description: 일본어 키보드를 이용해 맥에서 특수 기호, 역슬래
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-09-04",
   "updatedAt": "2022-09-04"
 }
@@ -19,7 +19,7 @@ description: 일본어 키보드를 이용해 맥에서 특수 기호, 역슬래
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-09-04
   updatedAt: 2022-09-04
 ```

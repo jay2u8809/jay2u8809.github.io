@@ -13,7 +13,7 @@ description: AWS Lambda 에서 필요한 파일만 Packaging 하는 방법을 �
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-08-14",
   "updatedAt": "2024-08-14"
 }
@@ -21,7 +21,7 @@ description: AWS Lambda 에서 필요한 파일만 Packaging 하는 방법을 �
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-08-14
   updatedAt: 2024-08-14
 ```

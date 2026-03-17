@@ -11,7 +11,7 @@ description: Github 를 사용하기 위해 SSH 를 생성하고 등록하는 �
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-09-18",
   "updatedAt": "2022-09-18"
 }
@@ -19,7 +19,7 @@ description: Github 를 사용하기 위해 SSH 를 생성하고 등록하는 �
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-09-18
   updatedAt: 2022-09-18
 ```

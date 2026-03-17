@@ -11,7 +11,7 @@ description: js 의 ?? 연산자와 || 연산자를 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2023-09-21",
   "updatedAt": "2023-09-21"
 }
@@ -19,7 +19,7 @@ description: js 의 ?? 연산자와 || 연산자를 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2023-09-21
   updatedAt: 2023-09-21
 ```

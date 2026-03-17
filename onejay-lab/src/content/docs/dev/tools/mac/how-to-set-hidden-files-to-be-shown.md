@@ -11,7 +11,7 @@ description:  Mac 의 Finder 에서 숨김 파일을 보거나 사이드 바의 
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-09-04",
   "updatedAt": "2022-09-04"
 }
@@ -19,7 +19,7 @@ description:  Mac 의 Finder 에서 숨김 파일을 보거나 사이드 바의 
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-09-04
   updatedAt: 2022-09-04
 ```

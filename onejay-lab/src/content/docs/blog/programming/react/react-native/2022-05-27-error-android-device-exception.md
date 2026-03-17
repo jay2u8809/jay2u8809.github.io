@@ -17,7 +17,7 @@ tags:
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-05-27",
   "updatedAt": "2022-05-27"
 }
@@ -25,7 +25,7 @@ tags:
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-05-27
   updatedAt: 2022-05-27
 ```
@@ -40,10 +40,10 @@ tags:
 
   React Native 를 이용해 Android 빌드 중 아래의 에러로 빌드에 실패했다.
 
-    ```text
-      Execution failed for task ':app:installDebug'.
-      > com.android.builder.testing.api.DeviceException: No connected devices!
-    ```
+  ```text
+    Execution failed for task ':app:installDebug'.
+    > com.android.builder.testing.api.DeviceException: No connected devices!
+  ```
 
 ## Error
 

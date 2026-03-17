@@ -11,7 +11,7 @@ description: VS Code 에서 WSL 을 사용할 때, VS Code 의 폰트를 바꾸�
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-09-08",
   "updatedAt": "2024-09-08"
 }
@@ -19,7 +19,7 @@ description: VS Code 에서 WSL 을 사용할 때, VS Code 의 폰트를 바꾸�
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-09-08
   updatedAt: 2024-09-08
 ```

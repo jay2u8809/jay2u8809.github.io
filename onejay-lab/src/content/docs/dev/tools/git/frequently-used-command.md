@@ -11,7 +11,7 @@ description: Git 의 명령어에 대해 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-08-18",
   "updatedAt": "2024-08-19"
 }
@@ -19,7 +19,7 @@ description: Git 의 명령어에 대해 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-08-18
   updatedAt: 2024-08-19
 ```
@@ -51,7 +51,7 @@ description: Git 의 명령어에 대해 정리한다.
     $ git log -1
 
     commit 14c65656386493c2108355a6d7345259bcf3f55d (HEAD -> feature/example)
-    Author: dev.ian <abcd1234@email.com>
+    Author: onejay <abcd1234@email.com>
     Date:   Sun Aug 11 15:54:53 2024 +0900
 
       add new wiki

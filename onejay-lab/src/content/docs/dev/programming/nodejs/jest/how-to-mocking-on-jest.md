@@ -11,7 +11,7 @@ description: Jest 를 이용한 Mocking 방법을 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-05-27",
   "updatedAt": "2024-08-17"
 }
@@ -19,7 +19,7 @@ description: Jest 를 이용한 Mocking 방법을 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-05-27
   updatedAt: 2024-08-17
 ```
@@ -60,37 +60,37 @@ description: Jest 를 이용한 Mocking 방법을 정리한다.
 
   #### - jest.spyOn 메소드를 이용한 Mocking 방법
 
-    - `jest.spyOn` 함수: Mocking 용 함수나 값을 만들어주는 메소드.
-    - private 메소드가 있는 **class 를 any 타입으로 형 변환** 하여 mocking 메소드를 만들어준다.
-    - mocking 한 메소드가 호출되었는지 확인하기 위해 `toHaveBeenCalled` or `toHaveBeenCalledTimes` 메소드를 활용한다.
+  - `jest.spyOn` 함수: Mocking 용 함수나 값을 만들어주는 메소드.
+  - private 메소드가 있는 **class 를 any 타입으로 형 변환** 하여 mocking 메소드를 만들어준다.
+  - mocking 한 메소드가 호출되었는지 확인하기 위해 `toHaveBeenCalled` or `toHaveBeenCalledTimes` 메소드를 활용한다.
 
-      ```typescript
-        describe('UserServiceSpec', () => {
-          let user: UserService;
+    ```typescript
+      describe('UserServiceSpec', () => {
+        let user: UserService;
 
-          beforeEach(async () => {
-            const module: TestingModule = await Test.createTestingModule({
-              providers: [UserService],
-              imports: [UserModule],
-            }).compile();
+        beforeEach(async () => {
+          const module: TestingModule = await Test.createTestingModule({
+            providers: [UserService],
+            imports: [UserModule],
+          }).compile();
 
-            user = module.get<UserService>(UserService);
-          });
-
-          it('mocking private method', async () =>{
-            // given
-            const id = 'test_id';
-            const getUser = jest
-              .spyOn(user as any, 'getUser')  // user 클래스의 getUser 를 mocking
-              .mockImplementation(async () => {
-                return {id: 'mock-user'};
-              });
-            // when & then
-            expect(getUSer).toHaveBeenCalled();
-            expect(getUSer).toHaveBeenCalledTimes(1);
-          }, 999_999_999);
+          user = module.get<UserService>(UserService);
         });
-      ```
+
+        it('mocking private method', async () =>{
+          // given
+          const id = 'test_id';
+          const getUser = jest
+            .spyOn(user as any, 'getUser')  // user 클래스의 getUser 를 mocking
+            .mockImplementation(async () => {
+              return {id: 'mock-user'};
+            });
+          // when & then
+          expect(getUSer).toHaveBeenCalled();
+          expect(getUSer).toHaveBeenCalledTimes(1);
+        }, 999_999_999);
+      });
+    ```
 
 
 
@@ -102,42 +102,42 @@ description: Jest 를 이용한 Mocking 방법을 정리한다.
 
   #### - overrideProvider 메소드를 이용한 Mocking 방법
 
-    - Mocking 한 class 를 jest 에서 사용하기 위해서는 Mocking 한 class 가 있는 module 에서 오버라이드Override 해야한다.
+  - Mocking 한 class 를 jest 에서 사용하기 위해서는 Mocking 한 class 가 있는 module 에서 오버라이드Override 해야한다.
 
-      ```typescript
-        // fetchUser 메소드를 Mocking 하기 위해 UserService class 를 상속해 새로운 class 를 만든다.
-        class MockUserService extends UserService {
-          async fetchUser(id: string): Promise<User> {
-            if (!id) {
-              throw new Error('no exist id');
-            }
-            // mocking code
-            return {
-              id: 'mock-user-id',
-            };
+    ```typescript
+      // fetchUser 메소드를 Mocking 하기 위해 UserService class 를 상속해 새로운 class 를 만든다.
+      class MockUserService extends UserService {
+        async fetchUser(id: string): Promise<User> {
+          if (!id) {
+            throw new Error('no exist id');
           }
+          // mocking code
+          return {
+            id: 'mock-user-id',
+          };
         }
+      }
 
-        describe('UserServiceSpec', () => {
-          let user: UserService;
+      describe('UserServiceSpec', () => {
+        let user: UserService;
 
-          beforeEach(async () => {
-            const module: TestingModule = await Test.createTestingModule({
-              providers: [MockUserService], // provider 로서 Mocking 용 class 를 지정
-              imports: [UserModule],
-            })
-            .overrideProvider(UserService)  // UserService class 를 override 
-            .useClass(MockUserService)      // override 할 class 지정(MockUserService class)
-            .compile();
-
-            user = module.get<UserService>(UserService);
-          });
-
-          it('should be defined', () => {
-            expect(user).toBeDefined();
+        beforeEach(async () => {
+          const module: TestingModule = await Test.createTestingModule({
+            providers: [MockUserService], // provider 로서 Mocking 용 class 를 지정
+            imports: [UserModule],
           })
+          .overrideProvider(UserService)  // UserService class 를 override 
+          .useClass(MockUserService)      // override 할 class 지정(MockUserService class)
+          .compile();
+
+          user = module.get<UserService>(UserService);
         });
-      ```
+
+        it('should be defined', () => {
+          expect(user).toBeDefined();
+        })
+      });
+    ```
 
 
 

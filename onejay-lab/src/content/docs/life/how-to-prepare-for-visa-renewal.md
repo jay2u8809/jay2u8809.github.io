@@ -12,7 +12,7 @@ description: 일본에서 재류 비자를 갱신하기 위한 서류 준비 방
 <!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Onejay",
   "createdAt": "2024-08-02",
   "updatedAt": "2024-08-16"
 }
@@ -20,7 +20,7 @@ description: 일본에서 재류 비자를 갱신하기 위한 서류 준비 방
 -->
 
 ```yaml
-  author: Onigiri.J
+  author: Onejay
   createdAt: 2024-08-02
   updatedAt: 2024-08-16
 ```

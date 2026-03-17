@@ -16,7 +16,7 @@ tags:
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-05-28",
   "updatedAt": "2022-05-28"
 }
@@ -24,7 +24,7 @@ tags:
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-05-28
   updatedAt: 2022-05-28
 ```
@@ -67,20 +67,20 @@ tags:
 
   Git Repository 의 구조를 정리하면 아래와 같다.
 
-    - Project Structure
+  - Project Structure
 
-      ```markdown
-        GitRepository
-            ├── A Project
-            ├── B Project
-            ├── C Project
-            ├── D Project
-            ├── E Project (new project)
-            │     ├── .git  # 자동으로 생성된 디렉토리
-            │     └── .gitignore
-            ├── .git
-            └── .gitignore
-      ```
+    ```markdown
+      GitRepository
+          ├── A Project
+          ├── B Project
+          ├── C Project
+          ├── D Project
+          ├── E Project (new project)
+          │     ├── .git  # 자동으로 생성된 디렉토리
+          │     └── .gitignore
+          ├── .git
+          └── .gitignore
+    ```
 
 ## 해결
 

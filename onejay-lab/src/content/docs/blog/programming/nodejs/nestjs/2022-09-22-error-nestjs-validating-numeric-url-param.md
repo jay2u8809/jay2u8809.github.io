@@ -17,7 +17,7 @@ tags:
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-09-22",
   "updatedAt": "2022-09-22"
 }
@@ -25,7 +25,7 @@ tags:
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-09-22
   updatedAt: 2022-09-22
 ```
@@ -44,56 +44,56 @@ tags:
 
   ### Controller
 
-    - 아래의 코드와 같이 주문 상품의 수량을 변경하는 EndPoint 가 있다고 가정한다.
+  - 아래의 코드와 같이 주문 상품의 수량을 변경하는 EndPoint 가 있다고 가정한다.
 
-      ```typescript
-        @Patch('order/prod/count/:id/:count')
-        @ApiResponse({
-          status: HttpStatus.OK,
-          type: OrderProdUpdateResponseDto,
-          description: 'udpdate ord prod',
-        })
-        @HttpCode(HttpStatus.OK)
-        @UseGuards(ParamGuard)
-        async updateOrdProd(
-          @Param() param: OrderProdUpdateDto,
-        ): Promise<OrderProdUpdateResponseDto> {
-          console.log(TAG, 'patch-ord-prod-req', param);
+    ```typescript
+      @Patch('order/prod/count/:id/:count')
+      @ApiResponse({
+        status: HttpStatus.OK,
+        type: OrderProdUpdateResponseDto,
+        description: 'udpdate ord prod',
+      })
+      @HttpCode(HttpStatus.OK)
+      @UseGuards(ParamGuard)
+      async updateOrdProd(
+        @Param() param: OrderProdUpdateDto,
+      ): Promise<OrderProdUpdateResponseDto> {
+        console.log(TAG, 'patch-ord-prod-req', param);
 
-          const result: OrderProdUpdateResponseDto = await this.orderService.updateOrdProd
-            param.id,
-            param.count,
-          );
+        const result: OrderProdUpdateResponseDto = await this.orderService.updateOrdProd
+          param.id,
+          param.count,
+        );
 
-          console.log(TAG, 'patch-ord-prod-res', result);
+        console.log(TAG, 'patch-ord-prod-res', result);
 
-          return result;
-        }
-      ```
+        return result;
+      }
+    ```
 
   ### DTO
 
-    - 위의 엔드포인트의 Path Variable (id, count) 에 해당하는 데이터를 정의한다.
+  - 위의 엔드포인트의 Path Variable (id, count) 에 해당하는 데이터를 정의한다.
 
-      ```typescript
-        import {ApiProperty} from '@nestjs/swagger';
-        import {IsNotEmpty, IsNumber, IsString} from 'class-validator';
-        import {Type} from 'class-transformer';
+    ```typescript
+      import {ApiProperty} from '@nestjs/swagger';
+      import {IsNotEmpty, IsNumber, IsString} from 'class-validator';
+      import {Type} from 'class-transformer';
 
-        export class OrderProdUpdateDto {
-          @ApiProperty()
-          @IsNotEmpty()
-          @IsString()
-          id: string;
+      export class OrderProdUpdateDto {
+        @ApiProperty()
+        @IsNotEmpty()
+        @IsString()
+        id: string;
 
-          @ApiProperty({
-            description: '주문 상품 수량',
-          })
-          @IsNotEmpty()
-          @IsNumber()
-          count: number;
-        }
-      ```
+        @ApiProperty({
+          description: '주문 상품 수량',
+        })
+        @IsNotEmpty()
+        @IsNumber()
+        count: number;
+      }
+    ```
 
 
 
@@ -103,9 +103,9 @@ tags:
 
   그럼에도 불구하고 API 테스트 툴(Postman, Insomnia 등) 나 Swagger를 사용해 Request 를 보내면 아래와 같이 숫자형 데이터가 아니라는 에러가 발생한다.
 
-    ```text
-      count must be a number conforming to the specified constraints
-    ```
+  ```text
+    count must be a number conforming to the specified constraints
+  ```
 
 
 
@@ -115,20 +115,20 @@ tags:
 
   데이터를 RequestBody 와 같이 JSON 형태가 아니라 URL의 **문자열로 보냈기 때문**에,  URL 경로에서 `:count`에 해당하는 데이터는 아래와 같이 **문자열** 로 DTO 의 `count` 필드와 맵핑된다. 
 
-    - Request
+  - Request
 
-      ```text
-        https://www.ooooo.com/api/v1/order/prod/count/ABCD321321-12/3
-      ```
+    ```text
+      https://www.ooooo.com/api/v1/order/prod/count/ABCD321321-12/3
+    ```
 
-    - count 는 숫자 3 이 아닌 문자열 '3' 이다.
+  - count 는 숫자 3 이 아닌 문자열 '3' 이다.
 
-      ```typescript
-        {
-          id: 'ABCD321321-12',
-          count: '3'
-        }
-      ```
+    ```typescript
+      {
+        id: 'ABCD321321-12',
+        count: '3'
+      }
+    ```
 
   그렇기 때문에 URL 경로의 데이터들을 DTO 객체와 맵핑하는 과정에서 _문자열 -> 숫자_ 로 변경하는 처리가 필요하다.
 

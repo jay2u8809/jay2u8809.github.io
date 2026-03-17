@@ -12,7 +12,7 @@ description: 일본 라인 모바일의 APN 을 설정하는 방법에 대해 �
 <!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Onejay",
   "createdAt": "2022-08-14",
   "updatedAt": "2022-08-14"
 }
@@ -20,7 +20,7 @@ description: 일본 라인 모바일의 APN 을 설정하는 방법에 대해 �
 -->
 
 ```yaml
-  author: Onigiri.J
+  author: Onejay
   createdAt: 2022-08-14
   updatedAt: 2022-08-14
 ```

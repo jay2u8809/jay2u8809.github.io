@@ -18,7 +18,7 @@ tags:
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-05-28",
   "updatedAt": "2024-08-16"
 }
@@ -26,14 +26,14 @@ tags:
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-05-28
   updatedAt: 2024-08-16
 ```
 
 ---
 
-> "Webpack 을 적용하여 AWS Lambda 에 업로드할 소스코드의 사이즈를 줄여본다"
+> "Webpack 을 적용하여 AWS Lambda 에 업로드할 소스코드의 용량을 줄이자"
 
 <!-- truncate -->
 
@@ -162,9 +162,9 @@ tags:
 
   웹팩 적용을 끝내고 deploy 해보면 문제 없이 소스코드가 업로드되는 것을 확인할 수 있다.
   
-    ```shell
-      $ npm run deploy:example
-    ```
+  ```shell
+    $ npm run deploy:example
+  ```
 
 
 
@@ -180,4 +180,4 @@ tags:
  
   - Build 시간 증가
 
-  아쉬운 점은 이를 통해 build 시간이 꽤나 길어졌다는 것이다. webpack 을 적용하는 시간이 걸리면서 약 30초 이상, 경우에 따라서는 약 3분 이상 build 시간이 늘어났다. build 시간은 단축 할 수 있는 다른 툴들도 알아봐야할 필요가 생겼다. 
+  아쉬운 점은 이를 통해 build 시간이 꽤나 길어졌다는 것이다. webpack 을 적용하는 시간이 걸리면서 약 30초 이상, 경우에 따라서는 약 3분 이상 build 시간이 늘어났다. build 시간은 단축 할 수 있는 다른 툴들도 알아봐야할 필요가 생겼다.

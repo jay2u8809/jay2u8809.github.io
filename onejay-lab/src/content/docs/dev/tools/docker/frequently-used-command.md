@@ -11,7 +11,7 @@ description: Docker 의 명령어에 대해 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-08-18",
   "updatedAt": "2024-08-20"
 }
@@ -19,7 +19,7 @@ description: Docker 의 명령어에 대해 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-08-18
   updatedAt: 2024-08-20
 ```
@@ -35,13 +35,13 @@ description: Docker 의 명령어에 대해 정리한다.
     - Docker
 
       ```shell
-        $ docker build -f Dockerfile -t devian/spring-boot-docker-test:0.0.1 .
+        $ docker build -f Dockerfile -t onejay/spring-boot-docker-test:0.0.1 .
       ```
 
     - Podman
 
       ```shell
-        $ podman build -f Dockerfile -t devian/spring-boot-docker-test:0.0.1 .
+        $ podman build -f Dockerfile -t onejay/spring-boot-docker-test:0.0.1 .
       ```
 
   ### Run
@@ -50,7 +50,7 @@ description: Docker 의 명령어에 대해 정리한다.
       + `port`: _8080:80_ 은 **로컬PC의 포트번호(8080):컨테이너의 포트번호(80)** 를 의미
 
       ```shell
-        $ docker run -p 8080:80 devian/spring-boot-docker-test:0.0.1
+        $ docker run -p 8080:80 onejay/spring-boot-docker-test:0.0.1
       ```
 
   ### Stop

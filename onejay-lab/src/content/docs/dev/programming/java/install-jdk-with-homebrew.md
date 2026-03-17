@@ -11,7 +11,7 @@ description: HoemBrew 를 이용해 Java JDK 를 설치하는 방법에 대해 �
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2022-09-11",
   "updatedAt": "2023-01-01"
 }
@@ -19,7 +19,7 @@ description: HoemBrew 를 이용해 Java JDK 를 설치하는 방법에 대해 �
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2022-09-11
   updatedAt: 2023-01-01
 ```
@@ -44,86 +44,86 @@ description: HoemBrew 를 이용해 Java JDK 를 설치하는 방법에 대해 �
 
   ### 2-1) JDK 설치
     
-    - 버전을 지정하여 설치할 경우
-    
-      ```shell
-        $ brew install openjdk@17
-      ```
+  - 버전을 지정하여 설치할 경우
+  
+    ```shell
+      $ brew install openjdk@17
+    ```
 
-    - 버전을 지정하지 않고 가장 최신 버전을 설치할 경우
+  - 버전을 지정하지 않고 가장 최신 버전을 설치할 경우
 
-      ```shell
-        $ brew install openjdk
-      ```
+    ```shell
+      $ brew install openjdk
+    ```
 
-    - Command
+  - Command
 
-      ```shell
-        $ brew install openjdk@17
+    ```shell
+      $ brew install openjdk@17
 
-        ==> Downloading https://ghcr.io/v2/homebrew/core/openjdk/17/manifests/17.0.4.1
-        ######################################################################## 100.0%
-        ==> Downloading https://ghcr.io/v2/homebrew/core/openjdk/17/blobs/sha256:7850d052807931b14395f0ba01938be6718518c76c11fb5
-        ==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7850d052807931b14395f0ba01938be6718
-        ######################################################################## 100.0%
-        ==> Pouring openjdk@17--17.0.4.1.monterey.bottle.tar.gz
-        ==> Caveats
-        For the system Java wrappers to find this JDK, symlink it with
-          sudo ln -sfn /usr/local/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+      ==> Downloading https://ghcr.io/v2/homebrew/core/openjdk/17/manifests/17.0.4.1
+      ######################################################################## 100.0%
+      ==> Downloading https://ghcr.io/v2/homebrew/core/openjdk/17/blobs/sha256:7850d052807931b14395f0ba01938be6718518c76c11fb5
+      ==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7850d052807931b14395f0ba01938be6718
+      ######################################################################## 100.0%
+      ==> Pouring openjdk@17--17.0.4.1.monterey.bottle.tar.gz
+      ==> Caveats
+      For the system Java wrappers to find this JDK, symlink it with
+        sudo ln -sfn /usr/local/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
 
-        openjdk@17 is keg-only, which means it was not symlinked into /usr/local,
-        because this is an alternate version of another formula.
+      openjdk@17 is keg-only, which means it was not symlinked into /usr/local,
+      because this is an alternate version of another formula.
 
-        If you need to have openjdk@17 first in your PATH, run:
-          echo 'export PATH="/usr/local/opt/openjdk@17/bin:$PATH"' >> ~/.zshrc
+      If you need to have openjdk@17 first in your PATH, run:
+        echo 'export PATH="/usr/local/opt/openjdk@17/bin:$PATH"' >> ~/.zshrc
 
-        For compilers to find openjdk@17 you may need to set:
-          export CPPFLAGS="-I/usr/local/opt/openjdk@17/include"
+      For compilers to find openjdk@17 you may need to set:
+        export CPPFLAGS="-I/usr/local/opt/openjdk@17/include"
 
-        ==> Summary
-        🍺  /usr/local/Cellar/openjdk@17/17.0.4.1: 639 files, 305.5MB
-        ==> Running `brew cleanup openjdk@17`...
-        Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
-        Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+      ==> Summary
+      🍺  /usr/local/Cellar/openjdk@17/17.0.4.1: 639 files, 305.5MB
+      ==> Running `brew cleanup openjdk@17`...
+      Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+      Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 
-      ```
+    ```
     
   ### 2-2) 심볼릭 링크 설정
 
-    - 버전을 지정하여 설치할 경우
-    
-      ```shell
-        $ sudo ln -sfn $(brew --prefix)/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
-      ```
+  - 버전을 지정하여 설치할 경우
+  
+    ```shell
+      $ sudo ln -sfn $(brew --prefix)/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+    ```
 
-    - 버전을 지정하지 않고 가장 최신 버전을 설치할 경우
-    
-      ```shell
-        $ sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-      ```
+  - 버전을 지정하지 않고 가장 최신 버전을 설치할 경우
+  
+    ```shell
+      $ sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+    ```
 
-    - Command
+  - Command
 
-      ```shell
-        $ sudo ln -sfn $(brew --prefix)/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
-        Password: 비밀번호 입력
-      ```
+    ```shell
+      $ sudo ln -sfn $(brew --prefix)/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+      Password: 비밀번호 입력
+    ```
     
   ### 2-3) 자바 버전 확인
     
+  ```shell
+    $ java --version
+  ```
+
+  - Command
+
     ```shell
       $ java --version
+
+      openjdk 17.0.4.1 2022-08-12
+      OpenJDK Runtime Environment Homebrew (build 17.0.4.1+0)
+      OpenJDK 64-Bit Server VM Homebrew (build 17.0.4.1+0, mixed mode, sharing)
     ```
-
-    - Command
-
-      ```shell
-        $ java --version
-
-        openjdk 17.0.4.1 2022-08-12
-        OpenJDK Runtime Environment Homebrew (build 17.0.4.1+0)
-        OpenJDK 64-Bit Server VM Homebrew (build 17.0.4.1+0, mixed mode, sharing)
-      ```
 
 
 ## 3. JAVA_HOME 설정
@@ -176,4 +176,3 @@ description: HoemBrew 를 이용해 Java JDK 를 설치하는 방법에 대해 �
 --- 
 - Refs
     - [macOS で Java を使う方法 ver. 2022](https://engineering.mobalab.net/2022/06/06/how-to-install-java-on-macos-in-2022/)
-

@@ -11,7 +11,7 @@ description: Docker 와 Podman 을 설치하는 방법에 대해 정리한다.
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-09-08",
   "updatedAt": "2024-09-08"
 }
@@ -19,7 +19,7 @@ description: Docker 와 Podman 을 설치하는 방법에 대해 정리한다.
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-09-08
   updatedAt: 2024-09-08
 ```

@@ -13,7 +13,7 @@ description: Serverless Framwork 의 플러그인(prune)을 이용해 AWS Lambda
 <!-- 
 ```json
 {
-  "author": "Dev.ian",
+  "author": "Onejay",
   "createdAt": "2024-06-26",
   "updatedAt": "2024-08-14"
 }
@@ -21,7 +21,7 @@ description: Serverless Framwork 의 플러그인(prune)을 이용해 AWS Lambda
 -->
 
 ```yaml
-  author: Dev.ian
+  author: Onejay
   createdAt: 2024-06-26
   updatedAt: 2024-08-14
 ```
@@ -44,52 +44,52 @@ description: Serverless Framwork 의 플러그인(prune)을 이용해 AWS Lambda
 
   #### 1) Install plugin
 
-    - sls 로 deploy 할 때만 사용하므로 dev dependency 로 충분하다
+  - sls 로 deploy 할 때만 사용하므로 dev dependency 로 충분하다
 
-      ```shell
-        npm install --save-dev serverless-prune-plugin
-      ```
+    ```shell
+      npm install --save-dev serverless-prune-plugin
+    ```
 
 
   #### 2) YAML
 
-    - YAML 설정을 통해 Deploy 를 할 때마다 동일한 처리를 할 수 있다.
+  - YAML 설정을 통해 Deploy 를 할 때마다 동일한 처리를 할 수 있다.
 
-      ```yaml
-        service: example-service
+    ```yaml
+      service: example-service
 
-        plugins:
-          - serverless-prune-plugin
+      plugins:
+        - serverless-prune-plugin
 
-        custom:
-          prune:
-            automatic: true
-            number: 3
-            # includeLayers: true
+      custom:
+        prune:
+          automatic: true
+          number: 3
+          # includeLayers: true
+    ```
+
+    + `number`
+      - 3인 경우 방금 deploy 한 버전 포함 최신 3개만 남기고 모두 지운다.
+
+    + `includeLayers`
+      - AWS Lambda Layer 의 이전 버전도 삭제할 것인가?
+
+  - Deploy 
+    + 플러그인을 설정한 뒤 sls 로 deploy 하면 아래와 같은 메시지가 나온다.
+
+      ```shell
+        ✔ Pruning of functions complete
       ```
-
-      + `number`
-        - 3인 경우 방금 deploy 한 버전 포함 최신 3개만 남기고 모두 지운다.
-
-      + `includeLayers`
-        - AWS Lambda Layer 의 이전 버전도 삭제할 것인가?
-
-    - Deploy 
-      + 플러그인을 설정한 뒤 sls 로 deploy 하면 아래와 같은 메시지가 나온다.
-
-        ```shell
-          ✔ Pruning of functions complete
-        ```
 
 
   #### 3) Command
 
-    - sls command 를 이용한다면 수동으로도 삭제 할 수 있다.
+  - sls command 를 이용한다면 수동으로도 삭제 할 수 있다.
 
-      ```shell
-      
-        $ sls prune -n 3 -c serverless.yaml
-      ```
+    ```shell
+    
+      $ sls prune -n 3 -c serverless.yaml
+    ```
 
 
 

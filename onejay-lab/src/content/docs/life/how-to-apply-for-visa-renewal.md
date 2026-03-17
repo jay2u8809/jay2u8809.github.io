@@ -12,7 +12,7 @@ description: 일본에서 재류 비자를 갱신하는 방법을 정리한다.
 <!-- 
 ```json
 {
-  "author": "Onigiri.J",
+  "author": "Onejay",
   "createdAt": "2024-08-02",
   "updatedAt": "2024-08-16"
 }
@@ -20,7 +20,7 @@ description: 일본에서 재류 비자를 갱신하는 방법을 정리한다.
 -->
 
 ```yaml
-  author: Onigiri.J
+  author: Onejay
   createdAt: 2024-08-02
   updatedAt: 2024-08-16
 ```
@@ -113,4 +113,3 @@ description: 일본에서 재류 비자를 갱신하는 방법을 정리한다.
   그리고 현재의 재류카드 뒷면에 **"在留期間更新許可申請中"** 라는 스탬프를 찍어준다.
 
   재류카드 뒷면의 스탬프와 접수표를 받았다면 접수 처리가 끝났다.
-
