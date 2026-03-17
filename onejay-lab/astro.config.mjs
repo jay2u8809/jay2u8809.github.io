@@ -68,6 +68,9 @@ export default defineConfig({
 					],
 					{
 						exclude: [
+							'/',
+							'/en',
+							'/ja',
 							'/blog',
 							'/blog/**',
 							'/en/blog',
