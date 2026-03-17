@@ -66,7 +66,7 @@ description: React Native 로 어플리케이션을 개발할 환경을 구축�
       ```
         
     #### ② Node 설치 
-      - _참고: [여러 버전의 node.js 관리하기](/docs/programming/nodejs/tips/how-to-install-nodenv)_
+      - _참고: [여러 버전의 node.js 관리하기](/dev/programming/nodejs/tips/how-to-install-nodenv)_
 
       - nodenv 설치
         
@@ -170,7 +170,7 @@ description: React Native 로 어플리케이션을 개발할 환경을 구축�
     ```
 
     + CocoaPods가 제대로 설치되지 않아 에러가 났다. 로그에 나온대로 아래의 명령어를 실행하여 해결한다.
-      - _참고: [ReactNative - [Error] iOS - Could not get the simulator list from Xcode](/dev-posts/2022-05-28-error-ios-could-not-get-simulator-list-from-xcode)_
+      - _참고: [ReactNative - [Error] iOS - Could not get the simulator list from Xcode](/blog/programming/react/react-native/2022-05-28-error-ios-could-not-get-simulator-list-from-xcode)_
 
       ```shell
         $ cd ./${APP_NAME}/ios && pod install
