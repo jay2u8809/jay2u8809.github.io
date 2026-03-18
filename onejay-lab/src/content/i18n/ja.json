@@ -7,6 +7,7 @@
   "starlightBlog.sidebar.authors": "著者",
   "starlightBlog.pagination.prev": "新しい記事",
   "starlightBlog.pagination.next": "古い記事",
+  "starlightBlog.post.date": "{{date, datetime(dateStyle: long)}}",
   "starlightBlog.post.draft": "下書き",
   "starlightBlog.post.featured": "おすすめ",
   "starlightBlog.post.tags": "タグ:",
