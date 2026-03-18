@@ -5,7 +5,7 @@ description: js 의 ?? 연산자와 || 연산자를 정리한다.
 ---
 
 <!--title -->
-# [TypeScript] && 와 || 연산자
+# [TypeScript] ?? 와 || 연산자
 <!--//title -->
 
 <!-- 
@@ -28,7 +28,7 @@ description: js 의 ?? 연산자와 || 연산자를 정리한다.
 ---
 
 
-## Contens
+## Contents
 
 |   | ?? 연산자 | \|\| 연산자 |
 |---|---|---|

@@ -39,7 +39,7 @@ description: Jest 를 이용한 Mocking 방법을 정리한다.
           throw new Error('no exist id');
         }
         // return
-        return this.getUSer(id);
+        return this.getUser(id);
       }
 
       // === private ===
@@ -56,7 +56,7 @@ description: Jest 를 이용한 Mocking 방법을 정리한다.
 
 ## Mocking private method 
 
-  - Target Method: `UserSerivce.getUser`
+  - Target Method: `UserService.getUser`
 
   #### - jest.spyOn 메소드를 이용한 Mocking 방법
 
@@ -86,8 +86,8 @@ description: Jest 를 이용한 Mocking 방법을 정리한다.
               return {id: 'mock-user'};
             });
           // when & then
-          expect(getUSer).toHaveBeenCalled();
-          expect(getUSer).toHaveBeenCalledTimes(1);
+          expect(getUser).toHaveBeenCalled();
+          expect(getUser).toHaveBeenCalledTimes(1);
         }, 999_999_999);
       });
     ```

@@ -31,7 +31,7 @@ description: 맥에서 Homebrew 를 설치하는 방법에 대해 정리한다.
   - Mac OS용 패키지 관리 프로그램
     + 패키지: 맥에 설치하여 사용하는 프로그램들을 의미. 주로 개발 환경을 구성할 때 사용하는 프로그램들이지만 크롬 브라우저 같은 일반적인 프로그램들도 설치할 수 있다.
     + 앱스토어나 구글플레이, npm 등과 같은 역할을 하는 프로그램이다.
-  - Termianl 을 이용해 패키지들을 검색, 설치, 업데이트, 삭제 할 수 있는 프로그램
+  - Terminal 을 이용해 패키지들을 검색, 설치, 업데이트, 삭제 할 수 있는 프로그램
   - 앱스토어나 공식 홈페이지에서 다운로드 받아 설치하는 경우에는 삭제했을 때도 일부 파일들이 남아 계속 디스크 공간을 차지할 수 있다. 하지만 Homebrew를 사용할 경우에는 말끔히 삭제가된다. 이 외에 업데이트와 같은 유지 관리 기능도 강력하기에 Homebrew 를 사용한다.
 
 
@@ -102,9 +102,9 @@ description: 맥에서 Homebrew 를 설치하는 방법에 대해 정리한다.
         ==> /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
       ```
         
-    #### 2-3) Hombrew 설치
+    #### 2-3) Homebrew 설치
 
-      - 이어서 Hombrew가 설치된다.
+      - 이어서 Homebrew가 설치된다.
         
       ```shell
         ==> Downloading and installing Homebrew...

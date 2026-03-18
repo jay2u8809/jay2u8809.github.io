@@ -1,10 +1,10 @@
 ---
-title: Typescript - filter 함수의 사용법
+title: TypeScript - filter 함수 사용법
 description: 자바스크립트의 Filter 함수에 대해 알아본다.
 ---
 
 <!--title -->
-# [Jobː談] AWS Lambda Storage Limit Error 해결: Prune Plugin
+# TypeScript - filter 함수 사용법
 <!--//title -->
 
 <!-- 

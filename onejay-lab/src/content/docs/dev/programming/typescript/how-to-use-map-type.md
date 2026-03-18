@@ -5,7 +5,7 @@ description: js 의 map 타입의 자료구조를 사용하는 방법에 대해 
 ---
 
 <!--title -->
-# [TypeScript] for of 와 for in 반복문
+# [TypeScript] Map 타입 사용방법
 <!--//title -->
 
 <!-- 

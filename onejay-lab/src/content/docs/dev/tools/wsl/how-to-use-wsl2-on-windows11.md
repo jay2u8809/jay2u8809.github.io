@@ -86,7 +86,7 @@ description: Windows 11 에서 WSL2 설치하는 방법에 대해 정리한다.
     - VERSION 이 _1_ 이라면 아래의 명령어를 실행
 
       ```shell
-        $ $ wsl --set-version Ubuntu 2
+        $ wsl --set-version Ubuntu 2
       ```
 
 

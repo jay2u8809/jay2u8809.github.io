@@ -1,5 +1,5 @@
 ---
-title: 개발 환경 설정(Mac)
+title: React Native 개발 환경 설정 (Mac)
 description: React Native 로 어플리케이션을 개발할 환경을 구축하는 방법을 정리한다.
 # sidebar_position: 1
 ---
@@ -171,7 +171,7 @@ description: React Native 로 어플리케이션을 개발할 환경을 구축�
   ```
 
   + CocoaPods가 제대로 설치되지 않아 에러가 났다. 로그에 나온대로 아래의 명령어를 실행하여 해결한다.
-    - _참고: [ReactNative - [Error] iOS - Could not get the simulator list from Xcode](/blog/programming/react/react-native/2022-05-28-error-ios-could-not-get-simulator-list-from-xcode)_
+    - _참고: [ReactNative - [Error] iOS - Could not get the simulator list from Xcode](/blog/programming/react/react-native/2022-05-28-error-react-native-ios-xcode-simulator)_
 
     ```shell
       $ cd ./${APP_NAME}/ios && pod install

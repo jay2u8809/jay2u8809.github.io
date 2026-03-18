@@ -121,7 +121,7 @@ description: js 의 for of 반복문과 for in 반복문을 비교하여 정리�
       Javascript : 3
   ```
 
-  ### whlie
+  ### while
   - 기본적인 while 문을 이용한 반복처리
 
   ```typescript
@@ -141,7 +141,7 @@ description: js 의 for of 반복문과 for in 반복문을 비교하여 정리�
       Javascript : 3
   ```
 
-  ### do whlie
+  ### do while
    - 기본적인 do while 문을 이용한 반복처리
 
   ```typescript

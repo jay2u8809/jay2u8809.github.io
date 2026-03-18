@@ -75,7 +75,7 @@ description: 조건문을 이용해 React 컴포넌트를 표시하는 방법을
             ? <div><h1>Error!!!</h1></div>
             :
             loading
-              ? <div><h1>Lodaing...</h1></div>
+              ? <div><h1>Loading...</h1></div>
               : <div><h1>{result}</h1></div>
         );
       }

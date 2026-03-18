@@ -1,16 +1,17 @@
 ---
-title: AWS Cloudwatch - 로그를 간편하게 검색하는 방법
+title: Log Insights로 로그 손쉽게 검색하기
 date: 2024-08-14
-excerpt: AWS Cloudwatch 의 로그를 Log Insights 를 이용해 간편하게 검색해 본다.
+excerpt: AWS CloudWatch 의 로그를 Log Insights 를 이용해 간편하게 검색해 본다.
 authors:
   - onejay
 tags:
   - aws
   - cloudwatch
   - log insights
+  - logging
 ---
 
-> "AWS Cloudatch 의 Log Insights 를 이용해 Cloudwatch 의 Log 를 검색한다."
+> "AWS CloudWatch 의 Log Insights 를 이용해 CloudWatch 의 Log 를 검색한다."
 <!-- truncate -->
 
 
@@ -45,9 +46,9 @@ tags:
  
 현재 운영 중인 서비스는 기본적으로 AWS 서비스(`API Gateway + AWS Lambda + DynamoDB`)를 이용한 Serverless 아키텍쳐 기반이다. 로그는 **CloudWatch + S3**를 이용해 저장하고 있다. 
 
-CloudWatch 는 실행한 AWS Lambda 의 인스턴스를 기준으로 로그를 기록하기 때문에 원하는 로그를 정확하게 검색하기가 어렵다. 때문에 `Log Insight` 라는 서비스를 이용하면, Query 를 이용해 간단하게 CloudWatch 로그를 검색할 수 있다.
+CloudWatch 는 실행한 AWS Lambda 의 인스턴스를 기준으로 로그를 기록하기 때문에 원하는 로그를 정확하게 검색하기가 어렵다. 때문에 `Log Insights` 라는 서비스를 이용하면, Query 를 이용해 간단하게 CloudWatch 로그를 검색할 수 있다.
 
-  이번 포스트에서는 CloudWatch 의 로그를 쉽게 검색하기 위한 **Log Insight 의 사용 방법** 을 정리한다.
+  이번 포스트에서는 CloudWatch 의 로그를 쉽게 검색하기 위한 **Log Insights 의 사용 방법** 을 정리한다.
 
 
 
@@ -57,7 +58,7 @@ CloudWatch 는 실행한 AWS Lambda 의 인스턴스를 기준으로 로그를 �
   
   - [로그 그룹 및 로그 스트림 작업](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html)
 
-  Serverless Framwork 를 예를 들어 아래의 yaml 을 보면, exmple-service 에 해당하는 로그 그룹이 생성되고, exampleLambdaIndex, exampleLambdaStatistics 라는 Lambda 들(혹은 API Gateway 나 다른 리소스)이 실행될 때마다 각각의 로그 스트림을 만들어 로그를 저장한다.
+  Serverless Framework 를 예를 들어 아래의 yaml 을 보면, exmple-service 에 해당하는 로그 그룹이 생성되고, exampleLambdaIndex, exampleLambdaStatistics 라는 Lambda 들(혹은 API Gateway 나 다른 리소스)이 실행될 때마다 각각의 로그 스트림을 만들어 로그를 저장한다.
 
   ```yaml
     service: example-service  # Log Group Name: example-service-dev, example-service-prod, ...

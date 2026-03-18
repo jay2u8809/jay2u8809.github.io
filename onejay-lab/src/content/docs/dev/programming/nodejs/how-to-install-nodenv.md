@@ -81,7 +81,7 @@ description: Nodenv를 설치하여 여러 버전의 Node.js 를 관리하는 �
   
   ### 2-1) Nodenv 로 설치 가능한 Node.js 버전 확인
 
-  어떤 버전의 node.js 를 설치할 수 있는지 확인. 대부분의 node.js 버전을 지원하지만 지원하지 않는 버전이 있을수 있으므로 확인이 필요하다.
+  어떤 버전의 node.js 를 설치할 수 있는지 확인. 대부분의 node.js 버전을 지원하지만 지원하지 않는 버전이 있을 수 있으므로 확인이 필요하다.
 
   - 설치할 수 있는 모든 node.js 버전 확인
 
@@ -221,7 +221,7 @@ description: Nodenv를 설치하여 여러 버전의 Node.js 를 관리하는 �
       $ sudo npm uninstall npm -g
     ```
 
-  - unintall node.js
+  - uninstall node.js
 
     ```shell
       $ brew uninstall node

@@ -1,11 +1,11 @@
 ---
-title: JDK 설치 방법 - HomeBrew
-description: HoemBrew 를 이용해 Java JDK 를 설치하는 방법에 대해 정리한다.
+title: Homebrew로 JDK 설치하기
+description: Homebrew 를 이용해 Java JDK 를 설치하는 방법에 대해 정리한다.
 # sidebar_position: 1
 ---
 
 <!--title -->
-# [Java] HomeBrew 로 JDK 설치하기
+# [Java] Homebrew 로 JDK 설치하기
 <!--//title -->
 
 <!-- 

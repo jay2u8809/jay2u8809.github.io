@@ -1,5 +1,5 @@
 ---
-title: JSON → CSV 방법
+title: JSON → CSV 변환 방법 (json-2-csv)
 description: json-2-csv 라이브러리를 이용해 간단히 csv 파일을 만드는 방법을 정리한다.
 # sidebar_position: 1
 ---
@@ -57,7 +57,7 @@ description: json-2-csv 라이브러리를 이용해 간단히 csv 파일을 만
       // 1. json -> csv line
       const csvLine: string = await json2csvAsync(items);
 
-      // 2. generate cvs file
+      // 2. generate csv file
       fs.writeFileSync('파일경로/파일명.csv', csvLine);
     ```
 
@@ -215,7 +215,7 @@ description: json-2-csv 라이브러리를 이용해 간단히 csv 파일을 만
       // 2. string array -> string
       const csvLine: string = csvLines.join('\n');
 
-      // 3. generate cvs file
+      // 3. generate csv file
       fs.writeFileSync('파일경로/파일명.csv', csvLine);
     ```
 
@@ -236,7 +236,7 @@ description: json-2-csv 라이브러리를 이용해 간단히 csv 파일을 만
   #### 3) csv 파일 생성
     
   ```typescript
-    // 3. generate cvs file
+    // 3. generate csv file
     fs.writeFileSync('파일경로/파일명.csv', csvLine);
   ```
 

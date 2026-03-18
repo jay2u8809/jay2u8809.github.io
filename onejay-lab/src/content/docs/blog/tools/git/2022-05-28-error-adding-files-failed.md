@@ -1,12 +1,13 @@
 ---
-title: Git - [Error] adding files failed
+title: 중첩된 .git 디렉토리로 인한 adding files failed 에러 해결
 date: 2022-05-28
 excerpt: Git 의 adding files failed 에러를 알아보고 해결해 본다.
 authors:
   - onejay
 tags:
   - git
-  - trouble shooting
+  - troubleshooting
+  - nestjs
 ---
 
 <!--title -->
