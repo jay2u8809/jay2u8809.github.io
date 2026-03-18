@@ -1,5 +1,5 @@
 ---
-title: AWS Lambda - Code Storage Limit 초과 해결: Serverless Prune Plugin
+title: Code Storage Limit 초과 해결 — Serverless Prune Plugin
 date: 2024-06-26
 excerpt: AWS Lambda 의 Code Storage Limit 해결방법
 authors:

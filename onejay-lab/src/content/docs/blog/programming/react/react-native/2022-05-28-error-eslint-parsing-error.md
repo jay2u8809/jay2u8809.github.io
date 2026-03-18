@@ -1,5 +1,5 @@
 ---
-title: React Native - ESLint Parsing Error 해결: TypeScript 파일 린트 설정
+title: ESLint Parsing Error 해결 — TypeScript 파일 린트 설정
 date: 2022-05-28
 excerpt: React Native 에서 ES Lint 의 Parsing error 를 해결해 본다.
 authors:

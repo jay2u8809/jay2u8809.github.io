@@ -1,5 +1,5 @@
 ---
-title: NestJS - URL Path Variable 숫자 타입 유효성 검사 오류 해결
+title: URL Path Variable 숫자 타입 유효성 검사 오류 해결
 date: 2022-09-22
 excerpt: Nest.js 에서 request 을 받을 때 발생한 validate 에러를 해결해 본다.
 authors:

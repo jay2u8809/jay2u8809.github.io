@@ -1,5 +1,5 @@
 ---
-title: AWS Lambda - Webpack으로 소스코드 용량 줄여 Upload Size Limit 해결하기
+title: Webpack으로 소스코드 용량 줄여 Upload Size Limit 해결하기
 date: 2024-05-28
 excerpt: Webpack 을 이용한 AWS Lambda 소스코드 용량 줄이기
 authors:

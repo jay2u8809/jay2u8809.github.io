@@ -1,5 +1,5 @@
 ---
-title: React Native - Android 빌드 실패: JAVA_HOME 환경변수 설정
+title: Android 빌드 실패 — JAVA_HOME 환경변수 설정
 date: 2022-05-27
 excerpt: React Native 에서 발생한 Android 빌드 에러를 해결해 본다.
 authors:

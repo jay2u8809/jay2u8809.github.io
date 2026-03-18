@@ -1,5 +1,5 @@
 ---
-title: AWS CloudWatch - Log Insights로 로그 손쉽게 검색하기
+title: Log Insights로 로그 손쉽게 검색하기
 date: 2024-08-14
 excerpt: AWS CloudWatch 의 로그를 Log Insights 를 이용해 간편하게 검색해 본다.
 authors:

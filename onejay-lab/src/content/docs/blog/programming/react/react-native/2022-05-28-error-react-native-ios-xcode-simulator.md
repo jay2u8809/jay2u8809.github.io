@@ -1,5 +1,5 @@
 ---
-title: React Native - iOS 빌드 오류 해결: Podfile.lock & Xcode 시뮬레이터 설정
+title: iOS 빌드 오류 해결 — Podfile.lock & Xcode 시뮬레이터 설정
 date: 2022-05-28
 excerpt: React Native 에서 발생한 xcode, podfile 관련 에러를 알아보고 해결해 본다.
 authors:
