@@ -5,7 +5,7 @@ description: CloudWatch - Log Insights 쿼리 사용 방법을 정리한다.
 ---
 
 <!--title -->
-# AWS Cloudwatch - Log Insights 검색 쿼리
+# AWS CloudWatch - Log Insights 검색 쿼리
 <!--//title -->
 
 <!-- 

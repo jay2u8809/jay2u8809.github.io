@@ -128,7 +128,7 @@ description: js 의 Promise.all 함수를 이용해 병렬 처리를 하는 방�
     
   ### Error 처리
 
-  - Promise.all() 함수는 메개변수로 여러 개의 Promise 들이 배열 형태로 들어가게 되는데, 이 중 **하나라도 reject 가 되거나 에러가 발생할 경우, 모든 Promise 들이 reject** 된다. 
+  - Promise.all() 함수는 매개변수로 여러 개의 Promise 들이 배열 형태로 들어가게 되는데, 이 중 **하나라도 reject 가 되거나 에러가 발생할 경우, 모든 Promise 들이 reject** 된다. 
 
   - Code① 의 `fetchFruits()` 함수를 아래와 같이 reject 되도록 수정한다.
     ```typescript

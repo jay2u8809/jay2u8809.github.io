@@ -1,5 +1,5 @@
 ---
-title: 개발 환경 설정
+title: NestJS 개발 환경 설정 (Mac)
 description: Nest.js 로 어플리케이션을 개발할 환경을 구축하는 방법을 정리한다.
 # sidebar_position: 1
 ---
@@ -115,7 +115,7 @@ description: Nest.js 로 어플리케이션을 개발할 환경을 구축하는 
 
 ## 2. PostgreSQL
 
-  > Docker 를 이용해 PostreSQL 을 사용하도록 설정
+  > Docker 를 이용해 PostgreSQL 을 사용하도록 설정
 
   - 참고: [Docker(Podman) 설치하기](/dev/tools/docker/how-to-install-docker)
 

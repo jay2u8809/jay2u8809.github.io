@@ -90,7 +90,7 @@ description: Shell 의 종류를 확인하고 기본 쉘을 변경하는 방법�
 > 현재 사용 중인 Shell 이외에 다른 Shell 을 사용할 수 있는지 확인하는 방법
 
 - **cat /etc/shells**
-  + etc 디레토리의 shells 라는 파일에는 해당 운영체제에서 사용할 수 있는 Shell 들의 설치 경로가 저장되어 있다.
+  + etc 디렉토리의 shells 라는 파일에는 해당 운영체제에서 사용할 수 있는 Shell 들의 설치 경로가 저장되어 있다.
   + bash, csh 등등 사용할 수 있는 다양한 쉘들의 설치 경로가 출력된다.
   
   ```shell
@@ -112,7 +112,7 @@ description: Shell 의 종류를 확인하고 기본 쉘을 변경하는 방법�
   ### Shell 의 종류
 
   #### 1) sh (Bourne Shell)
-  - 최초의 쉘. 대부분의 리눅에서 기본적으로 설치되어 있어 사용할 수 있다.
+  - 최초의 쉘. 대부분의 리눅스에서 기본적으로 설치되어 있어 사용할 수 있다.
     + 설치 경로: `[/bin/sh]`
 
   #### 2) bash (Bourne-Again Shell)
@@ -120,7 +120,7 @@ description: Shell 의 종류를 확인하고 기본 쉘을 변경하는 방법�
     + 설치 경로 : `[/bin/bash]`
 
   #### 3) zsh (Z Shell)
-  - 수 많은 쉘들의 기능을 가지고 있는 확장현 Bourne Shell 이다.
+  - 수 많은 쉘들의 기능을 가지고 있는 확장형 Bourne Shell 이다.
     + 설치 경로 : `[/bin/zsh]`
 
   #### 4) csh (C Shell)

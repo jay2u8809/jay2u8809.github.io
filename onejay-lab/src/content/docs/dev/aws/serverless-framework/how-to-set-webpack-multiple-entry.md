@@ -1,9 +1,6 @@
 ---
-# slug: /aws/serverless-framework/how-to-set-webpack-multiple-entry
-id: how-to-set-webpack-multiple-entry
-title: Nest.js Webpack 적용 방법
+title: NestJS Webpack 설정 방법 (다중 Entry)
 description: Nest.js 에 Webpack 을 적용하는 방법에 대해 정리한다.
-# sidebar_position: 1
 ---
 
 <!--title -->
@@ -33,7 +30,7 @@ description: Nest.js 에 Webpack 을 적용하는 방법에 대해 정리한다.
   AWS Lambda 를 Serverless Framework 로 Deploy 하면 아래와 같은 에러로 실패했다. 
 
   ```shell
-    ... ○ Created layer package  ${PRJECT_NAME}.serverless/sample-project-dev-nodejs-default.zip (57.4 MB)
+    ... ○ Created layer package  ${PROJECT_NAME}.serverless/sample-project-dev-nodejs-default.zip (57.4 MB)
     ... ○ Uploading layer package...
     ... ○ OK...
     ServerlessLayers error:
@@ -170,8 +167,8 @@ webpack 을 적용해 bundling 한 파일들이 Deploy 할 때 정확하게 업�
           individually: true
           include:
             - dist/convertImage-bundle.js
-            - dist/?-bundule.js
-            - dist/??-bundule.js
+            - dist/?-bundle.js
+            - dist/??-bundle.js
           exclude:
             - '**'
         timeout: 900
@@ -185,8 +182,8 @@ webpack 을 적용해 bundling 한 파일들이 Deploy 할 때 정확하게 업�
             individually: true
             include:
               - dist/backupS3-bundle.js
-              - dist/?-bundule.js
-              - dist/??-bundule.js
+              - dist/?-bundle.js
+              - dist/??-bundle.js
             exclude:
               - '**'
           timeout: 900
@@ -200,8 +197,8 @@ webpack 을 적용해 bundling 한 파일들이 Deploy 할 때 정확하게 업�
             individually: true
             include:
               - dist/statisticsUsers-bundle.js
-              - dist/?-bundule.js
-              - dist/??-bundule.js
+              - dist/?-bundle.js
+              - dist/??-bundle.js
             exclude:
               - '**'
           timeout: 900

@@ -39,7 +39,7 @@ description: Jest 를 이용해 테스트를 하는 방법에 대해 정리한�
           throw new NoUserException('no exist id');
         }
         // return
-        return this.getUSer(id);
+        return this.getUser(id);
       }
 
       // === private ===

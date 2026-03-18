@@ -1,12 +1,14 @@
 ---
-title: ReactNative - [Error] ES Lint - Parsing error
+title: React Native - ESLint Parsing Error 해결: TypeScript 파일 린트 설정
 date: 2022-05-28
 excerpt: React Native 에서 ES Lint 의 Parsing error 를 해결해 본다.
 authors:
   - onejay
 tags:
   - react native
-  - trouble shooting
+  - troubleshooting
+  - eslint
+  - typescript
 ---
 
 <!--title -->
@@ -31,7 +33,7 @@ tags:
 
 ---
 
-> ReactNative 의 EsLint 에러를 해결해 본다.
+> ReactNative 의 ESLint 에러를 해결해 본다.
 
 <!-- truncate -->
 
@@ -101,9 +103,9 @@ Typescript 를 사용하고 있기에 parserOptions 에 project 항목을 추가
 
 ## 해결
 
-  > `.eslinltrc.js` 의 적용 대상에서 3개의 파일을 제외
+  > `.eslintrc.js` 의 적용 대상에서 3개의 파일을 제외
 
-  이 에러에 대해 구글링해보니 의외로 해결 방법은 간단했다. `.eslinltrc.js` 의  적용되는 대상에서 이 3개의 파일들을 제외하면 된다. 
+  이 에러에 대해 구글링해보니 의외로 해결 방법은 간단했다. `.eslintrc.js` 의  적용되는 대상에서 이 3개의 파일들을 제외하면 된다. 
 
   es lint 처리는 기본적으로 전체 프로젝트의 코드들을 대상으로 처리하기에 3개의 설정 파일(js)도 포함 된다. 하지만 이 3개의 설정 파일들은 es lint 처리를 할 필요가 없다. (직접적으로 코딩하는 파일이 아니므로)
 

@@ -1,11 +1,11 @@
 ---
-title: SSH Key 생성 및 Github 등록 방법
-description: Github 를 사용하기 위해 SSH 를 생성하고 등록하는 방법을 정리한다.
+title: SSH Key 생성 및 GitHub 등록 방법
+description: GitHub 를 사용하기 위해 SSH 를 생성하고 등록하는 방법을 정리한다.
 # sidebar_position: 1
 ---
 
 <!--title -->
-# SSH Key 생성해서 Github에 등록하기
+# SSH Key 생성해서 GitHub에 등록하기
 <!--//title -->
 
 <!-- 

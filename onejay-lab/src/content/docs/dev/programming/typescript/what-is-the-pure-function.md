@@ -1,5 +1,5 @@
 ---
-title: Typescript - 순수함수란?
+title: TypeScript - 순수 함수(Pure Function)란?
 description: js 의 순수 함수에 대해 알아본다.
 ---
 
@@ -54,7 +54,7 @@ description: js 의 순수 함수에 대해 알아본다.
   - Code①
 
     ```typescript
-      function add(num1: number, num2: nubmer): number {
+      function add(num1: number, num2: number): number {
         return num1 + num2;
       }
     ```

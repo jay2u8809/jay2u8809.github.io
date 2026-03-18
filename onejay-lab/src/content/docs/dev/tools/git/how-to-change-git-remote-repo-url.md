@@ -51,7 +51,7 @@ description: Git 의 Remote Repository URL 을 변경해 본다.
 
     - `origin`
       + repository url의 별칭(alias)
-      + reposiory url 이 길기 때문에 사용하는 별칭으로 기본적으로 origin 을 사용한다.
+      + repository url 이 길기 때문에 사용하는 별칭으로 기본적으로 origin 을 사용한다.
     
     - `git@gitlab.com:projects/sample1/ABCDE-service.git`
       + repository 의 ssh url 
@@ -91,7 +91,7 @@ description: Git 의 Remote Repository URL 을 변경해 본다.
   
     - `git remote rename ${CURRENT_ALIAS} ${NEW_ALIAS}`
 
-  #### 2) 기존 별칭으로 새로운 URL 의 repositroy 를 추가
+  #### 2) 기존 별칭으로 새로운 URL 의 repository 를 추가
 
     -  `git remote add origin ${REPOSITORY_NEW_URL}`
   

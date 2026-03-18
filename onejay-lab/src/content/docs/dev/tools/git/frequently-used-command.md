@@ -1,5 +1,5 @@
 ---
-title: 자주 사용하는 명령어
+title: Git - 자주 사용하는 명령어
 description: Git 의 명령어에 대해 정리한다.
 # sidebar_position: 1
 ---
@@ -134,7 +134,7 @@ description: Git 의 명령어에 대해 정리한다.
       $ git branch ${NEW_BRANCH_NAME}
     ```
 
-  - create a new branch and swtich to a branch 
+  - create a new branch and switch to a branch
 
     ```shell
       $ git checkout -b ${NEW_BRANCH_NAME}

@@ -1,5 +1,5 @@
 ---
-title: AWS Lambda - Code Storage Limit 해결방법
+title: AWS Lambda - Code Storage Limit 초과 해결: Serverless Prune Plugin
 date: 2024-06-26
 excerpt: AWS Lambda 의 Code Storage Limit 해결방법
 authors:
@@ -9,6 +9,7 @@ tags:
   - lambda
   - serverless framework
   - prune
+  - deploy
 ---
 
 <!--title -->
@@ -113,7 +114,7 @@ tags:
 
 ### 3) Deploy
 
-  시험 삼아 1개의 Sereverless Framework 설정 파일(YAML)에 Serverless Prune Plugin을 설정하고 sls 로 deploy 했다. 예상대로 오래된 버전의 파일들이 모두 삭제되었다. 나머지 Sereverless Framework 설정 파일(YAML)에도 플러그인을 설정하고 모두 deploy 를 해서 오래된 버전 파일들을 삭제했다. 개발환경(Dev)의 람다함수들의 deploy 횟수가 많았었기에 개발환경만 deploy 해도 상당한 양의 코드 스토리지를 확보할 수 있었다.  
+  시험 삼아 1개의 Serverless Framework 설정 파일(YAML)에 Serverless Prune Plugin을 설정하고 sls 로 deploy 했다. 예상대로 오래된 버전의 파일들이 모두 삭제되었다. 나머지 Serverless Framework 설정 파일(YAML)에도 플러그인을 설정하고 모두 deploy 를 해서 오래된 버전 파일들을 삭제했다. 개발환경(Dev)의 람다함수들의 deploy 횟수가 많았었기에 개발환경만 deploy 해도 상당한 양의 코드 스토리지를 확보할 수 있었다.  
 
   - 75GB -> 22GB
 

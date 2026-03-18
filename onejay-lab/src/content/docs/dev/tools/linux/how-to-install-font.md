@@ -53,7 +53,7 @@ description: 리눅스(ZorinOS) 에서 D2Coding font 를 설치하는 방법을 
     sudo fc-cache -fv
     ```
 
-5) VsCode 의 Editor: Font Famliy 의 가장 앞에 폰트 추가
+5) VsCode 의 Editor: Font Family 의 가장 앞에 폰트 추가
   - ```text
     'D2Coding-Ver1.3.2-20180524', 'Droid Sans Mono', monospace
     ```

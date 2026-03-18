@@ -78,7 +78,7 @@ description: Array 를 이용해서 React 컴포넌트를 동적으로 표시하
             ? <div><h1>Error!!!</h1></div>
             :
             loading
-              ? <div><h1>Lodaing...</h1></div>
+              ? <div><h1>Loading...</h1></div>
               : {
                   result.map((item, index) => {
                     return (

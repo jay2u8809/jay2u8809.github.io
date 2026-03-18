@@ -105,7 +105,7 @@ description: Docker 와 Podman 을 설치하는 방법에 대해 정리한다.
 ## Error
 
   ### Docker Image 를 Pull 할 수 없다
-  - Dockerfile 을 작성해서 build 를 하거나 `podman pull <DOCKER_IMGAE_NAME>` 명령어를 사용할 때 아래와 같은 에러가 발생할 때가 있다.
+  - Dockerfile 을 작성해서 build 를 하거나 `podman pull <DOCKER_IMAGE_NAME>` 명령어를 사용할 때 아래와 같은 에러가 발생할 때가 있다.
 
     ```shell
       Error: error creating build container: short-name "eclipse-temurin:17" did not resolve to an alias and no unqualified-search registries are defined in "/etc/containers/registries.conf"

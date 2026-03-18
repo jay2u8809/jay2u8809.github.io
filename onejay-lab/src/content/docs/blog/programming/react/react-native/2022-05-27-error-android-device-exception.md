@@ -1,13 +1,14 @@
 ---
-title: ReactNative - [Error] Android - DeviceException
+title: React Native - Android 빌드 실패: JAVA_HOME 환경변수 설정
 date: 2022-05-27
 excerpt: React Native 에서 발생한 Android 빌드 에러를 해결해 본다.
 authors:
   - onejay
 tags:
   - react native
-  - trouble shooting
+  - troubleshooting
   - android
+  - java
 ---
 
 <!--title -->
@@ -121,7 +122,7 @@ tags:
     - **JAVA_HOME** 변수는 일종의 전역 변수(_Global Variable_) 이다. 
       + 시스템(OS)의 전역 변수로서 **JAVA_HOME** 이라는 전역 변수를 시스템(OS)에 등록하면 시스템(OS) 어디서든 java 를 실행하고 사용할 수 있다.
 
-    - Andriod Studio 나 IntelliJ, Tomcat 등의 java 를 이용하는 프로그램들이 Build, BootRun, Emulator 등을 실행 할 때, 별도로 jdk 의 경로를 지정해주지 않아도 시스템(OS)의 **JAVA_HOME** 이라는 변수를 불러와 사용한다.
+    - Android Studio 나 IntelliJ, Tomcat 등의 java 를 이용하는 프로그램들이 Build, BootRun, Emulator 등을 실행 할 때, 별도로 jdk 의 경로를 지정해주지 않아도 시스템(OS)의 **JAVA_HOME** 이라는 변수를 불러와 사용한다.
       + JDK 경로는 **JAVA_HOME** 에 저장되어 있다는 약속
       + 이 약속된 변수 **JAVA_HOME** 이 없었기에 빌드에 실패했다. 따라서 이 변수를 지정해주어야 한다.
 
@@ -139,7 +140,7 @@ tags:
   - ② JAVA_HOME 환경변수가 없을 경우 가장 아래쪽에 추가
 
     ```shell
-      $ echo export JAVA_HOME= /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home >> .zshrc
+      $ echo export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home >> .zshrc
     ```
 
   - ③ zshrc 적용
@@ -158,7 +159,7 @@ tags:
 
 ### Android Build
 
-  에러가 해결되었는지 확인을 위해 다시 한 번 ios 를 빌드해 본다.
+  에러가 해결되었는지 확인을 위해 다시 한 번 android 를 빌드해 본다.
 
   - 프로젝트 디렉토리로 이동하여 실행
 

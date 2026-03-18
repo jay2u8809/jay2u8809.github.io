@@ -1,5 +1,5 @@
 ---
-title: AWS Lambda - Webpack 으로 Upload Size Limit 해결하기
+title: AWS Lambda - Webpack으로 소스코드 용량 줄여 Upload Size Limit 해결하기
 date: 2024-05-28
 excerpt: Webpack 을 이용한 AWS Lambda 소스코드 용량 줄이기
 authors:
@@ -9,6 +9,8 @@ tags:
   - lambda
   - serverless framework
   - webpack
+  - nestjs
+  - optimization
 ---
 
 <!--title -->
@@ -43,7 +45,7 @@ tags:
     Unzipped size must be smaller than 262144000 bytes
   ```
 
-  최근에 Serverless Framework(이하 `sls`)로 AWS Lambda 를 Deploy 하면서 나온 에러 메세지다. AWS Lambda 에 업로드할 소스코드의 용량이 (압축하지 않았을 경우에) 약 250MB 보다 적어야 한다는 것이다.
+  최근에 Serverless Framework(이하 `sls`)로 AWS Lambda 를 Deploy 하면서 나온 에러 메시지다. AWS Lambda 에 업로드할 소스코드의 용량이 (압축하지 않았을 경우에) 약 250MB 보다 적어야 한다는 것이다.
 
   현재 우리 팀의 서비스는 AWS Lambda 와 ECS Fargate 에 Nest.js 프로젝트를 올려 운영하고 있다. ECS Fargate 는 특별히 소스코드 용량 제한이 없지만 AWS Lambda 는 여러가지 용량 제한이 있다. 
 
@@ -80,9 +82,9 @@ tags:
 
 ## Webpack 을 사용하는 이유
 
-  웹팩Webpack은 필요없는(사용하지 않는) 코드를 없앨수 있다. 각 마이크로 서비스에 실제 사용되는 소스코드와 의존성만을 이용해 결과물을 만들어 낸다. 그렇기 때문에 필요없는 코드들을 없앨 수 있고 실제 기능에 필요한 코드만을 업로드할 수 있도록 한다.
+  웹팩Webpack은 필요없는(사용하지 않는) 코드를 없앨 수 있다. 각 마이크로 서비스에 실제 사용되는 소스코드와 의존성만을 이용해 결과물을 만들어 낸다. 그렇기 때문에 필요없는 코드들을 없앨 수 있고 실제 기능에 필요한 코드만을 업로드할 수 있도록 한다.
 
-  위에서 예를 든 "회원 서비스"에서 사용하지 않는 B 의존성을 제거할 수 있다. 필요없는 의존성을 제거할 수 있기에 소스코드의 용량을 획기적으로 줄일수 있을 것이라 생각했다.
+  위에서 예를 든 "회원 서비스"에서 사용하지 않는 B 의존성을 제거할 수 있다. 필요없는 의존성을 제거할 수 있기에 소스코드의 용량을 획기적으로 줄일 수 있을 것이라 생각했다.
 
 
 
@@ -172,7 +174,7 @@ tags:
 
   - 250MB -> 15MB
 
-  웹팩을 적용함으로서 deploy 할 때 업로드할 소스코드의 양을 대폭 줄일 수 있었다. 기존의 방식은 프로젝트의 소스코드(`dist`)와 의존성(`node_module`)을 모두 업로드하는 방식이었기에 250MB가 넘어가는 용량이었지만 웹팩을 통해 약 15MB 정도의 main.js 만 업로드하는 방식으로 바꾸었다. 이를 통해 S3 의 저장용량도 줄일 수 있었다. (AWS Lambda 의 소스코드는 일정 용량 이상인 경우 S3 에 업로드 된다.)
+  웹팩을 적용함으로써 deploy 할 때 업로드할 소스코드의 양을 대폭 줄일 수 있었다. 기존의 방식은 프로젝트의 소스코드(`dist`)와 의존성(`node_module`)을 모두 업로드하는 방식이었기에 250MB가 넘어가는 용량이었지만 웹팩을 통해 약 15MB 정도의 main.js 만 업로드하는 방식으로 바꾸었다. 이를 통해 S3 의 저장용량도 줄일 수 있었다. (AWS Lambda 의 소스코드는 일정 용량 이상인 경우 S3 에 업로드 된다.)
 
   - Build 필수
 
